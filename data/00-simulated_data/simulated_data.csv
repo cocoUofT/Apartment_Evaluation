@@ -1,152 +1,3501 @@
-division,state,party
-Division 1,Victoria,Liberal
-Division 2,New South Wales,Liberal
-Division 3,Tasmania,Liberal
-Division 4,New South Wales,Liberal
-Division 5,Queensland,Liberal
-Division 6,New South Wales,Labor
-Division 7,Victoria,Liberal
-Division 8,Western Australia,Labor
-Division 9,Western Australia,Greens
-Division 10,Queensland,Labor
-Division 11,Queensland,Labor
-Division 12,Northern Territory,Liberal
-Division 13,New South Wales,Labor
-Division 14,Western Australia,Labor
-Division 15,Western Australia,National
-Division 16,Victoria,Liberal
-Division 17,South Australia,Liberal
-Division 18,Victoria,Liberal
-Division 19,Western Australia,Labor
-Division 20,South Australia,Labor
-Division 21,New South Wales,Liberal
-Division 22,Queensland,Greens
-Division 23,New South Wales,Liberal
-Division 24,New South Wales,Liberal
-Division 25,Queensland,Labor
-Division 26,Victoria,National
-Division 27,New South Wales,Liberal
-Division 28,Queensland,Liberal
-Division 29,Tasmania,Liberal
-Division 30,South Australia,Liberal
-Division 31,New South Wales,Liberal
-Division 32,Victoria,Labor
-Division 33,Tasmania,Liberal
-Division 34,New South Wales,Liberal
-Division 35,Western Australia,Labor
-Division 36,New South Wales,Liberal
-Division 37,Tasmania,Greens
-Division 38,Tasmania,Labor
-Division 39,Victoria,Greens
-Division 40,South Australia,Labor
-Division 41,New South Wales,Other
-Division 42,New South Wales,Other
-Division 43,Tasmania,Labor
-Division 44,Tasmania,National
-Division 45,Queensland,Liberal
-Division 46,Australian Capital Territory,Other
-Division 47,Queensland,Labor
-Division 48,Queensland,Other
-Division 49,South Australia,Liberal
-Division 50,Victoria,National
-Division 51,South Australia,Liberal
-Division 52,Victoria,Labor
-Division 53,South Australia,National
-Division 54,Queensland,Liberal
-Division 55,Queensland,Labor
-Division 56,South Australia,Liberal
-Division 57,New South Wales,Other
-Division 58,Northern Territory,Liberal
-Division 59,New South Wales,Labor
-Division 60,Western Australia,Labor
-Division 61,New South Wales,Liberal
-Division 62,South Australia,Liberal
-Division 63,Queensland,Labor
-Division 64,Tasmania,Labor
-Division 65,South Australia,Labor
-Division 66,Victoria,Labor
-Division 67,Queensland,Liberal
-Division 68,Queensland,Liberal
-Division 69,Tasmania,Labor
-Division 70,South Australia,National
-Division 71,Australian Capital Territory,Labor
-Division 72,Western Australia,Labor
-Division 73,Queensland,National
-Division 74,Victoria,Labor
-Division 75,Western Australia,Labor
-Division 76,Tasmania,Labor
-Division 77,Queensland,Liberal
-Division 78,Western Australia,Liberal
-Division 79,Queensland,Labor
-Division 80,Queensland,Liberal
-Division 81,Victoria,Labor
-Division 82,New South Wales,Liberal
-Division 83,Victoria,Liberal
-Division 84,Queensland,National
-Division 85,Western Australia,Liberal
-Division 86,New South Wales,Labor
-Division 87,Queensland,Liberal
-Division 88,New South Wales,Liberal
-Division 89,Tasmania,Liberal
-Division 90,South Australia,Labor
-Division 91,Victoria,Liberal
-Division 92,New South Wales,Labor
-Division 93,Tasmania,Labor
-Division 94,South Australia,Labor
-Division 95,Victoria,Liberal
-Division 96,Victoria,Labor
-Division 97,Western Australia,Liberal
-Division 98,Queensland,Liberal
-Division 99,South Australia,Liberal
-Division 100,New South Wales,Labor
-Division 101,South Australia,Labor
-Division 102,New South Wales,Labor
-Division 103,Victoria,Labor
-Division 104,Victoria,Labor
-Division 105,South Australia,Other
-Division 106,Western Australia,Labor
-Division 107,Tasmania,Liberal
-Division 108,Victoria,Labor
-Division 109,Queensland,Liberal
-Division 110,Victoria,Labor
-Division 111,Australian Capital Territory,Labor
-Division 112,Victoria,Liberal
-Division 113,Victoria,Liberal
-Division 114,Victoria,Liberal
-Division 115,Tasmania,Labor
-Division 116,Victoria,Labor
-Division 117,New South Wales,Labor
-Division 118,Victoria,Labor
-Division 119,Victoria,Greens
-Division 120,Northern Territory,Labor
-Division 121,South Australia,Liberal
-Division 122,New South Wales,Liberal
-Division 123,New South Wales,Labor
-Division 124,New South Wales,Liberal
-Division 125,New South Wales,National
-Division 126,New South Wales,Labor
-Division 127,Queensland,Labor
-Division 128,New South Wales,Other
-Division 129,Queensland,Labor
-Division 130,Australian Capital Territory,Liberal
-Division 131,Tasmania,Greens
-Division 132,New South Wales,National
-Division 133,New South Wales,Labor
-Division 134,Northern Territory,Labor
-Division 135,South Australia,National
-Division 136,Victoria,Labor
-Division 137,Tasmania,National
-Division 138,South Australia,Liberal
-Division 139,New South Wales,Labor
-Division 140,Victoria,Other
-Division 141,Queensland,Greens
-Division 142,Victoria,National
-Division 143,Western Australia,Labor
-Division 144,Victoria,Labor
-Division 145,Queensland,Liberal
-Division 146,Tasmania,Liberal
-Division 147,South Australia,Liberal
-Division 148,Victoria,Labor
-Division 149,New South Wales,National
-Division 150,New South Wales,Labor
-Division 151,Victoria,Liberal
+RSN,CONFIRMED UNITS,YEAR BUILT,YEAR EVALUATED,PROPERTY TYPE,TENANT SERVICE REQUEST LOG,PEST CONTROL LOG,MAINTENANCE LOG,BUILDING AGE,size_group,building_size
+1,184,1942,2024,Social Housing,3,3,3,82,Very Large,Very Large
+2,46,2002,2024,Social Housing,3,3,3,22,Medium,Medium
+3,73,1975,2024,Private,3,3,3,49,Large,Large
+4,216,1925,2023,TCHC,3,3,3,98,Very Large,Very Large
+5,18,1926,2024,Private,1,3,3,98,Small,Small
+6,139,1950,2024,Private,3,3,0,74,Large,Large
+7,30,1945,2025,Private,3,1,3,80,Medium,Medium
+8,39,1917,2024,Private,3,1,3,107,Medium,Medium
+9,321,1917,2025,Private,3,3,0,108,Very Large,Very Large
+10,37,1997,2024,Private,3,3,3,27,Medium,Medium
+11,18,1911,2024,Private,3,3,3,113,Small,Small
+12,72,2009,2024,Private,3,3,3,15,Large,Large
+13,14,1926,2025,Private,1,3,3,99,Small,Small
+14,114,1948,2025,Private,3,3,3,77,Large,Large
+15,13,1974,2025,TCHC,2,3,3,51,Small,Small
+16,82,1968,2025,Private,3,3,3,57,Large,Large
+17,392,1952,2023,TCHC,3,3,3,71,Very Large,Very Large
+18,318,1976,2024,Private,3,3,3,48,Very Large,Very Large
+19,49,1922,2025,Private,3,3,3,103,Medium,Medium
+20,32,1965,2024,Private,1,1,3,59,Medium,Medium
+21,17,2020,2025,Private,3,3,1,5,Small,Small
+22,178,1980,2025,Private,3,3,3,45,Very Large,Very Large
+23,60,1959,2023,Private,3,2,3,64,Large,Large
+24,73,2008,2025,Private,3,1,1,17,Large,Large
+25,33,1940,2024,Private,3,3,1,84,Medium,Medium
+26,237,1933,2023,Private,3,3,2,90,Very Large,Very Large
+27,18,1982,2023,TCHC,3,3,3,41,Small,Small
+28,367,1927,2025,Private,3,3,3,98,Very Large,Very Large
+29,21,1984,2024,Private,3,3,3,40,Small,Small
+30,13,1971,2024,Private,3,3,3,53,Small,Small
+31,93,1934,2023,Private,3,0,1,89,Large,Large
+32,42,2000,2025,Private,3,3,3,25,Medium,Medium
+33,133,1960,2025,Private,3,3,3,65,Large,Large
+34,39,1976,2025,Private,3,1,3,49,Medium,Medium
+35,395,1978,2024,Private,0,2,2,46,Very Large,Very Large
+36,16,1931,2024,Private,3,3,3,93,Small,Small
+37,163,1969,2023,Private,3,3,3,54,Very Large,Very Large
+38,38,1965,2023,Private,3,1,3,58,Medium,Medium
+39,48,1900,2023,Private,3,2,3,123,Medium,Medium
+40,134,1929,2023,Social Housing,3,3,3,94,Large,Large
+41,138,1976,2025,Social Housing,3,3,3,49,Large,Large
+42,327,1988,2023,Private,3,3,1,35,Very Large,Very Large
+43,107,1946,2023,Private,3,3,1,77,Large,Large
+44,289,1915,2025,Private,3,3,3,110,Very Large,Very Large
+45,28,1954,2025,Private,3,3,3,71,Medium,Medium
+46,21,1905,2024,Private,3,3,3,119,Small,Small
+47,217,2013,2023,Private,3,3,3,10,Very Large,Very Large
+48,39,1971,2023,TCHC,3,0,1,52,Medium,Medium
+49,410,1967,2025,Private,1,3,3,58,Very Large,Very Large
+50,51,1984,2025,Private,3,1,0,41,Medium,Medium
+51,61,1984,2024,Private,3,3,3,40,Large,Large
+52,24,1957,2024,Social Housing,3,3,3,67,Small,Small
+53,38,1924,2024,Private,3,3,3,100,Medium,Medium
+54,117,2003,2025,Private,3,3,3,22,Large,Large
+55,32,1999,2025,Private,3,3,3,26,Medium,Medium
+56,28,1984,2024,Social Housing,3,3,1,40,Medium,Medium
+57,35,2019,2023,Private,3,3,3,4,Medium,Medium
+58,18,1921,2023,Private,3,3,3,102,Small,Small
+59,284,1920,2023,Private,3,3,3,103,Very Large,Very Large
+60,393,1953,2025,Private,3,3,1,72,Very Large,Very Large
+61,16,1986,2024,Private,3,3,3,38,Small,Small
+62,134,1918,2024,Private,3,3,1,106,Large,Large
+63,36,1956,2023,Private,3,3,3,67,Medium,Medium
+64,13,1987,2023,Private,2,3,3,36,Small,Small
+65,218,1991,2025,Private,1,3,3,34,Very Large,Very Large
+66,33,1986,2023,Social Housing,3,3,3,37,Medium,Medium
+67,477,1919,2025,Private,3,1,3,106,Very Large,Very Large
+68,142,1984,2025,Private,3,2,3,41,Large,Large
+69,228,2022,2023,Private,3,3,3,1,Very Large,Very Large
+70,52,1989,2023,TCHC,1,0,3,34,Medium,Medium
+71,314,1971,2024,Private,3,2,3,53,Very Large,Very Large
+72,53,1975,2024,Private,3,3,3,49,Medium,Medium
+73,39,1908,2025,Private,1,3,3,117,Medium,Medium
+74,342,2013,2025,Private,1,3,3,12,Very Large,Very Large
+75,146,1934,2025,Private,3,3,3,91,Very Large,Very Large
+76,52,1945,2024,TCHC,3,3,3,79,Medium,Medium
+77,86,1959,2024,Social Housing,1,2,3,65,Large,Large
+78,69,1955,2024,Social Housing,3,3,3,69,Large,Large
+79,39,1917,2025,Private,3,3,3,108,Medium,Medium
+80,93,1999,2023,Private,3,1,1,24,Large,Large
+81,40,2000,2025,TCHC,3,3,3,25,Medium,Medium
+82,65,1967,2024,Social Housing,0,3,3,57,Large,Large
+83,91,1977,2024,TCHC,3,3,3,47,Large,Large
+84,22,1948,2025,TCHC,2,3,3,77,Small,Small
+85,74,2020,2024,Private,1,3,3,4,Large,Large
+86,19,1949,2024,Social Housing,1,3,1,75,Small,Small
+87,232,2017,2024,Private,3,1,3,7,Very Large,Very Large
+88,233,1979,2025,Private,3,3,3,46,Very Large,Very Large
+89,163,1932,2024,Private,3,3,3,92,Very Large,Very Large
+90,132,1916,2024,Social Housing,3,3,3,108,Large,Large
+91,133,1993,2024,TCHC,0,3,0,31,Large,Large
+92,370,1969,2024,Private,3,3,2,55,Very Large,Very Large
+93,571,1978,2025,Social Housing,0,3,3,47,Very Large,Very Large
+94,78,1921,2024,Private,3,3,3,103,Large,Large
+95,721,1920,2024,Private,3,3,1,104,Very Large,Very Large
+96,147,1904,2025,Social Housing,3,1,3,121,Very Large,Very Large
+97,195,1900,2023,Private,3,1,3,123,Very Large,Very Large
+98,297,1984,2025,Private,3,3,3,41,Very Large,Very Large
+99,38,1936,2024,Social Housing,3,3,3,88,Medium,Medium
+100,92,1970,2025,Private,3,3,3,55,Large,Large
+101,100,1994,2025,Private,3,3,3,31,Large,Large
+102,234,1956,2025,TCHC,1,1,2,69,Very Large,Very Large
+103,37,1931,2025,Social Housing,3,3,3,94,Medium,Medium
+104,11,2012,2025,TCHC,3,3,3,13,Small,Small
+105,104,1999,2025,Private,3,3,3,26,Large,Large
+106,29,1981,2025,Private,3,1,3,44,Medium,Medium
+107,44,2018,2025,Private,3,3,3,7,Medium,Medium
+108,198,2018,2025,TCHC,3,3,3,7,Very Large,Very Large
+109,18,2019,2023,Private,3,2,1,4,Small,Small
+110,362,1941,2025,Private,3,3,2,84,Very Large,Very Large
+111,18,1944,2025,TCHC,3,3,1,81,Small,Small
+112,66,2020,2024,Private,1,1,3,4,Large,Large
+113,151,1979,2025,Private,3,3,3,46,Very Large,Very Large
+114,70,1988,2024,Private,3,3,3,36,Large,Large
+115,242,1984,2025,Social Housing,0,3,3,41,Very Large,Very Large
+116,21,1969,2025,Private,3,3,3,56,Small,Small
+117,32,1962,2025,Social Housing,1,3,3,63,Medium,Medium
+118,15,1944,2025,Private,3,3,3,81,Small,Small
+119,58,1919,2024,Private,3,3,3,105,Large,Large
+120,23,2012,2025,Private,3,3,3,13,Small,Small
+121,34,1951,2024,Private,2,3,3,73,Medium,Medium
+122,47,2008,2024,Private,1,3,2,16,Medium,Medium
+123,55,1905,2025,Private,3,3,3,120,Large,Large
+124,95,1941,2024,Private,3,2,1,83,Large,Large
+125,209,1971,2023,Private,3,3,3,52,Very Large,Very Large
+126,24,1970,2024,Private,3,3,3,54,Small,Small
+127,24,2015,2025,Private,3,3,3,10,Small,Small
+128,15,1914,2024,Private,3,3,3,110,Small,Small
+129,17,1929,2025,Private,3,3,3,96,Small,Small
+130,63,1985,2024,Private,3,3,1,39,Large,Large
+131,39,1922,2024,Private,3,3,3,102,Medium,Medium
+132,24,1980,2025,Private,3,3,3,45,Small,Small
+133,98,1932,2024,Private,3,3,1,92,Large,Large
+134,20,1945,2025,Private,0,3,3,80,Small,Small
+135,92,1976,2025,Private,3,3,3,49,Large,Large
+136,19,2019,2023,Private,3,3,3,4,Small,Small
+137,91,1916,2024,Private,3,3,3,108,Large,Large
+138,12,1940,2023,Private,3,3,3,83,Small,Small
+139,180,1928,2025,Private,3,3,3,97,Very Large,Very Large
+140,153,1976,2024,Private,3,3,3,48,Very Large,Very Large
+141,56,1971,2024,Private,3,1,3,53,Large,Large
+142,17,2000,2024,Private,3,3,3,24,Small,Small
+143,14,1989,2023,Private,3,3,3,34,Small,Small
+144,10,2019,2024,Private,3,3,3,5,Small,Small
+145,31,1917,2025,Private,3,3,1,108,Medium,Medium
+146,302,2014,2025,Private,3,3,3,11,Very Large,Very Large
+147,16,1923,2024,Private,3,3,3,101,Small,Small
+148,18,1964,2025,Private,1,1,1,61,Small,Small
+149,33,2019,2024,Private,3,3,3,5,Medium,Medium
+150,16,1952,2025,Private,3,3,3,73,Small,Small
+151,21,1974,2023,Social Housing,3,3,1,49,Small,Small
+152,382,1903,2025,Private,3,3,2,122,Very Large,Very Large
+153,24,2014,2023,Private,3,3,3,9,Small,Small
+154,46,1977,2024,Private,3,3,3,47,Medium,Medium
+155,30,1981,2025,Private,3,3,3,44,Medium,Medium
+156,192,1926,2024,TCHC,3,1,3,98,Very Large,Very Large
+157,207,1971,2023,Private,1,1,3,52,Very Large,Very Large
+158,21,1920,2025,Private,3,1,3,105,Small,Small
+159,397,1929,2024,Private,3,1,3,95,Very Large,Very Large
+160,103,1984,2023,Private,2,3,3,39,Large,Large
+161,46,1973,2024,Private,3,3,3,51,Medium,Medium
+162,21,1901,2025,Social Housing,3,1,3,124,Small,Small
+163,39,1985,2025,Private,3,1,3,40,Medium,Medium
+164,47,1999,2024,Private,3,3,1,25,Medium,Medium
+165,86,1980,2024,Private,3,3,3,44,Large,Large
+166,170,1923,2023,Private,2,3,3,100,Very Large,Very Large
+167,120,2015,2024,Private,3,3,3,9,Large,Large
+168,13,1906,2024,Private,3,3,3,118,Small,Small
+169,13,1936,2025,Private,3,3,3,89,Small,Small
+170,55,1903,2024,Social Housing,3,3,3,121,Large,Large
+171,377,1908,2025,Private,3,3,0,117,Very Large,Very Large
+172,40,1912,2025,Private,3,3,3,113,Medium,Medium
+173,32,1909,2025,Private,3,3,3,116,Medium,Medium
+174,82,1993,2023,Private,1,3,3,30,Large,Large
+175,77,1924,2023,Private,1,3,3,99,Large,Large
+176,142,1903,2023,Private,3,3,3,120,Large,Large
+177,27,2014,2025,Private,3,3,3,11,Medium,Medium
+178,14,2015,2025,Private,3,3,3,10,Small,Small
+179,343,2007,2025,Private,3,3,3,18,Very Large,Very Large
+180,10,1986,2024,Private,3,3,3,38,Small,Small
+181,17,1973,2025,Private,3,3,3,52,Small,Small
+182,50,1916,2025,Private,3,3,3,109,Medium,Medium
+183,31,1997,2024,Private,3,3,3,27,Medium,Medium
+184,79,1935,2024,Social Housing,3,3,3,89,Large,Large
+185,30,1959,2023,Social Housing,3,1,3,64,Medium,Medium
+186,22,1906,2025,Private,3,3,3,119,Small,Small
+187,12,1911,2024,Social Housing,3,3,3,113,Small,Small
+188,128,2018,2025,Private,3,3,2,7,Large,Large
+189,82,1946,2025,Private,1,1,3,79,Large,Large
+190,18,1907,2025,Private,3,1,3,118,Small,Small
+191,38,1990,2025,Private,3,3,3,35,Medium,Medium
+192,45,1960,2024,Private,3,3,3,64,Medium,Medium
+193,26,2005,2025,Private,1,3,3,20,Medium,Medium
+194,207,1968,2025,Private,3,3,3,57,Very Large,Very Large
+195,42,1936,2023,Private,3,3,3,87,Medium,Medium
+196,12,1976,2024,TCHC,3,1,3,48,Small,Small
+197,371,1993,2025,Private,3,3,3,32,Very Large,Very Large
+198,10,1920,2025,Private,1,3,1,105,Small,Small
+199,15,1918,2023,Private,3,3,3,105,Small,Small
+200,42,1977,2024,Private,3,3,1,47,Medium,Medium
+201,21,1994,2025,Private,3,3,3,31,Small,Small
+202,270,1972,2023,TCHC,3,3,3,51,Very Large,Very Large
+203,151,1934,2024,Private,3,3,3,90,Very Large,Very Large
+204,82,2015,2025,Private,1,3,3,10,Large,Large
+205,21,1912,2025,Private,3,1,3,113,Small,Small
+206,98,1907,2023,Private,3,3,3,116,Large,Large
+207,116,2022,2023,Private,3,1,3,1,Large,Large
+208,39,1963,2024,TCHC,3,3,3,61,Medium,Medium
+209,160,1964,2025,Private,1,3,3,61,Very Large,Very Large
+210,194,1927,2023,Private,1,3,3,96,Very Large,Very Large
+211,31,1942,2025,Private,3,3,3,83,Medium,Medium
+212,15,1916,2025,Private,3,3,3,109,Small,Small
+213,18,2004,2024,Private,3,3,1,20,Small,Small
+214,83,1920,2023,Private,3,3,0,103,Large,Large
+215,81,1909,2025,Private,3,3,3,116,Large,Large
+216,162,2019,2023,Private,3,0,3,4,Very Large,Very Large
+217,69,1991,2024,Private,3,3,3,33,Large,Large
+218,175,1958,2025,Private,3,3,1,67,Very Large,Very Large
+219,93,2016,2023,Private,3,3,3,7,Large,Large
+220,798,1978,2024,Private,3,3,3,46,Very Large,Very Large
+221,41,2008,2024,Private,3,3,3,16,Medium,Medium
+222,162,1959,2025,Private,0,3,3,66,Very Large,Very Large
+223,11,1957,2025,Private,3,3,3,68,Small,Small
+224,159,1938,2025,Private,3,3,3,87,Very Large,Very Large
+225,34,1980,2024,Private,3,3,3,44,Medium,Medium
+226,359,1923,2023,Private,3,3,3,100,Very Large,Very Large
+227,149,1940,2023,Private,3,3,3,83,Very Large,Very Large
+228,13,1945,2023,Private,3,3,3,78,Small,Small
+229,491,2001,2025,Private,2,3,3,24,Very Large,Very Large
+230,52,1920,2024,Private,3,3,3,104,Medium,Medium
+231,41,1945,2023,Private,3,3,3,78,Medium,Medium
+232,46,1917,2024,Private,3,3,3,107,Medium,Medium
+233,19,1949,2024,Private,3,3,3,75,Small,Small
+234,10,1906,2025,Private,3,3,3,119,Small,Small
+235,367,2018,2023,Private,1,3,3,5,Very Large,Very Large
+236,48,1961,2024,Private,3,3,3,63,Medium,Medium
+237,32,2014,2023,Private,3,3,3,9,Medium,Medium
+238,73,2013,2025,Private,1,3,1,12,Large,Large
+239,109,1901,2023,Private,3,3,3,122,Large,Large
+240,14,2006,2024,Private,3,3,3,18,Small,Small
+241,12,1982,2024,Private,3,3,3,42,Small,Small
+242,85,2010,2025,Private,3,3,3,15,Large,Large
+243,59,2001,2024,Private,3,3,3,23,Large,Large
+244,10,2022,2025,Private,3,2,3,3,Small,Small
+245,59,1920,2023,Private,3,3,3,103,Large,Large
+246,185,1933,2025,Private,3,3,0,92,Very Large,Very Large
+247,18,1957,2025,Private,3,3,1,68,Small,Small
+248,199,1966,2025,Private,1,3,1,59,Very Large,Very Large
+249,14,1910,2023,TCHC,2,1,3,113,Small,Small
+250,84,1941,2023,Private,3,3,3,82,Large,Large
+251,19,1994,2025,Private,3,3,3,31,Small,Small
+252,79,2009,2023,Private,3,3,3,14,Large,Large
+253,179,1970,2023,Private,3,3,3,53,Very Large,Very Large
+254,270,2004,2024,Private,1,3,3,20,Very Large,Very Large
+255,21,1973,2025,Private,3,3,3,52,Small,Small
+256,169,1952,2025,Private,3,3,3,73,Very Large,Very Large
+257,34,1972,2025,Private,3,3,3,53,Medium,Medium
+258,74,1998,2025,Private,3,1,3,27,Large,Large
+259,26,1955,2024,Private,1,3,3,69,Medium,Medium
+260,17,1907,2025,Private,3,3,1,118,Small,Small
+261,36,1977,2023,Private,3,3,3,46,Medium,Medium
+262,12,1943,2025,Private,3,3,3,82,Small,Small
+263,91,1909,2023,Private,3,3,3,114,Large,Large
+264,216,1954,2023,Private,3,3,3,69,Very Large,Very Large
+265,31,1924,2024,Private,3,3,0,100,Medium,Medium
+266,11,1957,2025,Private,3,3,3,68,Small,Small
+267,83,2002,2024,Private,3,3,2,22,Large,Large
+268,53,2016,2024,Private,1,3,3,8,Medium,Medium
+269,21,1935,2024,Private,3,3,3,89,Small,Small
+270,245,1993,2023,Social Housing,3,3,1,30,Very Large,Very Large
+271,80,1976,2023,Private,3,2,3,47,Large,Large
+272,75,1921,2025,Social Housing,3,3,3,104,Large,Large
+273,196,1963,2023,Social Housing,3,3,3,60,Very Large,Very Large
+274,133,1951,2025,Private,1,3,3,74,Large,Large
+275,17,1976,2023,Private,3,3,1,47,Small,Small
+276,95,1958,2023,Private,3,2,3,65,Large,Large
+277,272,1982,2025,Social Housing,3,3,3,43,Very Large,Very Large
+278,39,1991,2023,Private,3,1,3,32,Medium,Medium
+279,733,1982,2024,TCHC,3,3,3,42,Very Large,Very Large
+280,82,2017,2025,Private,1,1,2,8,Large,Large
+281,12,2017,2023,Private,0,1,3,6,Small,Small
+282,220,1918,2023,Private,3,3,3,105,Very Large,Very Large
+283,49,1949,2025,Private,3,3,3,76,Medium,Medium
+284,94,1931,2024,Private,1,3,3,93,Large,Large
+285,398,1933,2023,Private,3,3,3,90,Very Large,Very Large
+286,106,1935,2023,Social Housing,3,3,3,88,Large,Large
+287,27,1962,2025,Private,3,0,3,63,Medium,Medium
+288,95,1996,2024,Private,3,1,0,28,Large,Large
+289,44,1900,2023,Private,3,3,3,123,Medium,Medium
+290,12,2002,2023,Private,3,3,3,21,Small,Small
+291,111,1986,2025,Private,3,3,3,39,Large,Large
+292,68,1957,2025,Private,3,3,3,68,Large,Large
+293,18,1987,2023,Private,3,3,1,36,Small,Small
+294,13,1991,2023,Private,1,3,3,32,Small,Small
+295,40,1913,2024,Private,3,3,3,111,Medium,Medium
+296,32,1904,2025,Private,3,1,2,121,Medium,Medium
+297,87,2004,2024,Private,3,3,1,20,Large,Large
+298,147,1977,2025,Social Housing,3,3,3,48,Very Large,Very Large
+299,214,1963,2023,Private,3,3,3,60,Very Large,Very Large
+300,51,1921,2024,Private,3,3,3,103,Medium,Medium
+301,12,1974,2024,Private,0,3,3,50,Small,Small
+302,148,2022,2025,Private,3,3,3,3,Very Large,Very Large
+303,47,2014,2025,Social Housing,3,3,3,11,Medium,Medium
+304,90,1979,2025,Private,1,3,3,46,Large,Large
+305,46,2015,2023,TCHC,3,3,3,8,Medium,Medium
+306,108,2003,2023,Private,3,1,3,20,Large,Large
+307,336,1996,2025,Private,3,3,3,29,Very Large,Very Large
+308,10,1975,2024,Private,3,3,3,49,Small,Small
+309,12,1911,2025,TCHC,1,3,3,114,Small,Small
+310,18,1948,2024,Social Housing,3,3,3,76,Small,Small
+311,29,1921,2025,Private,3,3,3,104,Medium,Medium
+312,34,1955,2024,Private,3,3,3,69,Medium,Medium
+313,172,1953,2025,Private,1,3,3,72,Very Large,Very Large
+314,42,1965,2024,Private,3,3,3,59,Medium,Medium
+315,78,1985,2024,Private,3,3,3,39,Large,Large
+316,22,1918,2025,Private,3,3,3,107,Small,Small
+317,325,1936,2023,Private,3,1,1,87,Very Large,Very Large
+318,16,1979,2025,Private,3,1,3,46,Small,Small
+319,14,2012,2025,Private,3,3,3,13,Small,Small
+320,16,1977,2024,Private,2,3,1,47,Small,Small
+321,37,2019,2025,Private,3,1,3,6,Medium,Medium
+322,77,1943,2024,Private,1,1,3,81,Large,Large
+323,23,1953,2025,Private,3,1,1,72,Small,Small
+324,11,1953,2025,Private,3,3,3,72,Small,Small
+325,29,2010,2023,Private,3,3,3,13,Medium,Medium
+326,128,1965,2024,Private,3,3,3,59,Large,Large
+327,145,1975,2024,Private,3,3,3,49,Very Large,Very Large
+328,309,1948,2025,Private,3,3,3,77,Very Large,Very Large
+329,16,2012,2023,Private,3,3,3,11,Small,Small
+330,57,1954,2024,Private,3,3,3,70,Large,Large
+331,40,2015,2024,Private,3,3,2,9,Medium,Medium
+332,164,1929,2025,Private,3,3,3,96,Very Large,Very Large
+333,85,1989,2024,TCHC,3,3,3,35,Large,Large
+334,131,2019,2023,Private,3,3,1,4,Large,Large
+335,105,2017,2025,Private,3,3,3,8,Large,Large
+336,24,1987,2024,Private,3,3,3,37,Small,Small
+337,13,1997,2024,Private,3,3,3,27,Small,Small
+338,31,1928,2023,Social Housing,3,3,3,95,Medium,Medium
+339,39,1980,2023,TCHC,3,3,3,43,Medium,Medium
+340,28,1970,2024,Private,3,3,3,54,Medium,Medium
+341,183,1909,2023,Private,3,3,3,114,Very Large,Very Large
+342,98,2015,2025,Private,1,3,3,10,Large,Large
+343,54,1917,2024,Private,1,3,3,107,Large,Large
+344,60,2012,2025,Private,3,1,1,13,Large,Large
+345,33,1935,2023,Private,3,3,3,88,Medium,Medium
+346,103,1935,2023,Private,3,1,3,88,Large,Large
+347,104,1936,2024,Private,3,3,3,88,Large,Large
+348,16,1977,2025,Private,3,3,3,48,Small,Small
+349,110,1904,2024,Private,3,3,1,120,Large,Large
+350,128,1991,2025,Private,3,3,3,34,Large,Large
+351,44,2005,2024,Private,3,3,3,19,Medium,Medium
+352,61,1945,2025,Private,3,3,1,80,Large,Large
+353,162,1998,2025,Private,0,3,3,27,Very Large,Very Large
+354,206,2007,2023,Private,3,3,3,16,Very Large,Very Large
+355,16,2010,2023,Private,3,3,3,13,Small,Small
+356,147,1942,2024,Private,3,3,3,82,Very Large,Very Large
+357,17,1937,2023,Private,3,3,1,86,Small,Small
+358,196,1901,2024,TCHC,3,1,3,123,Very Large,Very Large
+359,143,1972,2024,Private,3,3,3,52,Very Large,Very Large
+360,10,2022,2025,TCHC,3,3,3,3,Small,Small
+361,115,1967,2024,Private,3,3,3,57,Large,Large
+362,48,1951,2025,Private,3,3,3,74,Medium,Medium
+363,63,1906,2023,Private,3,3,1,117,Large,Large
+364,293,1970,2025,TCHC,3,1,3,55,Very Large,Very Large
+365,186,1941,2025,Private,3,3,3,84,Very Large,Very Large
+366,171,1987,2025,Private,1,3,3,38,Very Large,Very Large
+367,58,2007,2023,Private,1,3,3,16,Large,Large
+368,30,1998,2024,Private,0,3,3,26,Medium,Medium
+369,350,2013,2023,Private,3,3,3,10,Very Large,Very Large
+370,10,1902,2024,Private,0,3,3,122,Small,Small
+371,11,1948,2025,Private,3,3,1,77,Small,Small
+372,11,1986,2023,TCHC,3,3,3,37,Small,Small
+373,14,1946,2024,Private,3,3,3,78,Small,Small
+374,50,2007,2025,Private,3,1,3,18,Medium,Medium
+375,10,1919,2025,Private,3,0,3,106,Small,Small
+376,82,2003,2023,Private,3,3,1,20,Large,Large
+377,98,1927,2023,Private,3,1,3,96,Large,Large
+378,383,1957,2023,Private,3,2,3,66,Very Large,Very Large
+379,155,1993,2025,Private,3,3,3,32,Very Large,Very Large
+380,45,1928,2025,Private,3,3,1,97,Medium,Medium
+381,32,1911,2024,Private,3,3,3,113,Medium,Medium
+382,36,1913,2024,Private,3,3,1,111,Medium,Medium
+383,15,1921,2025,Private,3,3,0,104,Small,Small
+384,73,1987,2024,TCHC,1,3,3,37,Large,Large
+385,128,1917,2024,Private,3,3,3,107,Large,Large
+386,145,1942,2024,Private,3,3,3,82,Very Large,Very Large
+387,10,1953,2023,Private,3,3,3,70,Small,Small
+388,360,1951,2024,Private,3,3,3,73,Very Large,Very Large
+389,61,1907,2024,Private,1,3,1,117,Large,Large
+390,18,2003,2023,Social Housing,3,2,1,20,Small,Small
+391,42,2020,2023,Private,3,3,3,3,Medium,Medium
+392,16,1997,2024,Private,1,3,1,27,Small,Small
+393,94,1987,2024,Private,3,3,1,37,Large,Large
+394,16,1975,2023,Private,3,3,3,48,Small,Small
+395,45,1943,2023,Private,3,3,3,80,Medium,Medium
+396,21,1904,2024,Private,3,3,3,120,Small,Small
+397,11,2008,2024,Private,3,3,3,16,Small,Small
+398,285,1961,2025,Private,3,3,3,64,Very Large,Very Large
+399,12,1937,2023,TCHC,3,3,3,86,Small,Small
+400,178,1979,2025,Private,3,3,3,46,Very Large,Very Large
+401,28,2021,2025,Social Housing,3,1,3,4,Medium,Medium
+402,71,1929,2024,Private,3,3,3,95,Large,Large
+403,39,1935,2025,Private,3,3,3,90,Medium,Medium
+404,124,1937,2024,Private,3,3,3,87,Large,Large
+405,77,1965,2025,Private,3,3,3,60,Large,Large
+406,26,1963,2023,Private,3,3,1,60,Medium,Medium
+407,22,1914,2023,Private,3,3,1,109,Small,Small
+408,13,2004,2025,Private,3,1,3,21,Small,Small
+409,336,1965,2025,TCHC,3,1,3,60,Very Large,Very Large
+410,75,2010,2024,Private,3,1,3,14,Large,Large
+411,49,1985,2023,Social Housing,3,3,3,38,Medium,Medium
+412,10,2019,2023,Private,3,3,3,4,Small,Small
+413,14,1941,2023,Social Housing,3,3,3,82,Small,Small
+414,365,1906,2023,TCHC,0,3,3,117,Very Large,Very Large
+415,31,1907,2024,Private,3,3,3,117,Medium,Medium
+416,114,1931,2025,Private,3,1,3,94,Large,Large
+417,347,1909,2025,TCHC,3,3,3,116,Very Large,Very Large
+418,18,1943,2024,Social Housing,3,3,3,81,Small,Small
+419,301,1999,2024,Private,3,3,3,25,Very Large,Very Large
+420,11,1946,2024,Private,3,3,3,78,Small,Small
+421,18,2014,2024,Private,3,3,1,10,Small,Small
+422,349,1951,2024,Private,3,3,3,73,Very Large,Very Large
+423,12,1917,2023,Private,3,3,3,106,Small,Small
+424,22,1909,2024,Private,3,3,3,115,Small,Small
+425,36,2000,2024,Private,3,3,3,24,Medium,Medium
+426,13,2009,2024,Private,3,3,3,15,Small,Small
+427,32,2019,2023,Private,3,3,3,4,Medium,Medium
+428,121,2018,2025,Social Housing,3,3,3,7,Large,Large
+429,133,2000,2025,Private,3,2,1,25,Large,Large
+430,15,1906,2024,Social Housing,3,3,3,118,Small,Small
+431,387,1926,2025,Private,1,3,3,99,Very Large,Very Large
+432,177,1915,2023,Private,1,3,3,108,Very Large,Very Large
+433,70,2011,2025,Private,3,3,3,14,Large,Large
+434,14,1950,2025,Private,3,1,3,75,Small,Small
+435,19,2005,2025,Private,1,3,3,20,Small,Small
+436,294,2001,2023,Private,3,3,3,22,Very Large,Very Large
+437,11,1941,2025,Private,3,1,3,84,Small,Small
+438,11,1992,2025,Private,3,3,3,33,Small,Small
+439,22,1925,2024,Private,3,3,3,99,Small,Small
+440,32,1929,2025,Private,3,3,3,96,Medium,Medium
+441,94,1972,2025,TCHC,3,3,3,53,Large,Large
+442,29,1959,2025,TCHC,3,3,1,66,Medium,Medium
+443,103,1927,2023,Private,3,3,3,96,Large,Large
+444,90,1958,2025,Private,3,3,3,67,Large,Large
+445,169,2008,2024,Private,3,3,3,16,Very Large,Very Large
+446,143,1973,2023,Private,3,3,3,50,Very Large,Very Large
+447,160,1937,2025,Private,3,3,3,88,Very Large,Very Large
+448,15,2018,2024,Private,3,0,1,6,Small,Small
+449,19,1999,2025,Private,3,0,3,26,Small,Small
+450,373,1988,2023,Private,3,3,3,35,Very Large,Very Large
+451,122,1972,2024,Private,3,1,3,52,Large,Large
+452,382,1922,2023,Private,1,3,3,101,Very Large,Very Large
+453,42,1977,2024,Private,1,3,3,47,Medium,Medium
+454,88,1985,2023,TCHC,3,3,3,38,Large,Large
+455,18,1934,2024,Private,3,3,3,90,Small,Small
+456,22,1972,2023,Private,3,3,3,51,Small,Small
+457,308,1925,2024,Private,3,3,3,99,Very Large,Very Large
+458,45,1977,2023,Private,3,3,3,46,Medium,Medium
+459,26,2003,2025,Private,3,3,3,22,Medium,Medium
+460,37,2015,2024,Private,3,3,3,9,Medium,Medium
+461,89,1916,2025,Private,2,3,3,109,Large,Large
+462,53,1994,2023,Private,3,3,3,29,Medium,Medium
+463,52,2014,2025,Private,3,3,3,11,Medium,Medium
+464,171,1960,2024,Social Housing,3,3,3,64,Very Large,Very Large
+465,13,1924,2025,Private,3,1,1,101,Small,Small
+466,48,1928,2025,Private,3,3,3,97,Medium,Medium
+467,198,1956,2024,TCHC,3,0,3,68,Very Large,Very Large
+468,31,1923,2024,Private,1,3,1,101,Medium,Medium
+469,81,1968,2024,Private,3,3,3,56,Large,Large
+470,260,1965,2023,TCHC,3,3,3,58,Very Large,Very Large
+471,75,1945,2025,Private,3,3,3,80,Large,Large
+472,50,1914,2025,Private,3,3,3,111,Medium,Medium
+473,93,1973,2024,Private,3,3,3,51,Large,Large
+474,53,2010,2023,Private,3,3,1,13,Medium,Medium
+475,17,1977,2025,Private,3,3,3,48,Small,Small
+476,18,1986,2025,Private,1,1,3,39,Small,Small
+477,49,1943,2025,Private,3,1,3,82,Medium,Medium
+478,44,1999,2023,Private,3,3,3,24,Medium,Medium
+479,16,1954,2025,Private,3,3,3,71,Small,Small
+480,34,1941,2024,TCHC,3,2,3,83,Medium,Medium
+481,180,1953,2025,Private,1,3,3,72,Very Large,Very Large
+482,108,2012,2023,Private,3,3,3,11,Large,Large
+483,14,2021,2024,Private,3,3,3,3,Small,Small
+484,33,1977,2025,Private,3,3,2,48,Medium,Medium
+485,20,1937,2024,Private,3,3,1,87,Small,Small
+486,113,2012,2024,TCHC,3,3,3,12,Large,Large
+487,46,1981,2025,Social Housing,3,3,3,44,Medium,Medium
+488,23,1978,2024,Social Housing,1,3,3,46,Small,Small
+489,11,1942,2025,Private,3,3,3,83,Small,Small
+490,10,2021,2025,Social Housing,1,0,3,4,Small,Small
+491,22,2007,2024,TCHC,2,3,3,17,Small,Small
+492,13,1937,2023,Private,3,3,2,86,Small,Small
+493,24,1949,2023,Private,2,3,3,74,Small,Small
+494,44,1954,2025,Private,1,3,1,71,Medium,Medium
+495,199,1941,2024,Private,3,3,2,83,Very Large,Very Large
+496,16,1980,2023,Private,3,3,3,43,Small,Small
+497,19,1926,2023,Private,3,3,1,97,Small,Small
+498,11,1987,2024,Private,3,1,3,37,Small,Small
+499,318,2008,2023,TCHC,3,3,1,15,Very Large,Very Large
+500,17,2012,2023,Private,1,3,1,11,Small,Small
+501,62,1908,2025,Private,3,3,3,117,Large,Large
+502,237,1971,2024,Social Housing,2,3,3,53,Very Large,Very Large
+503,147,1965,2024,Private,2,3,3,59,Very Large,Very Large
+504,235,1959,2024,Private,3,3,1,65,Very Large,Very Large
+505,85,1992,2023,Private,3,3,3,31,Large,Large
+506,165,1954,2025,Private,3,3,3,71,Very Large,Very Large
+507,15,2012,2023,Social Housing,3,3,3,11,Small,Small
+508,88,1973,2023,Private,3,1,3,50,Large,Large
+509,26,1913,2025,Private,3,1,3,112,Medium,Medium
+510,105,2019,2024,Private,3,3,3,5,Large,Large
+511,49,1985,2025,Private,3,3,3,40,Medium,Medium
+512,75,1939,2025,Private,3,3,3,86,Large,Large
+513,82,1954,2025,Private,3,3,3,71,Large,Large
+514,78,1916,2025,Private,3,3,3,109,Large,Large
+515,39,1905,2025,Private,3,1,3,120,Medium,Medium
+516,18,1934,2024,Private,3,1,3,90,Small,Small
+517,22,2022,2023,Private,3,3,3,1,Small,Small
+518,13,1959,2025,Private,3,2,3,66,Small,Small
+519,56,2009,2024,Private,3,3,3,15,Large,Large
+520,355,2007,2025,Private,1,3,3,18,Very Large,Very Large
+521,236,1997,2023,Private,3,3,1,26,Very Large,Very Large
+522,206,1913,2024,Private,3,3,3,111,Very Large,Very Large
+523,79,1998,2023,Private,3,3,3,25,Large,Large
+524,194,1941,2025,Private,3,3,3,84,Very Large,Very Large
+525,65,1934,2025,Private,3,3,3,91,Large,Large
+526,12,2021,2024,Private,3,3,3,3,Small,Small
+527,14,1961,2024,Private,3,1,3,63,Small,Small
+528,19,1991,2025,Private,3,1,3,34,Small,Small
+529,91,1947,2024,Private,3,3,3,77,Large,Large
+530,22,1974,2023,Private,3,3,3,49,Small,Small
+531,40,1939,2024,Private,3,3,3,85,Medium,Medium
+532,26,1923,2024,Private,3,3,3,101,Medium,Medium
+533,23,2014,2024,Private,3,3,1,10,Small,Small
+534,299,1934,2024,Private,3,3,3,90,Very Large,Very Large
+535,11,1998,2025,Private,3,3,3,27,Small,Small
+536,64,1929,2025,Private,3,3,3,96,Large,Large
+537,27,1919,2025,Private,3,3,3,106,Medium,Medium
+538,23,1909,2024,Private,3,1,1,115,Small,Small
+539,61,1906,2025,Private,3,3,3,119,Large,Large
+540,346,1955,2025,Private,3,3,3,70,Very Large,Very Large
+541,46,1973,2024,Private,1,3,3,51,Medium,Medium
+542,17,2009,2024,Private,3,2,1,15,Small,Small
+543,14,1987,2025,Private,3,2,3,38,Small,Small
+544,13,1936,2025,Private,1,1,1,89,Small,Small
+545,45,1999,2025,Private,3,3,3,26,Medium,Medium
+546,29,1961,2024,Private,3,3,1,63,Medium,Medium
+547,17,2015,2025,Private,3,3,3,10,Small,Small
+548,56,1994,2025,TCHC,3,3,3,31,Large,Large
+549,48,1904,2024,Private,2,3,1,120,Medium,Medium
+550,33,2022,2024,Social Housing,3,3,3,2,Medium,Medium
+551,155,2008,2023,Private,3,3,3,15,Very Large,Very Large
+552,128,1920,2025,Private,1,3,3,105,Large,Large
+553,47,1935,2024,Social Housing,1,3,1,89,Medium,Medium
+554,34,1944,2023,Private,2,0,1,79,Medium,Medium
+555,23,1905,2024,Private,3,3,1,119,Small,Small
+556,144,1968,2024,Private,3,3,3,56,Very Large,Very Large
+557,150,1905,2025,Private,3,3,3,120,Very Large,Very Large
+558,40,2005,2025,Private,3,3,1,20,Medium,Medium
+559,51,1908,2023,Private,3,3,3,115,Medium,Medium
+560,310,1946,2025,Private,3,3,3,79,Very Large,Very Large
+561,197,1993,2023,Private,3,3,3,30,Very Large,Very Large
+562,28,1958,2023,Private,3,3,0,65,Medium,Medium
+563,184,1918,2025,Private,3,3,3,107,Very Large,Very Large
+564,80,1979,2023,Private,3,3,3,44,Large,Large
+565,28,2002,2025,Private,3,3,3,23,Medium,Medium
+566,26,1908,2025,Private,3,3,3,117,Medium,Medium
+567,37,2003,2024,Private,3,3,3,21,Medium,Medium
+568,99,1970,2025,Private,3,3,3,55,Large,Large
+569,751,1958,2023,Private,3,3,3,65,Very Large,Very Large
+570,16,1996,2025,Private,3,1,3,29,Small,Small
+571,11,2012,2025,Private,3,3,3,13,Small,Small
+572,34,1950,2023,Private,3,3,3,73,Medium,Medium
+573,20,1903,2025,Social Housing,3,3,0,122,Small,Small
+574,28,1952,2023,Private,3,3,3,71,Medium,Medium
+575,105,1960,2024,Private,3,3,1,64,Large,Large
+576,50,1910,2023,Private,3,3,3,113,Medium,Medium
+577,67,1909,2025,Private,3,3,3,116,Large,Large
+578,99,1926,2024,Private,3,3,1,98,Large,Large
+579,27,1969,2024,Private,3,3,3,55,Medium,Medium
+580,59,1962,2025,Private,3,3,3,63,Large,Large
+581,340,1968,2025,TCHC,3,3,3,57,Very Large,Very Large
+582,172,1957,2025,Private,3,3,3,68,Very Large,Very Large
+583,58,1952,2024,TCHC,3,3,3,72,Large,Large
+584,34,1938,2024,Private,3,3,3,86,Medium,Medium
+585,41,1991,2025,Private,3,3,3,34,Medium,Medium
+586,12,1947,2024,TCHC,3,3,3,77,Small,Small
+587,11,1974,2024,Private,3,3,3,50,Small,Small
+588,13,1933,2024,Private,2,3,3,91,Small,Small
+589,12,1983,2025,Private,3,1,3,42,Small,Small
+590,84,1981,2025,Private,3,3,3,44,Large,Large
+591,28,1987,2025,Private,3,3,1,38,Medium,Medium
+592,34,2004,2025,Private,3,3,3,21,Medium,Medium
+593,116,1977,2025,Private,3,3,1,48,Large,Large
+594,151,2014,2025,Private,1,3,3,11,Very Large,Very Large
+595,38,1916,2025,Private,2,3,3,109,Medium,Medium
+596,299,1990,2025,Private,3,3,3,35,Very Large,Very Large
+597,218,1957,2024,Private,1,3,0,67,Very Large,Very Large
+598,87,1916,2025,Private,3,1,3,109,Large,Large
+599,24,1953,2024,Private,3,3,3,71,Small,Small
+600,239,1928,2023,TCHC,3,3,3,95,Very Large,Very Large
+601,46,2019,2025,Private,3,3,3,6,Medium,Medium
+602,35,1969,2024,Private,3,3,3,55,Medium,Medium
+603,56,1950,2025,Private,3,3,3,75,Large,Large
+604,354,1969,2025,Private,3,3,3,56,Very Large,Very Large
+605,28,1955,2023,Private,3,3,3,68,Medium,Medium
+606,166,1913,2024,TCHC,3,3,3,111,Very Large,Very Large
+607,14,1983,2023,Private,3,3,3,40,Small,Small
+608,34,1976,2025,Private,1,3,1,49,Medium,Medium
+609,25,1908,2023,Private,1,1,3,115,Medium,Medium
+610,65,1994,2024,Private,3,3,3,30,Large,Large
+611,27,1901,2024,Private,1,3,3,123,Medium,Medium
+612,69,1971,2024,Private,1,3,1,53,Large,Large
+613,184,1901,2024,Private,3,3,3,123,Very Large,Very Large
+614,29,1913,2024,Private,3,1,3,111,Medium,Medium
+615,159,1975,2024,Private,3,3,1,49,Very Large,Very Large
+616,310,1992,2024,Private,3,3,3,32,Very Large,Very Large
+617,34,1924,2023,Private,3,3,3,99,Medium,Medium
+618,19,1980,2023,Private,3,3,3,43,Small,Small
+619,13,2016,2025,Private,3,3,3,9,Small,Small
+620,61,1958,2025,Private,3,3,0,67,Large,Large
+621,143,1926,2024,Private,3,3,3,98,Very Large,Very Large
+622,27,1948,2025,Private,3,3,0,77,Medium,Medium
+623,54,2008,2023,Private,3,3,3,15,Large,Large
+624,129,1906,2025,Social Housing,3,3,3,119,Large,Large
+625,299,2000,2025,Private,3,3,3,25,Very Large,Very Large
+626,327,2015,2024,TCHC,3,1,2,9,Very Large,Very Large
+627,39,1996,2024,Private,1,3,1,28,Medium,Medium
+628,100,2010,2024,Private,3,3,3,14,Large,Large
+629,11,1942,2025,Social Housing,3,3,3,83,Small,Small
+630,23,1959,2023,Private,3,3,1,64,Small,Small
+631,397,2022,2024,Private,3,3,3,2,Very Large,Very Large
+632,170,2018,2024,Private,3,3,3,6,Very Large,Very Large
+633,92,1904,2023,TCHC,3,3,3,119,Large,Large
+634,11,1977,2024,Private,3,3,3,47,Small,Small
+635,15,2010,2025,TCHC,3,3,1,15,Small,Small
+636,165,1946,2025,Private,3,3,3,79,Very Large,Very Large
+637,172,1997,2025,Private,3,3,2,28,Very Large,Very Large
+638,327,1986,2023,Private,3,3,3,37,Very Large,Very Large
+639,14,1993,2025,Private,3,3,3,32,Small,Small
+640,14,1935,2024,Private,3,3,3,89,Small,Small
+641,46,2005,2024,TCHC,3,3,3,19,Medium,Medium
+642,38,1986,2025,Private,3,3,2,39,Medium,Medium
+643,33,1921,2025,Private,3,3,3,104,Medium,Medium
+644,168,1945,2025,Private,2,3,3,80,Very Large,Very Large
+645,29,1909,2023,Private,3,3,1,114,Medium,Medium
+646,45,1912,2024,TCHC,3,3,3,112,Medium,Medium
+647,14,1988,2024,Private,3,3,3,36,Small,Small
+648,42,2018,2024,Private,1,2,3,6,Medium,Medium
+649,14,1955,2025,Private,3,3,3,70,Small,Small
+650,252,1969,2025,Private,3,3,3,56,Very Large,Very Large
+651,13,1910,2024,Private,3,3,3,114,Small,Small
+652,283,1946,2023,Private,1,3,3,77,Very Large,Very Large
+653,35,1996,2024,TCHC,3,1,3,28,Medium,Medium
+654,13,1996,2024,Private,3,3,3,28,Small,Small
+655,67,1980,2024,Private,3,1,3,44,Large,Large
+656,97,1913,2023,Private,3,3,3,110,Large,Large
+657,39,1951,2024,Private,3,3,1,73,Medium,Medium
+658,21,1931,2025,Private,3,3,3,94,Small,Small
+659,35,1935,2023,Private,3,3,3,88,Medium,Medium
+660,47,1963,2024,Private,3,3,3,61,Medium,Medium
+661,279,1926,2023,Private,3,3,1,97,Very Large,Very Large
+662,142,1917,2025,Private,3,3,3,108,Large,Large
+663,18,1961,2024,Private,3,3,3,63,Small,Small
+664,36,1997,2025,Private,3,2,3,28,Medium,Medium
+665,23,1939,2025,Private,3,3,3,86,Small,Small
+666,22,1905,2023,Private,3,3,3,118,Small,Small
+667,64,2017,2024,Social Housing,3,3,3,7,Large,Large
+668,15,1975,2024,Private,3,3,3,49,Small,Small
+669,15,2017,2024,Private,3,3,3,7,Small,Small
+670,71,2016,2023,Private,3,3,3,7,Large,Large
+671,366,1909,2023,Private,3,3,3,114,Very Large,Very Large
+672,40,1981,2025,Private,3,3,3,44,Medium,Medium
+673,49,1979,2025,Private,3,3,3,46,Medium,Medium
+674,19,1907,2025,Private,3,3,3,118,Small,Small
+675,139,1988,2024,Private,1,3,3,36,Large,Large
+676,196,1904,2024,Private,3,3,3,120,Very Large,Very Large
+677,75,1970,2023,Private,3,3,3,53,Large,Large
+678,24,2007,2025,Private,2,3,3,18,Small,Small
+679,78,2017,2024,Private,3,3,1,7,Large,Large
+680,18,1937,2025,TCHC,3,3,3,88,Small,Small
+681,360,1938,2025,Private,3,1,3,87,Very Large,Very Large
+682,188,1944,2023,TCHC,1,3,3,79,Very Large,Very Large
+683,161,1946,2023,Private,3,3,3,77,Very Large,Very Large
+684,10,1933,2024,Private,3,2,1,91,Small,Small
+685,38,1916,2024,Private,3,0,1,108,Medium,Medium
+686,262,1931,2023,Social Housing,3,3,3,92,Very Large,Very Large
+687,16,1900,2023,Private,3,3,3,123,Small,Small
+688,45,1964,2023,Private,0,3,3,59,Medium,Medium
+689,47,1974,2025,Private,3,1,3,51,Medium,Medium
+690,41,1923,2024,Private,3,3,3,101,Medium,Medium
+691,123,1952,2024,Private,3,3,3,72,Large,Large
+692,69,1978,2024,Private,3,3,3,46,Large,Large
+693,55,1972,2024,TCHC,3,1,3,52,Large,Large
+694,382,1953,2024,Private,3,3,3,71,Very Large,Very Large
+695,14,1994,2024,Private,3,3,3,30,Small,Small
+696,36,1937,2024,Private,3,2,3,87,Medium,Medium
+697,41,1957,2025,Private,3,3,3,68,Medium,Medium
+698,82,1991,2023,Private,1,3,2,32,Large,Large
+699,67,1912,2025,TCHC,3,3,1,113,Large,Large
+700,44,1988,2025,Private,1,3,3,37,Medium,Medium
+701,189,1960,2023,Private,3,3,3,63,Very Large,Very Large
+702,262,1952,2023,Private,3,3,3,71,Very Large,Very Large
+703,56,1946,2024,Private,3,3,1,78,Large,Large
+704,62,1900,2024,Social Housing,3,3,3,124,Large,Large
+705,396,2012,2024,Social Housing,3,3,3,12,Very Large,Very Large
+706,38,2000,2025,Private,3,1,1,25,Medium,Medium
+707,139,1980,2024,Private,1,3,3,44,Large,Large
+708,123,1908,2025,Private,3,3,3,117,Large,Large
+709,58,1908,2024,Private,3,3,3,116,Large,Large
+710,12,1963,2025,TCHC,1,3,1,62,Small,Small
+711,68,1906,2024,Private,3,3,3,118,Large,Large
+712,36,1948,2024,Private,3,3,3,76,Medium,Medium
+713,13,2021,2025,Private,2,3,3,4,Small,Small
+714,199,1907,2023,TCHC,3,3,3,116,Very Large,Very Large
+715,19,2003,2025,Private,3,3,3,22,Small,Small
+716,15,1988,2023,Private,3,3,3,35,Small,Small
+717,13,2002,2024,Private,3,3,3,22,Small,Small
+718,19,1902,2025,Private,3,1,3,123,Small,Small
+719,300,1922,2025,TCHC,3,3,3,103,Very Large,Very Large
+720,10,1924,2025,Private,3,3,1,101,Small,Small
+721,175,1974,2025,Private,3,3,3,51,Very Large,Very Large
+722,31,1990,2023,Private,3,3,3,33,Medium,Medium
+723,112,1976,2023,Private,3,3,3,47,Large,Large
+724,21,1907,2025,Private,3,3,1,118,Small,Small
+725,67,1917,2025,TCHC,3,3,3,108,Large,Large
+726,228,1942,2023,Private,3,3,3,81,Very Large,Very Large
+727,112,2001,2024,Private,1,3,3,23,Large,Large
+728,62,1948,2025,Private,3,3,3,77,Large,Large
+729,122,1958,2025,TCHC,3,3,3,67,Large,Large
+730,155,1947,2024,Private,3,3,3,77,Very Large,Very Large
+731,67,1943,2025,Private,0,3,1,82,Large,Large
+732,26,1911,2025,Private,3,3,3,114,Medium,Medium
+733,129,2016,2025,Private,3,3,3,9,Large,Large
+734,142,1964,2025,Private,3,3,1,61,Large,Large
+735,158,1980,2023,Private,0,3,2,43,Very Large,Very Large
+736,16,1962,2023,TCHC,1,3,3,61,Small,Small
+737,26,1926,2025,Private,3,3,3,99,Medium,Medium
+738,30,1951,2025,TCHC,3,3,3,74,Medium,Medium
+739,48,1964,2024,Private,3,3,3,60,Medium,Medium
+740,19,1953,2024,Social Housing,3,3,3,71,Small,Small
+741,16,1968,2023,Private,3,3,0,55,Small,Small
+742,381,2013,2025,Private,3,3,3,12,Very Large,Very Large
+743,197,1943,2025,Private,3,1,3,82,Very Large,Very Large
+744,53,1968,2023,Private,3,3,1,55,Medium,Medium
+745,12,2012,2024,Private,3,1,3,12,Small,Small
+746,14,1956,2023,Private,1,3,3,67,Small,Small
+747,18,1926,2023,Private,3,3,3,97,Small,Small
+748,68,2011,2025,TCHC,3,3,3,14,Large,Large
+749,46,1994,2024,Private,3,3,3,30,Medium,Medium
+750,217,1956,2024,Private,3,1,2,68,Very Large,Very Large
+751,17,1914,2024,Private,3,3,3,110,Small,Small
+752,72,1986,2025,Private,3,3,3,39,Large,Large
+753,12,1968,2025,Private,3,3,3,57,Small,Small
+754,31,1999,2024,Private,3,3,3,25,Medium,Medium
+755,41,1992,2023,Private,3,3,3,31,Medium,Medium
+756,199,1976,2024,Private,3,3,3,48,Very Large,Very Large
+757,352,1994,2025,Private,3,1,3,31,Very Large,Very Large
+758,33,1957,2025,Private,3,3,3,68,Medium,Medium
+759,27,1902,2025,Private,3,3,3,123,Medium,Medium
+760,16,1950,2025,Private,1,3,3,75,Small,Small
+761,62,2003,2024,Private,1,3,3,21,Large,Large
+762,155,2018,2023,Private,3,3,3,5,Very Large,Very Large
+763,47,2021,2024,Private,3,3,1,3,Medium,Medium
+764,22,1933,2024,Private,3,3,3,91,Small,Small
+765,119,2001,2025,Private,3,1,3,24,Large,Large
+766,19,1919,2023,Private,3,3,3,104,Small,Small
+767,33,2017,2023,Social Housing,1,3,3,6,Medium,Medium
+768,22,1940,2024,Private,3,3,3,84,Small,Small
+769,18,1950,2024,Private,3,3,3,74,Small,Small
+770,143,1902,2024,Private,3,3,1,122,Very Large,Very Large
+771,35,1904,2024,Private,3,3,3,120,Medium,Medium
+772,234,1908,2023,Private,3,3,3,115,Very Large,Very Large
+773,21,1932,2024,Private,1,3,3,92,Small,Small
+774,275,1971,2025,Private,0,3,3,54,Very Large,Very Large
+775,10,1920,2025,TCHC,1,3,3,105,Small,Small
+776,27,1912,2025,Private,3,3,3,113,Medium,Medium
+777,19,2012,2024,Private,3,3,2,12,Small,Small
+778,28,1972,2024,Social Housing,1,1,3,52,Medium,Medium
+779,267,1945,2025,Private,3,1,3,80,Very Large,Very Large
+780,129,2015,2025,Private,3,3,2,10,Large,Large
+781,38,1905,2025,Private,3,3,3,120,Medium,Medium
+782,29,1959,2024,Private,3,3,3,65,Medium,Medium
+783,59,1940,2024,Private,3,3,1,84,Large,Large
+784,108,2014,2023,Private,1,1,3,9,Large,Large
+785,76,2017,2024,Private,1,3,3,7,Large,Large
+786,93,1954,2023,Private,1,3,3,69,Large,Large
+787,85,2014,2025,Private,2,3,3,11,Large,Large
+788,121,1947,2024,Private,1,3,3,77,Large,Large
+789,225,1921,2025,Social Housing,3,3,3,104,Very Large,Very Large
+790,23,1905,2024,Private,3,3,3,119,Small,Small
+791,286,1965,2024,Private,3,3,1,59,Very Large,Very Large
+792,15,1974,2025,Private,1,3,3,51,Small,Small
+793,38,1966,2025,Private,3,3,3,59,Medium,Medium
+794,32,1954,2024,Private,3,3,1,70,Medium,Medium
+795,127,1974,2024,Private,3,3,3,50,Large,Large
+796,26,1921,2024,Private,2,3,3,103,Medium,Medium
+797,259,1907,2023,Private,3,3,3,116,Very Large,Very Large
+798,97,2013,2024,Private,3,3,3,11,Large,Large
+799,195,1978,2025,Private,3,1,3,47,Very Large,Very Large
+800,36,1951,2023,TCHC,3,3,1,72,Medium,Medium
+801,43,1954,2024,Private,3,3,3,70,Medium,Medium
+802,341,1954,2025,Private,3,3,3,71,Very Large,Very Large
+803,42,1921,2025,Private,3,3,3,104,Medium,Medium
+804,284,1936,2023,Private,3,3,3,87,Very Large,Very Large
+805,22,1999,2023,Private,3,3,3,24,Small,Small
+806,149,1933,2024,Private,3,3,3,91,Very Large,Very Large
+807,62,1996,2025,Private,3,3,1,29,Large,Large
+808,147,1924,2025,Private,3,3,1,101,Very Large,Very Large
+809,323,2003,2023,Private,0,3,3,20,Very Large,Very Large
+810,10,1975,2024,Private,2,1,3,49,Small,Small
+811,13,1925,2024,Social Housing,3,3,3,99,Small,Small
+812,83,1955,2025,Private,3,3,2,70,Large,Large
+813,11,1984,2025,Private,1,3,3,41,Small,Small
+814,34,1918,2025,Private,3,3,3,107,Medium,Medium
+815,306,1950,2023,Private,3,3,3,73,Very Large,Very Large
+816,10,1964,2025,Private,3,3,3,61,Small,Small
+817,31,1977,2024,Private,3,3,3,47,Medium,Medium
+818,36,1949,2024,Private,3,3,3,75,Medium,Medium
+819,234,2019,2023,Private,3,3,3,4,Very Large,Very Large
+820,69,1982,2023,TCHC,3,3,3,41,Large,Large
+821,103,2007,2025,Private,3,3,3,18,Large,Large
+822,87,1900,2024,Private,3,1,2,124,Large,Large
+823,93,1933,2023,Private,3,3,0,90,Large,Large
+824,28,2010,2024,Private,3,3,3,14,Medium,Medium
+825,197,1937,2024,Private,3,3,3,87,Very Large,Very Large
+826,21,1989,2024,Private,3,3,3,35,Small,Small
+827,14,1911,2025,TCHC,3,3,3,114,Small,Small
+828,16,1981,2024,Private,3,3,3,43,Small,Small
+829,13,1954,2025,Private,3,3,3,71,Small,Small
+830,139,1936,2024,Private,3,3,1,88,Large,Large
+831,41,1938,2025,Private,3,3,3,87,Medium,Medium
+832,36,2017,2023,Private,3,3,3,6,Medium,Medium
+833,26,1977,2024,Private,3,3,1,47,Medium,Medium
+834,10,1914,2025,TCHC,3,3,1,111,Small,Small
+835,154,2014,2025,Private,3,3,3,11,Very Large,Very Large
+836,18,1905,2024,Private,3,1,3,119,Small,Small
+837,389,1984,2025,Private,3,3,2,41,Very Large,Very Large
+838,142,1942,2023,TCHC,3,3,3,81,Large,Large
+839,15,1970,2023,Private,3,3,3,53,Small,Small
+840,147,1972,2025,Private,3,3,3,53,Very Large,Very Large
+841,210,1936,2025,TCHC,3,3,3,89,Very Large,Very Large
+842,67,1977,2024,Private,3,3,3,47,Large,Large
+843,220,1959,2024,Private,3,3,3,65,Very Large,Very Large
+844,69,1939,2023,Private,3,3,3,84,Large,Large
+845,328,2003,2025,Private,3,3,3,22,Very Large,Very Large
+846,38,1948,2025,Private,3,3,3,77,Medium,Medium
+847,136,1989,2023,Private,3,2,1,34,Large,Large
+848,397,1964,2023,Private,3,3,3,59,Very Large,Very Large
+849,152,1908,2024,Private,3,3,3,116,Very Large,Very Large
+850,169,1926,2023,Private,3,3,3,97,Very Large,Very Large
+851,273,1976,2025,TCHC,3,1,3,49,Very Large,Very Large
+852,11,1955,2024,Social Housing,3,1,3,69,Small,Small
+853,105,1936,2024,Private,3,3,3,88,Large,Large
+854,177,1936,2025,Private,3,3,3,89,Very Large,Very Large
+855,13,1906,2023,Private,3,3,3,117,Small,Small
+856,136,1971,2025,TCHC,3,1,2,54,Large,Large
+857,178,1996,2024,Private,0,3,3,28,Very Large,Very Large
+858,19,1966,2024,Private,1,3,3,58,Small,Small
+859,179,1939,2025,Private,3,3,3,86,Very Large,Very Large
+860,299,1950,2023,Private,1,3,3,73,Very Large,Very Large
+861,353,1902,2024,Private,3,3,3,122,Very Large,Very Large
+862,32,1935,2024,TCHC,3,3,3,89,Medium,Medium
+863,45,2005,2025,Private,1,3,3,20,Medium,Medium
+864,40,1997,2024,Private,3,3,3,27,Medium,Medium
+865,70,2010,2023,TCHC,3,3,3,13,Large,Large
+866,31,1968,2025,Private,3,3,3,57,Medium,Medium
+867,96,1978,2024,Private,0,3,3,46,Large,Large
+868,32,2003,2025,Private,3,3,3,22,Medium,Medium
+869,36,1908,2025,Private,1,1,3,117,Medium,Medium
+870,15,1928,2024,Private,0,1,3,96,Small,Small
+871,691,2010,2024,Private,3,1,3,14,Very Large,Very Large
+872,10,1943,2025,Private,3,0,3,82,Small,Small
+873,24,1956,2024,Social Housing,3,3,3,68,Small,Small
+874,318,1988,2024,Private,3,3,3,36,Very Large,Very Large
+875,18,1938,2025,Private,3,0,3,87,Small,Small
+876,186,1920,2025,Private,3,3,3,105,Very Large,Very Large
+877,30,1948,2025,TCHC,3,3,3,77,Medium,Medium
+878,14,2007,2024,TCHC,3,1,3,17,Small,Small
+879,18,2022,2025,Private,3,3,3,3,Small,Small
+880,252,1944,2024,Private,2,0,3,80,Very Large,Very Large
+881,13,1972,2024,Private,3,3,3,52,Small,Small
+882,41,2002,2025,Private,3,3,3,23,Medium,Medium
+883,171,1986,2023,Private,0,3,3,37,Very Large,Very Large
+884,16,1914,2025,Private,1,3,3,111,Small,Small
+885,16,1901,2023,Private,1,2,3,122,Small,Small
+886,636,1975,2024,Private,3,3,3,49,Very Large,Very Large
+887,13,1984,2023,Private,3,3,2,39,Small,Small
+888,34,1946,2024,TCHC,3,3,3,78,Medium,Medium
+889,169,2009,2023,Private,3,3,3,14,Very Large,Very Large
+890,85,1925,2025,Social Housing,1,3,3,100,Large,Large
+891,14,1926,2025,Private,3,1,3,99,Small,Small
+892,13,1995,2023,Private,0,3,3,28,Small,Small
+893,112,1919,2024,Social Housing,3,3,3,105,Large,Large
+894,59,1947,2024,Private,3,3,3,77,Large,Large
+895,27,1902,2024,Private,3,3,3,122,Medium,Medium
+896,22,1947,2023,TCHC,3,3,3,76,Small,Small
+897,34,1943,2024,Private,3,2,3,81,Medium,Medium
+898,162,1945,2025,Private,3,3,3,80,Very Large,Very Large
+899,31,1994,2024,Private,3,2,3,30,Medium,Medium
+900,17,2001,2025,Social Housing,3,3,3,24,Small,Small
+901,128,1955,2025,Private,3,3,1,70,Large,Large
+902,34,2014,2023,Private,1,3,1,9,Medium,Medium
+903,124,1953,2023,Private,3,3,3,70,Large,Large
+904,216,1908,2023,Private,3,3,3,115,Very Large,Very Large
+905,11,1930,2025,Social Housing,3,3,3,95,Small,Small
+906,18,1941,2025,Private,3,3,3,84,Small,Small
+907,43,1959,2025,Private,3,3,1,66,Medium,Medium
+908,26,2011,2025,Private,3,3,3,14,Medium,Medium
+909,277,1942,2024,TCHC,3,3,3,82,Very Large,Very Large
+910,166,1923,2023,Private,3,1,3,100,Very Large,Very Large
+911,91,1919,2023,Private,3,3,1,104,Large,Large
+912,107,1952,2025,Private,3,3,0,73,Large,Large
+913,160,1988,2025,Private,3,2,1,37,Very Large,Very Large
+914,455,1989,2025,Private,3,1,3,36,Very Large,Very Large
+915,23,1928,2025,Private,3,3,3,97,Small,Small
+916,126,1998,2025,Private,3,3,3,27,Large,Large
+917,17,2012,2025,Private,3,3,3,13,Small,Small
+918,39,1994,2025,Private,3,3,3,31,Medium,Medium
+919,77,1984,2024,Social Housing,3,3,3,40,Large,Large
+920,15,1998,2023,Private,3,3,3,25,Small,Small
+921,10,1970,2024,Private,3,3,3,54,Small,Small
+922,30,1996,2024,Private,3,3,3,28,Medium,Medium
+923,93,1998,2024,Private,3,1,3,26,Large,Large
+924,33,1907,2025,Private,3,3,3,118,Medium,Medium
+925,190,1908,2025,Private,1,3,2,117,Very Large,Very Large
+926,103,1988,2023,Private,3,3,3,35,Large,Large
+927,94,2005,2024,Private,1,3,3,19,Large,Large
+928,19,1982,2025,Private,3,3,3,43,Small,Small
+929,351,2008,2023,Private,3,3,1,15,Very Large,Very Large
+930,396,1992,2023,Private,3,3,3,31,Very Large,Very Large
+931,153,1990,2023,Private,3,3,1,33,Very Large,Very Large
+932,53,2016,2025,Private,3,3,3,9,Medium,Medium
+933,17,1943,2025,Private,1,3,3,82,Small,Small
+934,22,2020,2024,Private,3,3,1,4,Small,Small
+935,63,1920,2025,Private,3,3,3,105,Large,Large
+936,11,1965,2025,Private,3,3,3,60,Small,Small
+937,20,2015,2025,Private,3,3,3,10,Small,Small
+938,47,1996,2024,Private,3,3,3,28,Medium,Medium
+939,255,1993,2024,Private,1,3,3,31,Very Large,Very Large
+940,231,1926,2025,Private,3,3,3,99,Very Large,Very Large
+941,12,1987,2025,TCHC,1,1,1,38,Small,Small
+942,77,1938,2025,TCHC,3,3,2,87,Large,Large
+943,15,1926,2025,Private,3,3,3,99,Small,Small
+944,51,1928,2023,Private,3,3,3,95,Medium,Medium
+945,181,1924,2023,Private,3,3,3,99,Very Large,Very Large
+946,14,1959,2024,Private,3,3,3,65,Small,Small
+947,13,1971,2025,Private,3,3,3,54,Small,Small
+948,182,1904,2025,Private,3,3,3,121,Very Large,Very Large
+949,109,1923,2025,Private,3,3,2,102,Large,Large
+950,47,1986,2024,Private,3,3,3,38,Medium,Medium
+951,37,2016,2024,Private,3,3,3,8,Medium,Medium
+952,135,2020,2025,Private,1,3,3,5,Large,Large
+953,123,1930,2024,Private,3,3,3,94,Large,Large
+954,31,1969,2024,Private,3,3,3,55,Medium,Medium
+955,315,1946,2025,Private,3,3,1,79,Very Large,Very Large
+956,121,1910,2024,Social Housing,3,3,3,114,Large,Large
+957,151,1943,2025,Private,3,3,3,82,Very Large,Very Large
+958,208,2015,2024,Private,3,3,3,9,Very Large,Very Large
+959,40,1910,2025,Social Housing,3,3,3,115,Medium,Medium
+960,130,1997,2023,TCHC,1,3,3,26,Large,Large
+961,161,1932,2025,Private,3,3,3,93,Very Large,Very Large
+962,308,1910,2024,Private,3,3,3,114,Very Large,Very Large
+963,24,2010,2023,Private,3,3,1,13,Small,Small
+964,84,1932,2025,Social Housing,3,3,3,93,Large,Large
+965,50,2001,2023,Private,3,3,3,22,Medium,Medium
+966,60,1972,2025,Private,3,3,1,53,Large,Large
+967,83,1998,2024,Private,3,3,1,26,Large,Large
+968,88,1927,2024,Private,3,3,3,97,Large,Large
+969,25,1913,2025,Private,3,3,2,112,Medium,Medium
+970,250,1921,2024,Private,1,3,3,103,Very Large,Very Large
+971,99,2017,2023,Private,3,3,3,6,Large,Large
+972,27,1936,2025,Private,3,3,3,89,Medium,Medium
+973,151,1997,2023,Private,3,3,3,26,Very Large,Very Large
+974,10,1999,2023,Social Housing,3,3,3,24,Small,Small
+975,25,1940,2024,Private,3,3,3,84,Medium,Medium
+976,119,1929,2025,Private,3,3,3,96,Large,Large
+977,29,1956,2024,Private,3,3,3,68,Medium,Medium
+978,16,1902,2024,Private,3,3,3,122,Small,Small
+979,25,1927,2025,Private,3,3,3,98,Medium,Medium
+980,153,1902,2024,Private,3,3,1,122,Very Large,Very Large
+981,31,1992,2024,Private,3,3,3,32,Medium,Medium
+982,330,1958,2025,Private,3,3,3,67,Very Large,Very Large
+983,228,1962,2024,Private,1,2,3,62,Very Large,Very Large
+984,16,1978,2023,Private,3,3,3,45,Small,Small
+985,23,2005,2025,Private,3,3,3,20,Small,Small
+986,670,1995,2025,TCHC,3,3,2,30,Very Large,Very Large
+987,55,1911,2025,Private,1,3,1,114,Large,Large
+988,25,1959,2024,Private,3,3,3,65,Medium,Medium
+989,47,2011,2023,Private,3,3,3,12,Medium,Medium
+990,42,1990,2023,Private,3,3,3,33,Medium,Medium
+991,204,1904,2024,Private,3,3,3,120,Very Large,Very Large
+992,46,1919,2024,Private,3,3,3,105,Medium,Medium
+993,42,1910,2024,Private,3,3,3,114,Medium,Medium
+994,115,1943,2023,Private,3,3,0,80,Large,Large
+995,24,2007,2024,Private,3,3,3,17,Small,Small
+996,160,1968,2023,Private,3,1,3,55,Very Large,Very Large
+997,40,2020,2025,Private,3,3,3,5,Medium,Medium
+998,16,1980,2023,TCHC,3,3,1,43,Small,Small
+999,58,1950,2025,Private,3,3,1,75,Large,Large
+1000,213,1958,2024,TCHC,3,0,2,66,Very Large,Very Large
+1001,17,1912,2025,Private,3,3,3,113,Small,Small
+1002,20,2003,2023,TCHC,3,1,3,20,Small,Small
+1003,27,1900,2025,Private,3,3,1,125,Medium,Medium
+1004,175,1995,2023,Private,3,3,3,28,Very Large,Very Large
+1005,378,1980,2023,Private,3,3,3,43,Very Large,Very Large
+1006,116,1945,2023,TCHC,3,3,2,78,Large,Large
+1007,13,1902,2024,Private,3,3,3,122,Small,Small
+1008,254,1973,2025,Social Housing,3,1,1,52,Very Large,Very Large
+1009,45,1990,2025,Private,3,3,3,35,Medium,Medium
+1010,304,1959,2023,Private,3,3,3,64,Very Large,Very Large
+1011,89,1966,2025,Private,3,3,3,59,Large,Large
+1012,10,1983,2024,Private,3,1,3,41,Small,Small
+1013,34,1921,2023,Private,3,3,3,102,Medium,Medium
+1014,31,1950,2024,Private,3,3,3,74,Medium,Medium
+1015,288,1979,2025,Social Housing,3,2,3,46,Very Large,Very Large
+1016,45,1917,2023,TCHC,2,3,3,106,Medium,Medium
+1017,26,1965,2024,TCHC,3,3,1,59,Medium,Medium
+1018,13,1928,2024,Social Housing,1,3,3,96,Small,Small
+1019,165,1956,2024,Private,3,3,3,68,Very Large,Very Large
+1020,17,1964,2025,TCHC,3,3,3,61,Small,Small
+1021,16,1936,2024,Private,3,3,3,88,Small,Small
+1022,576,1914,2024,Private,3,3,3,110,Very Large,Very Large
+1023,124,1948,2023,TCHC,3,3,3,75,Large,Large
+1024,227,1907,2024,Private,3,3,3,117,Very Large,Very Large
+1025,11,1983,2024,Private,3,3,3,41,Small,Small
+1026,134,1979,2025,Private,3,3,3,46,Large,Large
+1027,61,1996,2023,Social Housing,1,3,3,27,Large,Large
+1028,407,1991,2025,Private,3,3,3,34,Very Large,Very Large
+1029,234,1968,2025,Private,3,3,3,57,Very Large,Very Large
+1030,13,1961,2023,Private,3,3,3,62,Small,Small
+1031,12,1936,2024,Private,3,3,3,88,Small,Small
+1032,83,1926,2024,Private,3,3,1,98,Large,Large
+1033,117,1939,2024,Private,3,0,3,85,Large,Large
+1034,152,1946,2025,Private,3,3,1,79,Very Large,Very Large
+1035,292,2007,2024,Private,3,3,3,17,Very Large,Very Large
+1036,10,1923,2024,Social Housing,3,3,3,101,Small,Small
+1037,356,1942,2023,Private,3,3,3,81,Very Large,Very Large
+1038,14,1948,2025,Private,3,3,3,77,Small,Small
+1039,156,1955,2025,Private,3,3,3,70,Very Large,Very Large
+1040,14,1911,2024,Private,3,3,3,113,Small,Small
+1041,306,1966,2024,Private,3,3,3,58,Very Large,Very Large
+1042,22,1943,2025,Private,3,3,3,82,Small,Small
+1043,121,2018,2023,Private,3,3,3,5,Large,Large
+1044,10,1916,2024,Private,3,3,3,108,Small,Small
+1045,38,1905,2025,Private,3,3,3,120,Medium,Medium
+1046,16,1913,2025,Private,3,3,3,112,Small,Small
+1047,17,1913,2025,Private,3,1,3,112,Small,Small
+1048,17,1937,2025,Private,3,3,3,88,Small,Small
+1049,20,1951,2025,Private,3,3,3,74,Small,Small
+1050,100,1957,2025,Private,3,3,3,68,Large,Large
+1051,57,1923,2025,Private,3,2,1,102,Large,Large
+1052,16,2000,2025,Private,3,3,3,25,Small,Small
+1053,51,1961,2024,Private,3,3,3,63,Medium,Medium
+1054,20,1926,2024,Private,3,3,3,98,Small,Small
+1055,107,2007,2023,Private,3,1,1,16,Large,Large
+1056,12,1948,2023,Private,3,3,3,75,Small,Small
+1057,176,1997,2023,Private,3,3,1,26,Very Large,Very Large
+1058,18,1922,2025,Private,3,3,3,103,Small,Small
+1059,89,1963,2025,TCHC,3,3,3,62,Large,Large
+1060,84,1988,2025,Private,3,3,3,37,Large,Large
+1061,243,1909,2024,Private,3,2,1,115,Very Large,Very Large
+1062,38,1923,2024,Private,2,3,3,101,Medium,Medium
+1063,283,1921,2025,Private,3,1,3,104,Very Large,Very Large
+1064,184,1950,2025,Private,3,3,3,75,Very Large,Very Large
+1065,12,1925,2025,Private,1,3,1,100,Small,Small
+1066,348,1955,2025,Private,1,3,3,70,Very Large,Very Large
+1067,74,1960,2025,Private,1,3,3,65,Large,Large
+1068,10,1965,2025,Private,3,3,3,60,Small,Small
+1069,18,1971,2025,TCHC,3,3,3,54,Small,Small
+1070,55,1973,2024,Private,3,3,3,51,Large,Large
+1071,42,1917,2025,Private,3,3,3,108,Medium,Medium
+1072,17,1933,2024,Private,3,2,3,91,Small,Small
+1073,307,1998,2023,Private,3,3,3,25,Very Large,Very Large
+1074,12,2001,2025,Private,3,3,3,24,Small,Small
+1075,19,1914,2024,Private,3,3,3,110,Small,Small
+1076,65,1931,2023,Private,3,3,3,92,Large,Large
+1077,153,1977,2024,Private,3,2,3,47,Very Large,Very Large
+1078,56,2001,2023,TCHC,3,3,3,22,Large,Large
+1079,47,1977,2025,Private,3,3,2,48,Medium,Medium
+1080,178,1959,2025,Private,3,1,3,66,Very Large,Very Large
+1081,25,1976,2025,Private,3,3,3,49,Medium,Medium
+1082,36,1900,2024,Private,3,3,3,124,Medium,Medium
+1083,13,1954,2025,Private,2,1,3,71,Small,Small
+1084,55,1920,2024,Private,3,3,3,104,Large,Large
+1085,173,1962,2025,Private,2,1,1,63,Very Large,Very Large
+1086,21,1910,2025,Private,1,3,3,115,Small,Small
+1087,163,1982,2024,Private,1,0,3,42,Very Large,Very Large
+1088,42,1924,2025,Private,1,3,3,101,Medium,Medium
+1089,14,1941,2024,Private,3,3,2,83,Small,Small
+1090,180,1972,2025,Private,3,3,3,53,Very Large,Very Large
+1091,17,2002,2023,Social Housing,3,3,3,21,Small,Small
+1092,10,1907,2024,Private,3,3,3,117,Small,Small
+1093,48,1908,2025,Private,3,2,3,117,Medium,Medium
+1094,285,1989,2024,Private,3,2,3,35,Very Large,Very Large
+1095,60,1918,2025,Private,0,3,3,107,Large,Large
+1096,84,2000,2024,Private,3,3,3,24,Large,Large
+1097,16,1945,2025,TCHC,0,3,1,80,Small,Small
+1098,44,1943,2024,Private,3,3,3,81,Medium,Medium
+1099,62,1906,2023,Private,3,3,3,117,Large,Large
+1100,21,1909,2023,TCHC,3,3,3,114,Small,Small
+1101,115,1909,2023,Private,3,3,1,114,Large,Large
+1102,38,1951,2025,Private,1,3,3,74,Medium,Medium
+1103,13,1955,2023,Private,3,3,3,68,Small,Small
+1104,114,1926,2023,Private,3,1,3,97,Large,Large
+1105,356,1953,2025,Private,3,3,3,72,Very Large,Very Large
+1106,246,1944,2025,Private,3,3,3,81,Very Large,Very Large
+1107,122,1902,2024,Private,3,1,3,122,Large,Large
+1108,49,1966,2023,Private,3,3,3,57,Medium,Medium
+1109,146,1920,2025,TCHC,3,3,3,105,Very Large,Very Large
+1110,316,2017,2025,Private,3,1,2,8,Very Large,Very Large
+1111,87,2020,2024,Private,3,3,1,4,Large,Large
+1112,93,1955,2023,Private,3,3,3,68,Large,Large
+1113,14,1988,2025,Private,1,3,3,37,Small,Small
+1114,32,1908,2025,Private,3,3,3,117,Medium,Medium
+1115,114,1910,2024,Private,3,3,3,114,Large,Large
+1116,62,1966,2023,Private,3,3,3,57,Large,Large
+1117,145,2010,2025,Private,1,3,3,15,Very Large,Very Large
+1118,14,1904,2025,Private,3,3,3,121,Small,Small
+1119,166,1930,2025,TCHC,3,3,3,95,Very Large,Very Large
+1120,162,1947,2024,Private,3,3,3,77,Very Large,Very Large
+1121,40,1914,2024,Private,1,3,3,110,Medium,Medium
+1122,56,1972,2025,TCHC,3,3,3,53,Large,Large
+1123,44,1941,2025,Private,3,3,3,84,Medium,Medium
+1124,50,1936,2025,Private,0,3,3,89,Medium,Medium
+1125,30,1955,2025,TCHC,0,3,3,70,Medium,Medium
+1126,288,1916,2024,Social Housing,3,3,3,108,Very Large,Very Large
+1127,87,2017,2024,TCHC,3,3,3,7,Large,Large
+1128,18,1960,2024,Private,3,3,3,64,Small,Small
+1129,510,1999,2023,Private,3,2,3,24,Very Large,Very Large
+1130,12,1927,2023,Private,3,3,3,96,Small,Small
+1131,45,1980,2024,Private,3,3,3,44,Medium,Medium
+1132,45,1953,2024,Private,3,1,3,71,Medium,Medium
+1133,10,1935,2025,Private,3,3,3,90,Small,Small
+1134,47,1934,2023,Private,1,3,3,89,Medium,Medium
+1135,79,1929,2023,Private,3,3,3,94,Large,Large
+1136,52,2016,2024,Private,3,3,3,8,Medium,Medium
+1137,245,1926,2025,Private,3,3,1,99,Very Large,Very Large
+1138,283,1949,2024,Private,1,3,3,75,Very Large,Very Large
+1139,14,1968,2025,Private,3,3,3,57,Small,Small
+1140,95,2005,2024,Private,1,1,3,19,Large,Large
+1141,146,1934,2023,Private,3,3,3,89,Very Large,Very Large
+1142,20,1920,2023,Private,2,3,1,103,Small,Small
+1143,37,1910,2025,Private,3,3,3,115,Medium,Medium
+1144,36,1906,2025,TCHC,3,3,3,119,Medium,Medium
+1145,55,1923,2023,Private,3,3,3,100,Large,Large
+1146,212,1998,2024,Private,3,3,3,26,Very Large,Very Large
+1147,12,2003,2025,Private,3,3,0,22,Small,Small
+1148,77,1918,2023,Private,3,2,3,105,Large,Large
+1149,229,1985,2025,Private,3,3,3,40,Very Large,Very Large
+1150,11,1931,2024,Private,3,2,3,93,Small,Small
+1151,17,1933,2024,Private,2,3,3,91,Small,Small
+1152,71,1947,2024,Private,3,3,0,77,Large,Large
+1153,119,2012,2024,Private,3,3,3,12,Large,Large
+1154,10,2004,2023,Private,2,3,3,19,Small,Small
+1155,63,1987,2024,Private,3,3,3,37,Large,Large
+1156,13,1903,2023,Private,3,3,2,120,Small,Small
+1157,49,1926,2025,Private,1,1,3,99,Medium,Medium
+1158,15,1978,2025,Private,1,3,3,47,Small,Small
+1159,36,2019,2023,Private,1,3,3,4,Medium,Medium
+1160,15,1939,2023,Private,3,3,3,84,Small,Small
+1161,178,1976,2025,Private,3,3,3,49,Very Large,Very Large
+1162,181,1975,2025,TCHC,3,3,3,50,Very Large,Very Large
+1163,38,1981,2025,Private,3,3,3,44,Medium,Medium
+1164,140,1999,2024,Social Housing,1,3,3,25,Large,Large
+1165,25,1948,2025,Private,3,3,3,77,Medium,Medium
+1166,49,1974,2024,Social Housing,3,3,1,50,Medium,Medium
+1167,39,1960,2024,Social Housing,3,3,3,64,Medium,Medium
+1168,85,1968,2024,Private,3,3,3,56,Large,Large
+1169,38,1945,2023,Private,3,3,3,78,Medium,Medium
+1170,323,1972,2023,Private,3,3,3,51,Very Large,Very Large
+1171,49,1928,2025,Private,3,3,3,97,Medium,Medium
+1172,15,1907,2024,Private,3,3,3,117,Small,Small
+1173,24,2009,2024,Private,1,1,3,15,Small,Small
+1174,19,1982,2025,Private,3,3,3,43,Small,Small
+1175,42,1972,2024,TCHC,3,3,1,52,Medium,Medium
+1176,118,1917,2024,Private,3,3,3,107,Large,Large
+1177,22,2004,2025,Private,3,1,3,21,Small,Small
+1178,142,1997,2024,Private,3,3,3,27,Large,Large
+1179,48,1963,2024,Private,3,3,1,61,Medium,Medium
+1180,31,1976,2025,Private,3,3,3,49,Medium,Medium
+1181,60,1946,2025,TCHC,3,3,3,79,Large,Large
+1182,35,1988,2023,Private,3,3,3,35,Medium,Medium
+1183,18,1969,2024,Private,3,3,1,55,Small,Small
+1184,65,1983,2025,Private,3,3,3,42,Large,Large
+1185,18,1923,2024,Social Housing,3,3,3,101,Small,Small
+1186,83,1929,2024,Private,2,3,3,95,Large,Large
+1187,44,1909,2025,Private,3,3,3,116,Medium,Medium
+1188,158,1963,2025,Private,3,3,3,62,Very Large,Very Large
+1189,25,2000,2025,Private,3,3,3,25,Medium,Medium
+1190,398,1928,2024,Private,3,3,3,96,Very Large,Very Large
+1191,12,1958,2025,Private,3,3,3,67,Small,Small
+1192,118,1962,2025,Private,3,3,3,63,Large,Large
+1193,85,1960,2025,Private,3,0,3,65,Large,Large
+1194,69,1924,2024,Private,1,3,3,100,Large,Large
+1195,36,1913,2025,Private,3,3,3,112,Medium,Medium
+1196,288,1947,2023,Private,3,3,3,76,Very Large,Very Large
+1197,12,1948,2023,Private,3,3,2,75,Small,Small
+1198,65,1947,2025,Private,3,3,3,78,Large,Large
+1199,36,1934,2025,Private,1,3,2,91,Medium,Medium
+1200,40,1923,2025,TCHC,2,3,3,102,Medium,Medium
+1201,27,1960,2023,Social Housing,1,3,3,63,Medium,Medium
+1202,127,1900,2025,Private,3,3,3,125,Large,Large
+1203,154,1951,2025,Private,3,3,3,74,Very Large,Very Large
+1204,154,1974,2024,Private,3,3,3,50,Very Large,Very Large
+1205,32,1976,2023,Private,3,0,3,47,Medium,Medium
+1206,24,2014,2025,Private,3,1,3,11,Small,Small
+1207,340,1934,2025,Private,3,2,3,91,Very Large,Very Large
+1208,21,1922,2023,Private,3,3,3,101,Small,Small
+1209,215,1974,2024,Private,3,3,3,50,Very Large,Very Large
+1210,19,1950,2025,Private,3,3,3,75,Small,Small
+1211,11,1978,2025,Private,1,3,3,47,Small,Small
+1212,122,2010,2025,Private,3,3,3,15,Large,Large
+1213,17,2005,2023,Social Housing,3,3,3,18,Small,Small
+1214,22,1967,2024,Private,3,3,3,57,Small,Small
+1215,154,1925,2023,Private,3,3,3,98,Very Large,Very Large
+1216,44,1992,2023,Social Housing,3,3,3,31,Medium,Medium
+1217,17,1992,2024,Private,3,1,3,32,Small,Small
+1218,32,2002,2023,Private,3,2,3,21,Medium,Medium
+1219,54,2009,2024,Private,3,3,3,15,Large,Large
+1220,33,1972,2025,Private,3,3,3,53,Medium,Medium
+1221,43,1946,2024,Private,3,3,0,78,Medium,Medium
+1222,121,2017,2023,Private,3,3,3,6,Large,Large
+1223,14,2003,2024,Private,3,1,3,21,Small,Small
+1224,19,1961,2025,Private,3,3,3,64,Small,Small
+1225,15,1936,2023,Private,3,3,3,87,Small,Small
+1226,10,1942,2025,Private,3,3,3,83,Small,Small
+1227,20,1951,2024,Private,3,3,3,73,Small,Small
+1228,160,1939,2025,Private,3,1,3,86,Very Large,Very Large
+1229,10,1956,2024,Private,3,3,3,68,Small,Small
+1230,36,2021,2024,Private,2,3,3,3,Medium,Medium
+1231,152,1973,2024,Private,3,3,3,51,Very Large,Very Large
+1232,16,1901,2024,Private,3,3,3,123,Small,Small
+1233,12,1993,2024,Private,3,3,3,31,Small,Small
+1234,58,1981,2023,TCHC,3,3,3,42,Large,Large
+1235,16,1903,2025,Private,3,3,3,122,Small,Small
+1236,61,1977,2025,Private,3,1,1,48,Large,Large
+1237,38,1962,2025,Private,3,3,3,63,Medium,Medium
+1238,102,2012,2024,Private,3,3,3,12,Large,Large
+1239,16,1931,2023,Private,3,3,3,92,Small,Small
+1240,200,1909,2024,Private,3,1,3,115,Very Large,Very Large
+1241,123,1906,2025,Social Housing,3,1,3,119,Large,Large
+1242,376,1934,2023,Private,3,3,3,89,Very Large,Very Large
+1243,43,1977,2023,Private,3,3,1,46,Medium,Medium
+1244,55,1933,2023,Social Housing,3,1,3,90,Large,Large
+1245,16,1964,2025,Private,3,3,3,61,Small,Small
+1246,156,1901,2025,Private,3,3,2,124,Very Large,Very Large
+1247,50,2008,2024,Private,3,3,3,16,Medium,Medium
+1248,43,1976,2023,Private,3,3,1,47,Medium,Medium
+1249,268,2008,2024,Private,3,2,1,16,Very Large,Very Large
+1250,172,1980,2025,Private,3,3,3,45,Very Large,Very Large
+1251,152,2008,2025,Private,3,3,1,17,Very Large,Very Large
+1252,132,1940,2025,Private,3,3,3,85,Large,Large
+1253,40,1950,2025,Private,1,1,3,75,Medium,Medium
+1254,35,1955,2023,Private,1,3,1,68,Medium,Medium
+1255,330,1940,2024,Private,3,3,3,84,Very Large,Very Large
+1256,21,1941,2025,Private,3,3,3,84,Small,Small
+1257,36,1951,2024,Private,1,3,3,73,Medium,Medium
+1258,17,1902,2023,Social Housing,3,3,3,121,Small,Small
+1259,110,2000,2023,Private,3,2,1,23,Large,Large
+1260,11,1964,2025,TCHC,3,3,3,61,Small,Small
+1261,202,1915,2024,Social Housing,3,3,3,109,Very Large,Very Large
+1262,17,1982,2023,Private,3,3,3,41,Small,Small
+1263,14,2021,2025,Private,3,3,3,4,Small,Small
+1264,98,1959,2024,Private,1,3,1,65,Large,Large
+1265,18,1902,2024,Private,3,3,3,122,Small,Small
+1266,305,1979,2025,Private,3,3,3,46,Very Large,Very Large
+1267,87,2001,2024,Private,3,3,3,23,Large,Large
+1268,183,2015,2025,Private,3,2,3,10,Very Large,Very Large
+1269,135,1943,2024,Private,3,3,3,81,Large,Large
+1270,59,1951,2024,Private,3,3,3,73,Large,Large
+1271,593,1993,2025,Private,3,3,3,32,Very Large,Very Large
+1272,18,1989,2025,Private,3,2,3,36,Small,Small
+1273,44,1999,2025,TCHC,3,3,3,26,Medium,Medium
+1274,26,1958,2024,Private,2,3,3,66,Medium,Medium
+1275,322,1905,2025,Private,1,3,3,120,Very Large,Very Large
+1276,210,1935,2023,Private,3,2,3,88,Very Large,Very Large
+1277,37,1971,2023,Private,3,3,3,52,Medium,Medium
+1278,12,1966,2025,Private,3,1,3,59,Small,Small
+1279,78,1964,2024,Private,0,3,3,60,Large,Large
+1280,49,1908,2024,TCHC,3,3,3,116,Medium,Medium
+1281,66,1983,2025,Social Housing,3,3,3,42,Large,Large
+1282,10,2020,2024,Private,3,3,3,4,Small,Small
+1283,212,1973,2024,Private,3,3,3,51,Very Large,Very Large
+1284,38,2021,2023,Private,3,3,3,2,Medium,Medium
+1285,10,1983,2025,Private,1,1,3,42,Small,Small
+1286,448,1971,2025,Private,3,3,3,54,Very Large,Very Large
+1287,53,2006,2024,Private,3,3,3,18,Medium,Medium
+1288,291,2001,2025,Private,3,3,3,24,Very Large,Very Large
+1289,53,1907,2023,Private,3,2,3,116,Medium,Medium
+1290,16,1998,2024,Private,3,3,3,26,Small,Small
+1291,11,1912,2024,Social Housing,3,3,3,112,Small,Small
+1292,341,1977,2024,Private,3,3,1,47,Very Large,Very Large
+1293,381,1919,2025,Private,3,3,3,106,Very Large,Very Large
+1294,145,1973,2024,Private,3,3,3,51,Very Large,Very Large
+1295,41,1969,2025,Private,3,1,3,56,Medium,Medium
+1296,96,1963,2023,Private,1,3,3,60,Large,Large
+1297,22,1972,2023,Social Housing,3,3,1,51,Small,Small
+1298,257,1979,2023,TCHC,3,3,3,44,Very Large,Very Large
+1299,29,1906,2025,Private,3,3,3,119,Medium,Medium
+1300,66,1956,2023,Private,3,3,3,67,Large,Large
+1301,14,1975,2024,Private,3,3,3,49,Small,Small
+1302,14,1980,2024,Private,3,3,1,44,Small,Small
+1303,12,1984,2023,Private,1,3,3,39,Small,Small
+1304,16,1905,2023,Social Housing,2,3,1,118,Small,Small
+1305,71,2011,2023,Private,3,3,3,12,Large,Large
+1306,19,1958,2025,Private,3,3,1,67,Small,Small
+1307,34,1916,2024,TCHC,3,3,3,108,Medium,Medium
+1308,36,1901,2023,Private,1,3,3,122,Medium,Medium
+1309,36,1945,2024,Private,3,1,3,79,Medium,Medium
+1310,376,1980,2025,Private,3,3,3,45,Very Large,Very Large
+1311,15,1947,2025,Private,1,3,3,78,Small,Small
+1312,122,2008,2025,TCHC,3,3,3,17,Large,Large
+1313,35,1962,2025,Private,3,3,3,63,Medium,Medium
+1314,181,1943,2023,Private,3,3,3,80,Very Large,Very Large
+1315,15,1996,2024,Private,3,3,3,28,Small,Small
+1316,88,1902,2023,Private,3,3,3,121,Large,Large
+1317,19,1903,2023,Private,3,3,3,120,Small,Small
+1318,479,1972,2024,TCHC,2,0,3,52,Very Large,Very Large
+1319,32,1984,2024,Private,3,3,3,40,Medium,Medium
+1320,278,1987,2023,Private,3,3,3,36,Very Large,Very Large
+1321,117,1918,2024,Private,3,3,3,106,Large,Large
+1322,11,1993,2025,Private,3,3,3,32,Small,Small
+1323,113,1916,2025,Private,3,3,3,109,Large,Large
+1324,329,1902,2023,Private,3,3,3,121,Very Large,Very Large
+1325,37,1958,2023,Private,1,1,3,65,Medium,Medium
+1326,135,1903,2024,Private,3,3,1,121,Large,Large
+1327,13,2009,2025,Private,3,3,3,16,Small,Small
+1328,384,1970,2024,Private,3,2,3,54,Very Large,Very Large
+1329,65,1940,2024,Private,3,3,3,84,Large,Large
+1330,369,1930,2024,Private,0,3,3,94,Very Large,Very Large
+1331,80,1988,2024,Private,3,2,3,36,Large,Large
+1332,359,1901,2025,Private,1,3,3,124,Very Large,Very Large
+1333,13,1951,2024,Private,3,3,0,73,Small,Small
+1334,32,1944,2023,Social Housing,3,3,3,79,Medium,Medium
+1335,174,1912,2023,Private,3,3,3,111,Very Large,Very Large
+1336,116,1986,2023,Private,3,3,3,37,Large,Large
+1337,15,1987,2025,Private,3,3,1,38,Small,Small
+1338,31,1938,2024,Private,3,3,3,86,Medium,Medium
+1339,14,1931,2024,Private,3,3,3,93,Small,Small
+1340,11,1931,2025,Private,3,2,3,94,Small,Small
+1341,192,1955,2025,Private,1,3,3,70,Very Large,Very Large
+1342,94,1947,2024,Social Housing,3,3,1,77,Large,Large
+1343,35,1990,2023,Private,3,3,3,33,Medium,Medium
+1344,125,1980,2024,Private,3,3,3,44,Large,Large
+1345,12,1955,2025,TCHC,3,3,3,70,Small,Small
+1346,15,2021,2025,Private,0,3,3,4,Small,Small
+1347,101,1949,2025,Private,3,3,3,76,Large,Large
+1348,35,1983,2024,Private,3,3,3,41,Medium,Medium
+1349,233,1912,2024,Private,3,1,3,112,Very Large,Very Large
+1350,184,1961,2024,Private,3,3,1,63,Very Large,Very Large
+1351,383,1991,2025,Private,3,1,3,34,Very Large,Very Large
+1352,47,1928,2024,Private,3,3,1,96,Medium,Medium
+1353,78,1995,2023,Private,3,3,3,28,Large,Large
+1354,49,1913,2025,Private,3,3,3,112,Medium,Medium
+1355,139,2021,2024,Private,3,1,3,3,Large,Large
+1356,36,2017,2023,Private,3,3,3,6,Medium,Medium
+1357,176,2006,2023,Private,3,3,3,17,Very Large,Very Large
+1358,164,1997,2025,Private,3,3,3,28,Very Large,Very Large
+1359,14,1965,2023,Private,3,2,3,58,Small,Small
+1360,11,1963,2023,Private,3,3,3,60,Small,Small
+1361,66,1905,2023,Private,3,3,3,118,Large,Large
+1362,15,1954,2025,Private,3,3,3,71,Small,Small
+1363,101,2014,2024,TCHC,3,2,3,10,Large,Large
+1364,115,1934,2023,Social Housing,3,3,3,89,Large,Large
+1365,156,1901,2025,Private,3,3,3,124,Very Large,Very Large
+1366,25,1992,2025,Private,3,3,3,33,Medium,Medium
+1367,169,1964,2023,Private,1,3,3,59,Very Large,Very Large
+1368,30,1916,2023,Private,3,3,3,107,Medium,Medium
+1369,12,1922,2025,Social Housing,3,3,2,103,Small,Small
+1370,293,1987,2024,Private,3,1,3,37,Very Large,Very Large
+1371,255,1983,2023,Social Housing,0,3,3,40,Very Large,Very Large
+1372,311,1929,2025,Private,3,3,3,96,Very Large,Very Large
+1373,14,1954,2023,Social Housing,3,3,3,69,Small,Small
+1374,366,1966,2025,Private,3,3,3,59,Very Large,Very Large
+1375,16,1936,2025,Private,3,3,3,89,Small,Small
+1376,13,2005,2025,TCHC,3,3,3,20,Small,Small
+1377,16,2006,2025,Private,3,2,1,19,Small,Small
+1378,193,1987,2023,Social Housing,3,3,3,36,Very Large,Very Large
+1379,190,2000,2023,Private,3,3,3,23,Very Large,Very Large
+1380,15,1940,2023,Private,3,3,3,83,Small,Small
+1381,15,1949,2024,Private,3,3,1,75,Small,Small
+1382,19,1966,2024,Private,3,1,3,58,Small,Small
+1383,140,1935,2025,Private,3,3,0,90,Large,Large
+1384,332,1944,2024,Private,3,3,3,80,Very Large,Very Large
+1385,18,1954,2024,TCHC,3,3,3,70,Small,Small
+1386,88,1925,2025,Private,3,3,3,100,Large,Large
+1387,14,1901,2025,Private,3,0,3,124,Small,Small
+1388,232,2022,2024,Private,3,3,3,2,Very Large,Very Large
+1389,367,1909,2024,Private,3,3,3,115,Very Large,Very Large
+1390,35,1917,2023,Private,3,1,3,106,Medium,Medium
+1391,142,1999,2025,Private,3,3,3,26,Large,Large
+1392,94,1936,2024,Private,3,3,3,88,Large,Large
+1393,20,1927,2025,TCHC,3,3,3,98,Small,Small
+1394,15,1901,2025,Private,3,3,3,124,Small,Small
+1395,24,2019,2025,Private,3,3,3,6,Small,Small
+1396,271,2000,2025,Private,1,3,3,25,Very Large,Very Large
+1397,32,1905,2025,Private,1,3,3,120,Medium,Medium
+1398,18,1929,2025,Private,1,3,3,96,Small,Small
+1399,10,1937,2024,Private,3,3,3,87,Small,Small
+1400,47,1952,2024,TCHC,1,3,1,72,Medium,Medium
+1401,750,1944,2024,Private,3,3,3,80,Very Large,Very Large
+1402,147,1989,2025,Private,3,3,3,36,Very Large,Very Large
+1403,29,1986,2023,TCHC,3,3,3,37,Medium,Medium
+1404,29,1928,2024,Private,3,3,3,96,Medium,Medium
+1405,16,1911,2025,Private,3,3,3,114,Small,Small
+1406,71,1947,2024,Private,2,3,3,77,Large,Large
+1407,176,1989,2025,Private,3,1,3,36,Very Large,Very Large
+1408,93,1999,2023,Private,3,3,3,24,Large,Large
+1409,168,1905,2024,Private,3,3,3,119,Very Large,Very Large
+1410,48,2002,2024,Private,3,3,3,22,Medium,Medium
+1411,25,1953,2023,Private,3,1,3,70,Medium,Medium
+1412,199,1911,2023,Private,3,3,3,112,Very Large,Very Large
+1413,181,2002,2025,Private,3,1,3,23,Very Large,Very Large
+1414,30,1914,2023,Private,3,3,1,109,Medium,Medium
+1415,115,1968,2024,Private,3,2,3,56,Large,Large
+1416,63,1980,2024,Private,3,3,0,44,Large,Large
+1417,119,1941,2025,Private,2,3,3,84,Large,Large
+1418,110,1934,2024,Private,3,3,3,90,Large,Large
+1419,44,1917,2025,Private,3,3,3,108,Medium,Medium
+1420,150,1966,2025,TCHC,3,3,3,59,Very Large,Very Large
+1421,23,2017,2024,Private,3,1,3,7,Small,Small
+1422,52,1947,2025,Private,3,3,3,78,Medium,Medium
+1423,78,1982,2024,Social Housing,3,1,3,42,Large,Large
+1424,31,2015,2023,Private,3,3,3,8,Medium,Medium
+1425,98,2011,2025,Private,3,3,3,14,Large,Large
+1426,112,1929,2025,Private,3,3,3,96,Large,Large
+1427,34,1987,2024,Private,3,3,3,37,Medium,Medium
+1428,77,1916,2024,Private,1,3,3,108,Large,Large
+1429,123,1911,2025,Private,3,1,3,114,Large,Large
+1430,10,1904,2025,Private,3,3,3,121,Small,Small
+1431,49,1949,2023,Private,3,3,3,74,Medium,Medium
+1432,229,2018,2025,Private,3,3,3,7,Very Large,Very Large
+1433,331,1931,2024,Private,3,3,3,93,Very Large,Very Large
+1434,347,1963,2023,Private,3,3,3,60,Very Large,Very Large
+1435,171,1985,2025,Private,3,3,3,40,Very Large,Very Large
+1436,64,1926,2023,Private,3,3,3,97,Large,Large
+1437,369,2015,2024,Private,3,3,3,9,Very Large,Very Large
+1438,40,1998,2024,Private,3,3,1,26,Medium,Medium
+1439,131,2020,2023,Private,3,3,3,3,Large,Large
+1440,12,2005,2024,Private,3,1,3,19,Small,Small
+1441,186,1984,2023,Private,3,3,1,39,Very Large,Very Large
+1442,142,1926,2025,Private,3,3,3,99,Large,Large
+1443,10,1955,2023,Private,1,3,3,68,Small,Small
+1444,73,1991,2025,Private,3,3,3,34,Large,Large
+1445,205,1971,2024,Private,3,3,3,53,Very Large,Very Large
+1446,98,1973,2024,Private,3,3,3,51,Large,Large
+1447,38,1992,2023,Private,3,3,3,31,Medium,Medium
+1448,17,1999,2025,Private,3,3,3,26,Small,Small
+1449,74,2005,2024,Private,3,1,3,19,Large,Large
+1450,84,1932,2024,Private,3,3,3,92,Large,Large
+1451,27,2019,2024,Private,2,3,3,5,Medium,Medium
+1452,19,2019,2023,Private,3,3,3,4,Small,Small
+1453,340,1930,2023,Private,1,1,1,93,Very Large,Very Large
+1454,16,1934,2025,Private,3,3,1,91,Small,Small
+1455,33,1988,2024,TCHC,3,3,3,36,Medium,Medium
+1456,111,1933,2024,TCHC,3,3,3,91,Large,Large
+1457,12,1971,2023,Private,3,1,3,52,Small,Small
+1458,20,1931,2025,Private,2,3,3,94,Small,Small
+1459,391,1973,2025,Social Housing,3,3,3,52,Very Large,Very Large
+1460,43,1987,2024,Private,3,3,3,37,Medium,Medium
+1461,489,1945,2024,Private,2,1,3,79,Very Large,Very Large
+1462,44,1915,2025,Social Housing,3,3,3,110,Medium,Medium
+1463,84,1982,2023,Private,1,3,3,41,Large,Large
+1464,75,2019,2024,Private,3,3,3,5,Large,Large
+1465,14,1995,2025,Private,3,3,2,30,Small,Small
+1466,293,1902,2025,Private,3,2,3,123,Very Large,Very Large
+1467,34,2005,2024,Private,3,3,1,19,Medium,Medium
+1468,85,1951,2023,Private,3,3,3,72,Large,Large
+1469,15,1981,2024,Private,0,3,3,43,Small,Small
+1470,11,1963,2024,Private,3,3,3,61,Small,Small
+1471,10,1942,2024,Private,2,3,3,82,Small,Small
+1472,21,1909,2025,Private,3,3,3,116,Small,Small
+1473,59,1991,2023,Private,1,3,3,32,Large,Large
+1474,162,1952,2024,Private,3,3,3,72,Very Large,Very Large
+1475,30,2019,2025,Private,3,3,3,6,Medium,Medium
+1476,282,2010,2024,Private,3,3,0,14,Very Large,Very Large
+1477,31,2020,2023,Private,3,3,1,3,Medium,Medium
+1478,62,1945,2025,Private,3,3,3,80,Large,Large
+1479,95,1901,2023,Private,3,3,3,122,Large,Large
+1480,29,1977,2024,TCHC,3,3,3,47,Medium,Medium
+1481,110,2011,2025,Private,3,3,3,14,Large,Large
+1482,16,1933,2023,Private,3,3,3,90,Small,Small
+1483,38,1931,2025,Private,3,1,3,94,Medium,Medium
+1484,26,1942,2024,Private,3,3,3,82,Medium,Medium
+1485,23,1937,2025,Private,3,3,3,88,Small,Small
+1486,151,2019,2024,Social Housing,3,3,3,5,Very Large,Very Large
+1487,82,1966,2025,TCHC,3,3,3,59,Large,Large
+1488,115,1913,2025,Private,3,1,3,112,Large,Large
+1489,48,2002,2024,Private,3,3,1,22,Medium,Medium
+1490,130,2012,2024,TCHC,3,3,3,12,Large,Large
+1491,262,1990,2023,Private,3,3,3,33,Very Large,Very Large
+1492,147,1955,2023,Private,3,3,3,68,Very Large,Very Large
+1493,13,1904,2023,Private,3,3,3,119,Small,Small
+1494,22,2010,2023,TCHC,2,1,3,13,Small,Small
+1495,166,1998,2024,Private,0,3,3,26,Very Large,Very Large
+1496,68,1954,2025,Private,3,3,3,71,Large,Large
+1497,88,2022,2023,TCHC,3,3,1,1,Large,Large
+1498,125,2007,2025,TCHC,3,3,3,18,Large,Large
+1499,44,1975,2024,Private,3,3,3,49,Medium,Medium
+1500,11,2016,2025,Private,3,3,3,9,Small,Small
+1501,39,1931,2025,Private,3,3,3,94,Medium,Medium
+1502,12,1993,2024,Private,3,3,3,31,Small,Small
+1503,206,1938,2023,Private,3,1,3,85,Very Large,Very Large
+1504,343,2019,2025,Private,1,3,3,6,Very Large,Very Large
+1505,38,1904,2025,TCHC,3,3,1,121,Medium,Medium
+1506,454,1901,2025,Private,3,3,3,124,Very Large,Very Large
+1507,100,1990,2025,Private,3,2,3,35,Large,Large
+1508,141,1962,2023,Private,3,3,3,61,Large,Large
+1509,85,1907,2025,TCHC,1,1,3,118,Large,Large
+1510,164,2015,2025,Private,1,3,3,10,Very Large,Very Large
+1511,131,1913,2025,Private,3,3,1,112,Large,Large
+1512,81,1904,2025,Private,3,3,1,121,Large,Large
+1513,399,1911,2025,TCHC,3,3,3,114,Very Large,Very Large
+1514,15,2013,2025,Private,0,3,3,12,Small,Small
+1515,50,1932,2025,Social Housing,3,3,3,93,Medium,Medium
+1516,161,1988,2023,Social Housing,3,3,3,35,Very Large,Very Large
+1517,23,1986,2025,Private,3,3,3,39,Small,Small
+1518,14,2022,2023,Private,3,3,3,1,Small,Small
+1519,56,1922,2025,Private,3,3,3,103,Large,Large
+1520,17,1925,2025,Private,3,3,3,100,Small,Small
+1521,104,2005,2024,Social Housing,1,1,1,19,Large,Large
+1522,24,2022,2023,Private,3,3,1,1,Small,Small
+1523,260,2015,2025,Private,3,3,3,10,Very Large,Very Large
+1524,98,2009,2023,Private,3,3,3,14,Large,Large
+1525,47,1915,2025,Private,3,3,1,110,Medium,Medium
+1526,136,2017,2023,Private,3,3,3,6,Large,Large
+1527,172,1969,2025,Private,3,1,3,56,Very Large,Very Large
+1528,94,1986,2025,Private,3,3,3,39,Large,Large
+1529,204,1932,2025,Private,3,3,1,93,Very Large,Very Large
+1530,141,1905,2023,Social Housing,1,3,3,118,Large,Large
+1531,40,1917,2024,Private,3,3,3,107,Medium,Medium
+1532,33,1972,2023,Private,3,1,2,51,Medium,Medium
+1533,163,1965,2025,Private,3,3,3,60,Very Large,Very Large
+1534,33,2019,2025,TCHC,3,3,3,6,Medium,Medium
+1535,395,1972,2024,Private,3,3,3,52,Very Large,Very Large
+1536,27,1928,2025,Private,3,3,3,97,Medium,Medium
+1537,44,1960,2024,Private,3,3,3,64,Medium,Medium
+1538,206,1946,2024,Social Housing,3,3,3,78,Very Large,Very Large
+1539,31,1965,2024,Private,3,3,3,59,Medium,Medium
+1540,96,1900,2023,Social Housing,3,3,2,123,Large,Large
+1541,57,1990,2025,Private,3,1,3,35,Large,Large
+1542,31,2005,2025,Private,3,3,1,20,Medium,Medium
+1543,24,1989,2024,Private,3,3,3,35,Small,Small
+1544,17,2018,2025,Private,3,3,3,7,Small,Small
+1545,32,1944,2023,Private,3,3,1,79,Medium,Medium
+1546,82,1971,2023,Private,3,3,3,52,Large,Large
+1547,84,2020,2023,Private,0,3,3,3,Large,Large
+1548,341,1978,2024,Private,3,3,3,46,Very Large,Very Large
+1549,228,1978,2025,Private,3,3,3,47,Very Large,Very Large
+1550,92,2003,2023,Private,3,3,3,20,Large,Large
+1551,40,2003,2023,Private,1,3,3,20,Medium,Medium
+1552,356,1910,2024,Private,3,1,3,114,Very Large,Very Large
+1553,234,1972,2025,Private,3,3,3,53,Very Large,Very Large
+1554,78,1929,2025,Private,3,3,3,96,Large,Large
+1555,18,1955,2025,TCHC,2,3,3,70,Small,Small
+1556,18,1935,2023,Social Housing,3,2,3,88,Small,Small
+1557,156,1956,2025,Private,3,3,3,69,Very Large,Very Large
+1558,62,1964,2024,Private,3,3,3,60,Large,Large
+1559,18,1913,2024,Private,3,3,3,111,Small,Small
+1560,374,2003,2024,Private,3,3,3,21,Very Large,Very Large
+1561,291,1963,2023,Private,3,3,3,60,Very Large,Very Large
+1562,40,1919,2024,Private,3,3,1,105,Medium,Medium
+1563,44,1963,2024,TCHC,3,3,1,61,Medium,Medium
+1564,17,1942,2024,Private,3,3,3,82,Small,Small
+1565,19,2000,2025,TCHC,2,3,3,25,Small,Small
+1566,230,1977,2024,Private,3,3,3,47,Very Large,Very Large
+1567,47,1971,2023,Social Housing,3,3,3,52,Medium,Medium
+1568,132,1983,2025,TCHC,3,3,3,42,Large,Large
+1569,17,2001,2023,Private,1,0,3,22,Small,Small
+1570,196,1903,2024,Private,3,2,3,121,Very Large,Very Large
+1571,58,1917,2024,Private,3,3,3,107,Large,Large
+1572,29,1983,2024,Private,3,2,3,41,Medium,Medium
+1573,62,1934,2023,Private,3,3,1,89,Large,Large
+1574,190,1989,2024,Private,3,3,1,35,Very Large,Very Large
+1575,57,1906,2025,Private,3,3,3,119,Large,Large
+1576,86,1974,2025,Private,3,2,3,51,Large,Large
+1577,394,1939,2024,TCHC,1,3,1,85,Very Large,Very Large
+1578,15,2017,2023,Private,3,3,3,6,Small,Small
+1579,22,1942,2024,Private,3,3,0,82,Small,Small
+1580,62,1957,2023,Private,1,3,3,66,Large,Large
+1581,91,1963,2023,Private,3,3,3,60,Large,Large
+1582,16,2009,2025,Private,1,3,3,16,Small,Small
+1583,388,1988,2025,Social Housing,3,3,1,37,Very Large,Very Large
+1584,65,2020,2024,Private,3,3,3,4,Large,Large
+1585,263,1947,2023,Private,3,3,1,76,Very Large,Very Large
+1586,62,1967,2023,Private,3,3,1,56,Large,Large
+1587,155,1972,2023,Private,3,3,3,51,Very Large,Very Large
+1588,118,1993,2025,Private,3,3,3,32,Large,Large
+1589,298,1940,2024,Private,3,3,3,84,Very Large,Very Large
+1590,49,1957,2025,Private,3,3,3,68,Medium,Medium
+1591,49,1993,2024,Private,1,3,3,31,Medium,Medium
+1592,63,1975,2023,Private,3,3,0,48,Large,Large
+1593,382,1918,2025,Private,3,3,1,107,Very Large,Very Large
+1594,11,1972,2025,Private,3,1,3,53,Small,Small
+1595,356,1943,2024,TCHC,3,3,1,81,Very Large,Very Large
+1596,59,1942,2024,Private,1,3,1,82,Large,Large
+1597,18,2006,2025,Private,3,3,3,19,Small,Small
+1598,12,1978,2025,Private,3,3,3,47,Small,Small
+1599,11,1909,2023,Private,3,3,3,114,Small,Small
+1600,14,1909,2025,Private,3,3,3,116,Small,Small
+1601,27,1946,2025,Private,3,3,3,79,Medium,Medium
+1602,10,2013,2025,Private,3,1,1,12,Small,Small
+1603,22,2006,2023,Social Housing,3,3,3,17,Small,Small
+1604,301,1913,2023,Private,3,3,3,110,Very Large,Very Large
+1605,85,1949,2025,Social Housing,3,3,3,76,Large,Large
+1606,284,1983,2025,Private,3,0,3,42,Very Large,Very Large
+1607,173,1903,2025,Private,3,3,3,122,Very Large,Very Large
+1608,301,1950,2025,Private,1,3,3,75,Very Large,Very Large
+1609,15,1969,2023,Private,3,3,3,54,Small,Small
+1610,189,1999,2025,Social Housing,3,3,3,26,Very Large,Very Large
+1611,19,1938,2025,Private,3,3,3,87,Small,Small
+1612,309,2015,2024,Private,3,3,3,9,Very Large,Very Large
+1613,162,1996,2025,Private,3,3,1,29,Very Large,Very Large
+1614,159,1925,2025,Private,1,3,1,100,Very Large,Very Large
+1615,204,1958,2023,Social Housing,3,1,3,65,Very Large,Very Large
+1616,184,1960,2023,Private,3,3,3,63,Very Large,Very Large
+1617,111,1921,2025,Private,3,3,3,104,Large,Large
+1618,15,1929,2025,TCHC,2,3,3,96,Small,Small
+1619,98,1925,2023,Private,3,3,3,98,Large,Large
+1620,41,1915,2024,TCHC,3,3,3,109,Medium,Medium
+1621,59,2022,2024,Private,1,1,1,2,Large,Large
+1622,114,1946,2023,Private,2,3,3,77,Large,Large
+1623,24,1971,2025,Private,3,3,3,54,Small,Small
+1624,260,1990,2023,Private,3,1,3,33,Very Large,Very Large
+1625,45,1912,2025,Private,3,3,3,113,Medium,Medium
+1626,82,2010,2025,Private,3,1,3,15,Large,Large
+1627,57,2009,2025,TCHC,3,3,3,16,Large,Large
+1628,49,2017,2024,Private,3,3,3,7,Medium,Medium
+1629,31,1973,2024,Private,3,3,3,51,Medium,Medium
+1630,83,1991,2023,Private,1,3,1,32,Large,Large
+1631,10,2012,2023,Private,3,3,3,11,Small,Small
+1632,49,1909,2024,Private,3,1,1,115,Medium,Medium
+1633,166,1916,2024,Private,3,3,3,108,Very Large,Very Large
+1634,25,1914,2025,Private,3,3,3,111,Medium,Medium
+1635,345,1935,2023,Private,3,3,1,88,Very Large,Very Large
+1636,45,1905,2023,Private,3,3,3,118,Medium,Medium
+1637,38,1972,2024,Private,3,2,3,52,Medium,Medium
+1638,12,2009,2024,Social Housing,3,3,3,15,Small,Small
+1639,59,2009,2023,TCHC,2,3,3,14,Large,Large
+1640,32,2013,2025,TCHC,3,3,3,12,Medium,Medium
+1641,14,1907,2023,Private,3,3,3,116,Small,Small
+1642,182,1996,2023,Private,3,3,1,27,Very Large,Very Large
+1643,183,1903,2025,Private,3,3,3,122,Very Large,Very Large
+1644,64,1984,2025,Private,3,3,3,41,Large,Large
+1645,25,1917,2024,Private,3,3,3,107,Medium,Medium
+1646,52,2022,2025,Private,3,3,3,3,Medium,Medium
+1647,190,2002,2023,Private,3,3,3,21,Very Large,Very Large
+1648,44,1928,2023,Private,3,3,3,95,Medium,Medium
+1649,30,1903,2025,Private,2,1,2,122,Medium,Medium
+1650,171,1929,2024,Private,3,1,3,95,Very Large,Very Large
+1651,343,1904,2024,Private,2,3,1,120,Very Large,Very Large
+1652,82,1981,2025,Private,3,3,3,44,Large,Large
+1653,10,1957,2023,Private,3,1,3,66,Small,Small
+1654,19,1924,2024,Private,3,3,3,100,Small,Small
+1655,28,1998,2025,Social Housing,3,3,3,27,Medium,Medium
+1656,247,1944,2024,Private,3,3,1,80,Very Large,Very Large
+1657,63,2020,2024,Private,3,1,3,4,Large,Large
+1658,18,1929,2025,Private,3,3,3,96,Small,Small
+1659,267,1962,2024,Private,3,3,3,62,Very Large,Very Large
+1660,12,1987,2025,Private,3,3,3,38,Small,Small
+1661,45,1981,2023,Private,3,1,1,42,Medium,Medium
+1662,161,2005,2024,Private,3,3,3,19,Very Large,Very Large
+1663,269,1993,2024,Private,3,3,3,31,Very Large,Very Large
+1664,14,1982,2025,Private,3,3,3,43,Small,Small
+1665,48,2002,2025,TCHC,3,3,3,23,Medium,Medium
+1666,54,1923,2025,Private,3,3,3,102,Large,Large
+1667,47,1914,2024,Private,1,3,3,110,Medium,Medium
+1668,27,1910,2024,Private,3,3,0,114,Medium,Medium
+1669,309,2021,2023,Private,1,1,3,2,Very Large,Very Large
+1670,27,2012,2025,Private,3,3,3,13,Medium,Medium
+1671,296,1973,2024,Private,3,3,3,51,Very Large,Very Large
+1672,25,1945,2024,Private,1,3,3,79,Medium,Medium
+1673,99,1940,2023,Private,3,3,2,83,Large,Large
+1674,83,1947,2025,Private,3,3,3,78,Large,Large
+1675,195,1987,2025,Private,3,3,3,38,Very Large,Very Large
+1676,30,1988,2024,Private,3,3,1,36,Medium,Medium
+1677,363,1912,2024,Private,3,3,3,112,Very Large,Very Large
+1678,240,1900,2025,Private,3,3,3,125,Very Large,Very Large
+1679,118,1987,2023,Private,3,3,3,36,Large,Large
+1680,192,1941,2025,Private,3,3,3,84,Very Large,Very Large
+1681,98,1976,2025,Social Housing,1,1,3,49,Large,Large
+1682,27,1987,2025,Private,3,3,3,38,Medium,Medium
+1683,10,1921,2023,Private,3,3,3,102,Small,Small
+1684,209,1925,2024,Private,3,3,2,99,Very Large,Very Large
+1685,17,1986,2025,TCHC,1,3,3,39,Small,Small
+1686,12,1958,2025,Private,3,3,3,67,Small,Small
+1687,84,2010,2024,Private,3,3,3,14,Large,Large
+1688,154,1962,2024,Private,3,3,3,62,Very Large,Very Large
+1689,38,1984,2024,Private,3,3,3,40,Medium,Medium
+1690,227,1936,2024,Private,3,3,3,88,Very Large,Very Large
+1691,308,1982,2025,TCHC,3,3,1,43,Very Large,Very Large
+1692,17,2009,2024,Private,3,3,3,15,Small,Small
+1693,152,1940,2024,Social Housing,3,1,1,84,Very Large,Very Large
+1694,105,1913,2024,Private,3,3,1,111,Large,Large
+1695,189,1908,2024,Private,3,3,1,116,Very Large,Very Large
+1696,39,1939,2024,Private,1,3,1,85,Medium,Medium
+1697,18,1984,2024,Private,1,1,3,40,Small,Small
+1698,43,1935,2023,Private,1,3,3,88,Medium,Medium
+1699,69,2007,2025,Private,3,3,1,18,Large,Large
+1700,41,1983,2025,Private,3,3,3,42,Medium,Medium
+1701,48,1991,2023,Social Housing,3,3,3,32,Medium,Medium
+1702,29,1934,2024,Private,3,3,3,90,Medium,Medium
+1703,322,2006,2023,Private,1,3,3,17,Very Large,Very Large
+1704,146,1908,2025,Private,3,3,3,117,Very Large,Very Large
+1705,30,1949,2025,Private,3,3,3,76,Medium,Medium
+1706,116,1911,2023,TCHC,3,1,3,112,Large,Large
+1707,78,2018,2023,Private,3,2,3,5,Large,Large
+1708,83,1985,2025,Private,3,1,3,40,Large,Large
+1709,90,2016,2025,Private,3,1,3,9,Large,Large
+1710,85,1967,2025,Private,3,1,3,58,Large,Large
+1711,257,1954,2024,Private,3,1,3,70,Very Large,Very Large
+1712,30,2003,2023,Social Housing,3,1,3,20,Medium,Medium
+1713,19,1963,2025,TCHC,3,3,3,62,Small,Small
+1714,80,1951,2025,Private,3,3,3,74,Large,Large
+1715,19,1981,2023,Social Housing,3,3,3,42,Small,Small
+1716,147,1992,2024,Private,3,3,0,32,Very Large,Very Large
+1717,27,1939,2024,TCHC,3,3,3,85,Medium,Medium
+1718,19,1965,2025,Social Housing,3,3,3,60,Small,Small
+1719,22,1935,2024,Private,1,3,3,89,Small,Small
+1720,95,1901,2024,Private,3,3,3,123,Large,Large
+1721,55,1946,2023,Private,3,3,3,77,Large,Large
+1722,59,1995,2023,Private,1,3,3,28,Large,Large
+1723,12,2017,2024,Private,3,3,3,7,Small,Small
+1724,17,2009,2024,Private,3,3,2,15,Small,Small
+1725,56,1965,2023,Private,3,3,1,58,Large,Large
+1726,204,2005,2025,Private,0,3,3,20,Very Large,Very Large
+1727,161,1918,2024,Private,3,3,3,106,Very Large,Very Large
+1728,29,1929,2025,Private,3,3,3,96,Medium,Medium
+1729,147,1994,2025,Private,3,3,3,31,Very Large,Very Large
+1730,696,1968,2025,Private,3,3,3,57,Very Large,Very Large
+1731,21,1978,2025,Private,1,3,3,47,Small,Small
+1732,35,2019,2025,Private,3,3,3,6,Medium,Medium
+1733,287,2019,2025,Private,3,3,2,6,Very Large,Very Large
+1734,44,1943,2023,Private,3,3,3,80,Medium,Medium
+1735,26,1929,2024,Private,1,3,3,95,Medium,Medium
+1736,90,1936,2024,Private,3,1,3,88,Large,Large
+1737,68,2004,2025,Private,3,3,3,21,Large,Large
+1738,45,1903,2025,Social Housing,3,3,3,122,Medium,Medium
+1739,31,2015,2024,Private,3,1,3,9,Medium,Medium
+1740,124,1935,2025,Private,3,3,3,90,Large,Large
+1741,338,1968,2024,Private,3,3,3,56,Very Large,Very Large
+1742,39,1966,2025,Private,3,3,1,59,Medium,Medium
+1743,22,1964,2023,Private,3,3,3,59,Small,Small
+1744,58,1924,2025,Private,3,3,3,101,Large,Large
+1745,47,1901,2024,Private,3,3,2,123,Medium,Medium
+1746,158,2007,2023,Private,3,3,3,16,Very Large,Very Large
+1747,111,1962,2024,Private,3,3,3,62,Large,Large
+1748,18,2022,2024,Private,3,3,1,2,Small,Small
+1749,145,1913,2025,Private,3,3,3,112,Very Large,Very Large
+1750,43,1917,2024,Social Housing,2,3,3,107,Medium,Medium
+1751,16,1939,2023,Private,3,3,3,84,Small,Small
+1752,24,1922,2025,Private,3,1,3,103,Small,Small
+1753,20,1922,2024,Private,3,3,1,102,Small,Small
+1754,240,1991,2024,Private,0,3,1,33,Very Large,Very Large
+1755,35,1918,2025,Private,3,3,3,107,Medium,Medium
+1756,151,1993,2025,Private,3,3,3,32,Very Large,Very Large
+1757,13,1903,2025,Private,3,3,3,122,Small,Small
+1758,14,1941,2025,Private,3,3,3,84,Small,Small
+1759,48,1937,2023,Private,3,0,1,86,Medium,Medium
+1760,298,2022,2023,Private,3,3,3,1,Very Large,Very Large
+1761,23,1992,2024,Private,3,3,3,32,Small,Small
+1762,45,1959,2025,Private,3,3,3,66,Medium,Medium
+1763,16,2001,2025,Social Housing,3,3,3,24,Small,Small
+1764,23,2001,2024,Private,1,3,1,23,Small,Small
+1765,79,2004,2025,Private,3,3,3,21,Large,Large
+1766,41,1973,2024,Private,3,3,3,51,Medium,Medium
+1767,194,1983,2024,Private,3,3,3,41,Very Large,Very Large
+1768,90,1979,2025,Private,3,3,3,46,Large,Large
+1769,348,1912,2025,Private,3,3,3,113,Very Large,Very Large
+1770,62,1964,2023,Private,3,3,3,59,Large,Large
+1771,45,1912,2024,Private,3,2,1,112,Medium,Medium
+1772,12,1943,2024,Private,3,3,3,81,Small,Small
+1773,58,1911,2025,Social Housing,3,3,1,114,Large,Large
+1774,177,1958,2025,Private,3,3,3,67,Very Large,Very Large
+1775,27,1984,2023,Social Housing,3,3,3,39,Medium,Medium
+1776,16,1909,2025,TCHC,3,3,3,116,Small,Small
+1777,30,1980,2025,Private,3,1,3,45,Medium,Medium
+1778,89,1969,2023,Private,3,3,3,54,Large,Large
+1779,196,1917,2023,Private,3,3,3,106,Very Large,Very Large
+1780,335,1974,2024,Private,3,3,3,50,Very Large,Very Large
+1781,33,1971,2025,Private,3,3,3,54,Medium,Medium
+1782,30,1904,2024,Private,3,3,3,120,Medium,Medium
+1783,195,1997,2023,Private,3,3,3,26,Very Large,Very Large
+1784,37,1956,2024,Private,3,2,3,68,Medium,Medium
+1785,263,1940,2024,Private,3,3,3,84,Very Large,Very Large
+1786,13,1963,2023,Private,0,3,3,60,Small,Small
+1787,219,1986,2024,TCHC,3,3,3,38,Very Large,Very Large
+1788,18,2007,2024,Private,3,0,3,17,Small,Small
+1789,57,1936,2024,Private,3,3,2,88,Large,Large
+1790,50,1983,2025,Private,3,3,3,42,Medium,Medium
+1791,128,1927,2025,Private,3,1,1,98,Large,Large
+1792,43,1927,2024,Private,3,3,0,97,Medium,Medium
+1793,66,1945,2023,Private,3,3,3,78,Large,Large
+1794,124,2004,2023,Private,3,3,3,19,Large,Large
+1795,98,1969,2023,Social Housing,3,3,3,54,Large,Large
+1796,49,1979,2025,Private,3,2,1,46,Medium,Medium
+1797,113,2009,2024,Private,3,3,3,15,Large,Large
+1798,117,1999,2025,Private,3,3,3,26,Large,Large
+1799,48,1972,2023,Social Housing,3,3,1,51,Medium,Medium
+1800,168,1907,2024,Private,3,3,3,117,Very Large,Very Large
+1801,20,1919,2025,Private,3,0,3,106,Small,Small
+1802,167,1968,2024,Private,3,3,2,56,Very Large,Very Large
+1803,31,1948,2024,Private,3,3,3,76,Medium,Medium
+1804,69,1929,2024,Private,3,3,3,95,Large,Large
+1805,88,1958,2025,TCHC,3,3,3,67,Large,Large
+1806,97,1953,2024,TCHC,1,3,1,71,Large,Large
+1807,52,1903,2025,Social Housing,3,3,0,122,Medium,Medium
+1808,94,1907,2025,Private,3,3,3,118,Large,Large
+1809,12,2014,2023,Social Housing,3,3,1,9,Small,Small
+1810,159,1925,2024,Private,3,3,3,99,Very Large,Very Large
+1811,19,1970,2024,Private,3,3,3,54,Small,Small
+1812,10,1922,2023,TCHC,3,3,3,101,Small,Small
+1813,35,1958,2025,Private,3,3,3,67,Medium,Medium
+1814,240,1977,2025,Private,3,3,3,48,Very Large,Very Large
+1815,11,1956,2025,Private,3,1,3,69,Small,Small
+1816,38,1973,2024,Social Housing,3,3,3,51,Medium,Medium
+1817,44,1902,2024,Private,3,2,3,122,Medium,Medium
+1818,42,1945,2023,Private,3,3,3,78,Medium,Medium
+1819,407,1901,2024,Private,1,3,3,123,Very Large,Very Large
+1820,45,1951,2024,Private,3,3,1,73,Medium,Medium
+1821,25,2010,2025,Private,2,1,3,15,Medium,Medium
+1822,15,1920,2025,Private,3,1,3,105,Small,Small
+1823,285,1911,2024,Private,3,3,3,113,Very Large,Very Large
+1824,15,1995,2024,Private,3,3,3,29,Small,Small
+1825,19,1972,2023,Private,1,3,3,51,Small,Small
+1826,84,2001,2025,Private,3,3,3,24,Large,Large
+1827,104,1974,2025,Private,3,3,3,51,Large,Large
+1828,175,1942,2024,Private,3,3,3,82,Very Large,Very Large
+1829,44,1941,2024,Private,3,3,3,83,Medium,Medium
+1830,134,1994,2024,Private,3,3,2,30,Large,Large
+1831,31,1974,2025,Private,3,3,3,51,Medium,Medium
+1832,11,1944,2025,Private,3,3,1,81,Small,Small
+1833,30,1917,2025,Private,3,3,3,108,Medium,Medium
+1834,202,1916,2025,Private,3,3,3,109,Very Large,Very Large
+1835,28,1956,2025,Private,3,3,3,69,Medium,Medium
+1836,32,2002,2024,Private,3,1,2,22,Medium,Medium
+1837,26,1991,2024,Social Housing,3,3,3,33,Medium,Medium
+1838,96,1963,2023,Private,0,3,3,60,Large,Large
+1839,25,1911,2025,Private,3,1,3,114,Medium,Medium
+1840,189,2008,2024,Private,1,3,3,16,Very Large,Very Large
+1841,393,1905,2025,Private,3,3,0,120,Very Large,Very Large
+1842,49,1998,2023,Private,3,3,3,25,Medium,Medium
+1843,15,1918,2025,Private,3,3,3,107,Small,Small
+1844,372,1936,2023,Private,3,3,3,87,Very Large,Very Large
+1845,44,1916,2024,Private,3,3,3,108,Medium,Medium
+1846,60,1977,2025,Private,3,1,3,48,Large,Large
+1847,66,1931,2025,TCHC,3,3,1,94,Large,Large
+1848,60,1928,2023,Private,0,1,3,95,Large,Large
+1849,35,1996,2023,Private,3,3,3,27,Medium,Medium
+1850,196,1955,2025,Private,3,1,3,70,Very Large,Very Large
+1851,303,2015,2025,Private,0,3,3,10,Very Large,Very Large
+1852,34,1922,2025,Social Housing,3,1,3,103,Medium,Medium
+1853,77,2020,2023,Private,3,0,3,3,Large,Large
+1854,72,1910,2025,Private,3,3,3,115,Large,Large
+1855,77,1912,2023,Private,3,3,3,111,Large,Large
+1856,78,2013,2024,Private,3,3,3,11,Large,Large
+1857,71,1900,2024,Private,3,3,3,124,Large,Large
+1858,162,1952,2024,Private,3,3,3,72,Very Large,Very Large
+1859,16,2010,2024,Private,3,3,3,14,Small,Small
+1860,37,1984,2024,Private,3,3,3,40,Medium,Medium
+1861,45,1990,2024,Private,3,3,3,34,Medium,Medium
+1862,35,2005,2024,TCHC,3,3,3,19,Medium,Medium
+1863,28,1927,2023,Private,3,3,3,96,Medium,Medium
+1864,99,1959,2024,Private,3,3,3,65,Large,Large
+1865,27,1969,2023,TCHC,3,3,1,54,Medium,Medium
+1866,41,1919,2023,TCHC,1,2,3,104,Medium,Medium
+1867,10,1931,2025,Private,3,3,1,94,Small,Small
+1868,33,1939,2025,Private,3,3,3,86,Medium,Medium
+1869,86,1949,2025,Private,1,3,3,76,Large,Large
+1870,42,2015,2023,Private,3,3,3,8,Medium,Medium
+1871,17,1938,2023,TCHC,3,3,3,85,Small,Small
+1872,344,1940,2025,Private,3,3,3,85,Very Large,Very Large
+1873,26,2019,2024,Social Housing,3,3,3,5,Medium,Medium
+1874,220,1995,2024,Private,3,3,3,29,Very Large,Very Large
+1875,36,2016,2024,TCHC,3,3,1,8,Medium,Medium
+1876,187,1974,2025,Private,3,3,3,51,Very Large,Very Large
+1877,54,1990,2024,Social Housing,3,3,1,34,Large,Large
+1878,95,1979,2024,Private,3,3,3,45,Large,Large
+1879,12,1929,2024,Private,3,1,3,95,Small,Small
+1880,33,1929,2025,Private,3,3,3,96,Medium,Medium
+1881,20,1990,2024,Private,3,0,3,34,Small,Small
+1882,35,1931,2023,TCHC,3,3,3,92,Medium,Medium
+1883,100,1979,2025,TCHC,2,3,3,46,Large,Large
+1884,22,1982,2023,Private,3,3,3,41,Small,Small
+1885,49,1922,2023,Private,3,3,3,101,Medium,Medium
+1886,34,1927,2025,Private,1,3,3,98,Medium,Medium
+1887,10,1939,2025,Private,3,3,3,86,Small,Small
+1888,32,1905,2025,Private,2,3,3,120,Medium,Medium
+1889,42,2012,2024,Private,3,3,0,12,Medium,Medium
+1890,44,1931,2025,Social Housing,1,3,3,94,Medium,Medium
+1891,381,2008,2023,Social Housing,3,3,3,15,Very Large,Very Large
+1892,33,1993,2024,Private,1,3,3,31,Medium,Medium
+1893,11,1992,2024,Private,1,3,3,32,Small,Small
+1894,317,1982,2025,Private,3,3,3,43,Very Large,Very Large
+1895,18,1986,2024,Private,3,3,3,38,Small,Small
+1896,186,1976,2025,Private,0,3,3,49,Very Large,Very Large
+1897,13,1974,2023,Private,3,3,3,49,Small,Small
+1898,14,2014,2023,Private,3,3,3,9,Small,Small
+1899,29,1996,2025,Private,3,3,3,29,Medium,Medium
+1900,88,2010,2023,Private,3,1,3,13,Large,Large
+1901,28,1955,2024,Social Housing,3,3,1,69,Medium,Medium
+1902,63,2010,2025,Private,3,3,3,15,Large,Large
+1903,87,1976,2024,TCHC,3,3,3,48,Large,Large
+1904,11,1994,2024,Private,3,3,3,30,Small,Small
+1905,130,1943,2025,Private,3,3,3,82,Large,Large
+1906,129,1934,2023,Private,3,3,2,89,Large,Large
+1907,62,1980,2025,Private,1,3,1,45,Large,Large
+1908,17,1984,2025,Private,3,3,3,41,Small,Small
+1909,82,2018,2023,Private,3,3,3,5,Large,Large
+1910,78,1945,2024,Private,3,3,3,79,Large,Large
+1911,148,2003,2025,Private,3,3,3,22,Very Large,Very Large
+1912,17,1932,2025,Private,3,3,3,93,Small,Small
+1913,40,1907,2024,Private,3,3,3,117,Medium,Medium
+1914,23,1925,2024,Private,3,3,3,99,Small,Small
+1915,29,1945,2024,Private,0,3,3,79,Medium,Medium
+1916,245,1900,2024,Private,3,3,3,124,Very Large,Very Large
+1917,28,1918,2024,Private,1,3,3,106,Medium,Medium
+1918,101,1938,2023,Private,3,3,3,85,Large,Large
+1919,73,1976,2025,Private,3,3,3,49,Large,Large
+1920,148,1959,2023,Private,3,3,3,64,Very Large,Very Large
+1921,234,1957,2024,Private,1,3,3,67,Very Large,Very Large
+1922,48,1939,2024,Private,3,3,1,85,Medium,Medium
+1923,296,1989,2025,Private,3,3,3,36,Very Large,Very Large
+1924,12,2019,2023,Private,1,3,3,4,Small,Small
+1925,235,1994,2025,Private,3,0,3,31,Very Large,Very Large
+1926,100,1964,2024,Private,3,3,3,60,Large,Large
+1927,88,2020,2024,Private,3,3,3,4,Large,Large
+1928,21,1964,2025,Private,3,1,1,61,Small,Small
+1929,11,1974,2024,Private,3,2,3,50,Small,Small
+1930,208,1908,2023,Private,3,1,3,115,Very Large,Very Large
+1931,328,1915,2025,Private,3,3,3,110,Very Large,Very Large
+1932,11,1915,2025,Private,3,3,3,110,Small,Small
+1933,11,1976,2024,Private,3,3,3,48,Small,Small
+1934,40,2000,2023,Private,3,3,3,23,Medium,Medium
+1935,10,2003,2024,TCHC,3,3,3,21,Small,Small
+1936,18,1965,2025,Private,3,3,3,60,Small,Small
+1937,19,1976,2024,Social Housing,3,3,3,48,Small,Small
+1938,198,1939,2025,Private,3,3,3,86,Very Large,Very Large
+1939,308,1981,2025,Private,3,3,3,44,Very Large,Very Large
+1940,670,1979,2025,Private,3,1,2,46,Very Large,Very Large
+1941,23,1993,2025,Private,3,3,0,32,Small,Small
+1942,290,1934,2023,Private,3,3,3,89,Very Large,Very Large
+1943,17,1941,2023,Private,3,3,3,82,Small,Small
+1944,29,1922,2025,Private,3,3,3,103,Medium,Medium
+1945,95,1930,2024,Private,3,3,3,94,Large,Large
+1946,61,2010,2024,Private,3,1,3,14,Large,Large
+1947,91,1908,2025,Private,3,3,0,117,Large,Large
+1948,109,1951,2024,Private,3,3,3,73,Large,Large
+1949,10,2007,2025,Private,3,3,3,18,Small,Small
+1950,15,1999,2025,Private,3,3,3,26,Small,Small
+1951,245,1945,2025,Private,3,1,1,80,Very Large,Very Large
+1952,65,2002,2025,Private,3,3,3,23,Large,Large
+1953,92,1990,2024,Private,1,3,3,34,Large,Large
+1954,163,2003,2023,Private,3,3,3,20,Very Large,Very Large
+1955,12,1999,2023,Private,3,3,3,24,Small,Small
+1956,23,1974,2023,Private,3,3,2,49,Small,Small
+1957,33,1945,2025,TCHC,3,3,3,80,Medium,Medium
+1958,181,1968,2023,Private,3,1,3,55,Very Large,Very Large
+1959,12,1942,2025,Private,3,3,3,83,Small,Small
+1960,26,1951,2025,TCHC,3,3,3,74,Medium,Medium
+1961,31,1989,2025,Private,3,3,3,36,Medium,Medium
+1962,10,2020,2024,Private,3,3,3,4,Small,Small
+1963,16,1910,2025,Private,3,3,3,115,Small,Small
+1964,27,2001,2023,Private,3,3,2,22,Medium,Medium
+1965,387,1944,2024,Private,0,3,3,80,Very Large,Very Large
+1966,83,2013,2025,Private,3,3,3,12,Large,Large
+1967,40,2012,2024,Private,3,3,3,12,Medium,Medium
+1968,23,1913,2023,Social Housing,3,1,3,110,Small,Small
+1969,22,1972,2024,Private,3,3,2,52,Small,Small
+1970,19,2017,2024,Private,3,3,3,7,Small,Small
+1971,239,2013,2024,Social Housing,3,3,2,11,Very Large,Very Large
+1972,178,2005,2024,Private,3,3,3,19,Very Large,Very Large
+1973,24,1945,2023,Private,1,3,3,78,Small,Small
+1974,19,1996,2025,Private,2,3,3,29,Small,Small
+1975,150,1979,2025,Private,3,3,3,46,Very Large,Very Large
+1976,156,1944,2025,Private,3,3,3,81,Very Large,Very Large
+1977,12,1918,2024,Private,1,3,3,106,Small,Small
+1978,13,1982,2024,Private,1,3,1,42,Small,Small
+1979,42,1923,2025,Private,3,3,1,102,Medium,Medium
+1980,182,2004,2024,Private,3,3,3,20,Very Large,Very Large
+1981,17,1923,2025,Private,3,3,3,102,Small,Small
+1982,85,1931,2024,Private,3,3,1,93,Large,Large
+1983,44,1975,2024,Private,3,3,3,49,Medium,Medium
+1984,13,1980,2025,Social Housing,3,3,3,45,Small,Small
+1985,143,1926,2024,Private,3,3,3,98,Very Large,Very Large
+1986,73,1978,2025,Private,3,3,3,47,Large,Large
+1987,19,1994,2024,Private,3,3,3,30,Small,Small
+1988,40,1949,2023,Private,3,3,3,74,Medium,Medium
+1989,33,1979,2024,Private,1,3,3,45,Medium,Medium
+1990,43,2006,2024,Private,3,1,3,18,Medium,Medium
+1991,41,1938,2024,Private,3,3,3,86,Medium,Medium
+1992,22,2019,2023,Private,3,3,3,4,Small,Small
+1993,47,1939,2024,TCHC,3,3,3,85,Medium,Medium
+1994,122,1985,2025,Private,3,3,3,40,Large,Large
+1995,11,1969,2025,Private,1,3,3,56,Small,Small
+1996,25,1925,2024,Private,3,3,3,99,Medium,Medium
+1997,72,1970,2024,Private,3,3,3,54,Large,Large
+1998,80,1995,2024,Private,1,3,3,29,Large,Large
+1999,23,1995,2023,Private,3,3,3,28,Small,Small
+2000,345,1947,2025,Private,3,3,3,78,Very Large,Very Large
+2001,456,1984,2023,Private,3,3,3,39,Very Large,Very Large
+2002,147,1920,2024,Private,3,3,3,104,Very Large,Very Large
+2003,152,1992,2024,Private,3,3,3,32,Very Large,Very Large
+2004,75,1974,2025,Private,3,1,3,51,Large,Large
+2005,28,2013,2023,TCHC,3,1,2,10,Medium,Medium
+2006,36,1909,2024,Social Housing,3,1,3,115,Medium,Medium
+2007,136,1900,2024,Private,3,1,3,124,Large,Large
+2008,40,1929,2023,Private,3,3,3,94,Medium,Medium
+2009,66,1933,2023,Private,3,3,3,90,Large,Large
+2010,19,1919,2023,Social Housing,3,3,3,104,Small,Small
+2011,21,2003,2025,Social Housing,3,3,1,22,Small,Small
+2012,68,2012,2024,Private,3,3,3,12,Large,Large
+2013,29,2022,2023,Private,3,3,3,1,Medium,Medium
+2014,94,1972,2023,Social Housing,3,3,2,51,Large,Large
+2015,106,1991,2025,Private,3,1,3,34,Large,Large
+2016,28,1928,2023,Private,3,3,3,95,Medium,Medium
+2017,133,1982,2025,Private,3,3,3,43,Large,Large
+2018,16,1925,2025,Social Housing,3,3,3,100,Small,Small
+2019,213,1931,2025,Private,3,3,3,94,Very Large,Very Large
+2020,153,1956,2024,Private,3,3,3,68,Very Large,Very Large
+2021,48,1952,2025,Private,3,3,3,73,Medium,Medium
+2022,349,1991,2023,Private,3,3,3,32,Very Large,Very Large
+2023,28,1926,2024,Private,1,3,3,98,Medium,Medium
+2024,252,1977,2025,Social Housing,3,3,3,48,Very Large,Very Large
+2025,99,1982,2024,Private,3,1,3,42,Large,Large
+2026,102,2016,2024,Private,2,3,3,8,Large,Large
+2027,14,1972,2025,Private,1,3,3,53,Small,Small
+2028,42,1928,2025,Private,3,1,3,97,Medium,Medium
+2029,46,1929,2024,Private,3,3,3,95,Medium,Medium
+2030,192,2015,2025,Private,3,0,3,10,Very Large,Very Large
+2031,789,1962,2023,Private,3,3,3,61,Very Large,Very Large
+2032,11,2014,2024,Private,3,3,0,10,Small,Small
+2033,524,2013,2025,Private,3,1,3,12,Very Large,Very Large
+2034,86,1961,2025,Private,3,3,3,64,Large,Large
+2035,132,1934,2025,Private,3,3,3,91,Large,Large
+2036,40,2000,2025,Private,3,3,3,25,Medium,Medium
+2037,159,1928,2024,Private,3,3,3,96,Very Large,Very Large
+2038,167,1980,2024,Private,1,3,3,44,Very Large,Very Large
+2039,18,2021,2025,Private,3,1,3,4,Small,Small
+2040,49,1952,2024,Private,3,3,2,72,Medium,Medium
+2041,32,1991,2024,Private,3,3,1,33,Medium,Medium
+2042,267,1985,2024,Private,3,3,3,39,Very Large,Very Large
+2043,46,1909,2025,Private,1,3,1,116,Medium,Medium
+2044,56,1908,2024,Private,3,3,3,116,Large,Large
+2045,94,1914,2024,Private,3,3,3,110,Large,Large
+2046,152,1904,2023,Private,3,3,3,119,Very Large,Very Large
+2047,60,1914,2025,Social Housing,3,3,3,111,Large,Large
+2048,33,2020,2024,Private,3,3,3,4,Medium,Medium
+2049,10,1909,2023,Private,3,3,3,114,Small,Small
+2050,207,1941,2024,Social Housing,3,3,3,83,Very Large,Very Large
+2051,327,1977,2023,Private,3,3,3,46,Very Large,Very Large
+2052,95,1950,2025,Private,3,3,1,75,Large,Large
+2053,20,1935,2025,Private,3,0,3,90,Small,Small
+2054,11,2012,2024,Private,3,3,3,12,Small,Small
+2055,28,1916,2023,TCHC,3,3,3,107,Medium,Medium
+2056,30,1942,2023,Private,3,1,3,81,Medium,Medium
+2057,41,1931,2024,Private,3,3,3,93,Medium,Medium
+2058,120,1921,2025,Private,3,3,3,104,Large,Large
+2059,247,2016,2025,Private,3,3,3,9,Very Large,Very Large
+2060,15,1975,2024,Private,3,3,3,49,Small,Small
+2061,47,1942,2024,Private,3,3,3,82,Medium,Medium
+2062,17,1986,2023,Social Housing,1,3,2,37,Small,Small
+2063,27,1998,2023,Private,3,3,2,25,Medium,Medium
+2064,375,1980,2024,Social Housing,3,3,3,44,Very Large,Very Large
+2065,152,1900,2024,Private,3,3,2,124,Very Large,Very Large
+2066,151,2020,2023,Private,3,3,3,3,Very Large,Very Large
+2067,140,1915,2023,Private,0,3,3,108,Large,Large
+2068,52,2020,2025,Private,3,3,3,5,Medium,Medium
+2069,20,1912,2025,Private,3,3,3,113,Small,Small
+2070,15,1996,2024,Private,3,3,3,28,Small,Small
+2071,39,1950,2025,Private,3,3,1,75,Medium,Medium
+2072,327,1977,2025,Private,3,3,3,48,Very Large,Very Large
+2073,14,1905,2024,Private,3,3,3,119,Small,Small
+2074,66,1985,2024,Private,3,3,3,39,Large,Large
+2075,190,1918,2023,Private,3,3,3,105,Very Large,Very Large
+2076,347,1943,2024,Private,3,3,3,81,Very Large,Very Large
+2077,108,1963,2025,Private,3,3,3,62,Large,Large
+2078,46,2000,2023,Private,3,3,3,23,Medium,Medium
+2079,83,1964,2024,TCHC,3,3,3,60,Large,Large
+2080,132,1954,2025,Private,3,3,3,71,Large,Large
+2081,82,1993,2024,Private,3,3,3,31,Large,Large
+2082,12,1979,2023,Social Housing,3,3,3,44,Small,Small
+2083,114,1920,2024,TCHC,3,3,3,104,Large,Large
+2084,143,1930,2023,Private,3,3,3,93,Very Large,Very Large
+2085,248,1975,2023,Private,1,3,3,48,Very Large,Very Large
+2086,34,1946,2023,Social Housing,3,3,1,77,Medium,Medium
+2087,16,1953,2025,Private,3,1,3,72,Small,Small
+2088,11,1951,2024,Private,3,3,3,73,Small,Small
+2089,28,1974,2023,Private,3,3,3,49,Medium,Medium
+2090,36,1963,2023,Private,3,3,1,60,Medium,Medium
+2091,22,1907,2024,Private,3,3,3,117,Small,Small
+2092,48,1947,2024,Private,3,3,3,77,Medium,Medium
+2093,34,1991,2023,TCHC,2,1,1,32,Medium,Medium
+2094,14,1963,2024,Private,3,3,3,61,Small,Small
+2095,139,1919,2025,Private,3,3,1,106,Large,Large
+2096,39,1938,2023,Private,3,3,0,85,Medium,Medium
+2097,152,1943,2025,Private,3,3,3,82,Very Large,Very Large
+2098,17,1996,2025,Private,3,3,3,29,Small,Small
+2099,50,1989,2024,Private,3,3,3,35,Medium,Medium
+2100,77,1977,2023,Private,3,1,3,46,Large,Large
+2101,389,1913,2025,Social Housing,0,1,3,112,Very Large,Very Large
+2102,59,2000,2025,Private,1,3,2,25,Large,Large
+2103,57,1961,2023,Private,3,3,3,62,Large,Large
+2104,93,1939,2024,Private,3,3,3,85,Large,Large
+2105,16,1917,2023,TCHC,3,3,3,106,Small,Small
+2106,84,2009,2024,Private,3,3,3,15,Large,Large
+2107,386,2011,2025,Private,3,3,3,14,Very Large,Very Large
+2108,183,1978,2025,Private,2,1,3,47,Very Large,Very Large
+2109,83,1975,2023,Private,3,3,1,48,Large,Large
+2110,41,1999,2024,Private,3,3,0,25,Medium,Medium
+2111,163,1995,2024,Private,0,3,3,29,Very Large,Very Large
+2112,105,1996,2025,Private,3,3,3,29,Large,Large
+2113,16,1927,2024,Private,3,3,3,97,Small,Small
+2114,35,1978,2025,Private,2,3,3,47,Medium,Medium
+2115,89,1925,2024,Private,3,3,3,99,Large,Large
+2116,10,1910,2024,Private,3,3,3,114,Small,Small
+2117,373,1969,2023,Social Housing,2,1,3,54,Very Large,Very Large
+2118,23,1902,2025,Private,3,0,3,123,Small,Small
+2119,156,1980,2025,Social Housing,3,3,1,45,Very Large,Very Large
+2120,182,1960,2025,Private,3,3,3,65,Very Large,Very Large
+2121,42,2012,2024,Private,3,3,3,12,Medium,Medium
+2122,129,1915,2024,TCHC,3,2,3,109,Large,Large
+2123,51,2008,2024,Private,3,0,3,16,Medium,Medium
+2124,86,2014,2023,Private,3,1,3,9,Large,Large
+2125,18,1974,2024,Private,3,3,3,50,Small,Small
+2126,188,1994,2025,Private,3,3,3,31,Very Large,Very Large
+2127,119,1937,2023,Private,3,3,3,86,Large,Large
+2128,25,1929,2023,Private,3,3,3,94,Medium,Medium
+2129,139,1905,2024,Private,3,3,3,119,Large,Large
+2130,181,1958,2023,Private,3,3,3,65,Very Large,Very Large
+2131,83,1990,2025,Social Housing,3,3,3,35,Large,Large
+2132,127,2000,2025,Private,3,3,3,25,Large,Large
+2133,158,1980,2025,Private,3,3,3,45,Very Large,Very Large
+2134,95,1984,2024,Private,3,3,3,40,Large,Large
+2135,84,1953,2025,Private,3,3,3,72,Large,Large
+2136,109,1970,2023,Private,3,3,3,53,Large,Large
+2137,60,1978,2025,Private,3,3,3,47,Large,Large
+2138,61,2017,2024,Private,3,3,3,7,Large,Large
+2139,36,1949,2024,Private,3,3,3,75,Medium,Medium
+2140,287,2020,2023,Private,3,1,3,3,Very Large,Very Large
+2141,25,1958,2023,Private,3,3,3,65,Medium,Medium
+2142,17,1950,2025,Private,3,3,3,75,Small,Small
+2143,48,1920,2025,Social Housing,3,3,1,105,Medium,Medium
+2144,13,1907,2025,Private,3,3,3,118,Small,Small
+2145,399,1915,2024,Private,3,3,3,109,Very Large,Very Large
+2146,303,1928,2024,Private,3,0,3,96,Very Large,Very Large
+2147,135,1996,2024,Private,3,3,3,28,Large,Large
+2148,48,1924,2023,Private,3,3,3,99,Medium,Medium
+2149,48,1915,2025,Private,3,1,3,110,Medium,Medium
+2150,253,1937,2023,Private,3,1,3,86,Very Large,Very Large
+2151,236,1928,2024,Private,3,0,1,96,Very Large,Very Large
+2152,387,1971,2023,Private,1,3,3,52,Very Large,Very Large
+2153,34,2015,2024,Private,3,1,3,9,Medium,Medium
+2154,60,1926,2024,Private,3,3,0,98,Large,Large
+2155,91,1994,2024,Private,3,1,3,30,Large,Large
+2156,156,1982,2025,Private,1,3,3,43,Very Large,Very Large
+2157,76,1962,2025,Private,3,3,3,63,Large,Large
+2158,355,1977,2025,Private,3,3,3,48,Very Large,Very Large
+2159,180,1941,2024,Private,3,3,3,83,Very Large,Very Large
+2160,25,1950,2024,Private,3,3,3,74,Medium,Medium
+2161,91,1978,2024,Private,3,3,3,46,Large,Large
+2162,39,1951,2024,Private,3,3,3,73,Medium,Medium
+2163,83,1927,2025,Private,3,3,3,98,Large,Large
+2164,23,1958,2023,Private,3,1,3,65,Small,Small
+2165,312,1951,2025,Private,3,3,3,74,Very Large,Very Large
+2166,47,2018,2024,Private,3,3,3,6,Medium,Medium
+2167,49,2014,2025,Private,3,3,3,11,Medium,Medium
+2168,24,1988,2024,TCHC,3,3,3,36,Small,Small
+2169,49,1931,2024,Private,3,1,3,93,Medium,Medium
+2170,85,1987,2024,Private,3,3,3,37,Large,Large
+2171,20,1903,2025,Social Housing,3,3,3,122,Small,Small
+2172,53,2021,2025,Private,3,1,3,4,Medium,Medium
+2173,10,1958,2025,Private,1,3,3,67,Small,Small
+2174,392,1968,2025,TCHC,3,3,3,57,Very Large,Very Large
+2175,18,1942,2025,TCHC,3,3,3,83,Small,Small
+2176,179,1981,2025,Private,3,3,3,44,Very Large,Very Large
+2177,16,2020,2024,Private,3,3,3,4,Small,Small
+2178,18,1959,2025,Private,3,3,1,66,Small,Small
+2179,56,1970,2025,Private,3,2,3,55,Large,Large
+2180,11,1942,2024,Private,3,3,3,82,Small,Small
+2181,10,1956,2025,Private,3,3,3,69,Small,Small
+2182,94,2014,2024,Private,3,3,1,10,Large,Large
+2183,19,1925,2023,TCHC,3,3,2,98,Small,Small
+2184,12,1943,2024,Private,3,3,3,81,Small,Small
+2185,259,2003,2023,Private,3,3,3,20,Very Large,Very Large
+2186,39,1944,2025,Private,2,3,3,81,Medium,Medium
+2187,15,1952,2024,Private,3,3,3,72,Small,Small
+2188,100,1953,2023,Private,2,3,3,70,Large,Large
+2189,192,1907,2025,Private,0,3,1,118,Very Large,Very Large
+2190,19,1965,2023,Private,3,3,1,58,Small,Small
+2191,128,2022,2025,Private,3,3,3,3,Large,Large
+2192,194,2017,2024,Private,3,3,3,7,Very Large,Very Large
+2193,342,1967,2023,Private,3,3,3,56,Very Large,Very Large
+2194,23,1905,2025,Private,1,3,3,120,Small,Small
+2195,49,1921,2025,Private,3,3,3,104,Medium,Medium
+2196,37,1933,2023,Private,3,3,3,90,Medium,Medium
+2197,20,2006,2024,Private,3,3,3,18,Small,Small
+2198,57,1985,2025,Private,1,3,3,40,Large,Large
+2199,77,2016,2023,Private,3,3,1,7,Large,Large
+2200,14,1956,2025,Private,3,3,3,69,Small,Small
+2201,119,1934,2023,Private,3,3,3,89,Large,Large
+2202,208,1959,2025,Private,3,3,3,66,Very Large,Very Large
+2203,178,1977,2025,Private,3,3,3,48,Very Large,Very Large
+2204,399,1906,2023,Private,3,1,3,117,Very Large,Very Large
+2205,99,1937,2025,Private,3,3,1,88,Large,Large
+2206,153,1999,2023,Private,3,3,3,24,Very Large,Very Large
+2207,30,2017,2025,TCHC,3,3,3,8,Medium,Medium
+2208,18,1914,2025,Private,3,3,3,111,Small,Small
+2209,148,1965,2024,Private,3,3,3,59,Very Large,Very Large
+2210,31,2010,2024,Private,2,3,2,14,Medium,Medium
+2211,230,1989,2023,Private,3,3,3,34,Very Large,Very Large
+2212,24,1974,2025,Private,3,3,1,51,Small,Small
+2213,39,1916,2025,Private,3,3,1,109,Medium,Medium
+2214,24,2022,2025,Social Housing,3,3,1,3,Small,Small
+2215,139,1996,2025,Private,1,3,3,29,Large,Large
+2216,97,1911,2023,Private,3,3,3,112,Large,Large
+2217,35,1908,2025,TCHC,3,3,3,117,Medium,Medium
+2218,39,1955,2024,Private,3,3,3,69,Medium,Medium
+2219,128,1952,2024,Private,3,3,3,72,Large,Large
+2220,48,2019,2025,Private,3,3,3,6,Medium,Medium
+2221,12,2003,2023,Private,1,3,3,20,Small,Small
+2222,167,1944,2023,Private,3,3,3,79,Very Large,Very Large
+2223,50,1956,2024,Private,3,3,3,68,Medium,Medium
+2224,38,1950,2023,Private,3,3,3,73,Medium,Medium
+2225,101,1923,2023,Private,3,3,3,100,Large,Large
+2226,365,2000,2023,Private,3,3,3,23,Very Large,Very Large
+2227,26,1958,2023,Social Housing,3,3,3,65,Medium,Medium
+2228,387,1977,2025,Private,3,3,3,48,Very Large,Very Large
+2229,355,1920,2023,Private,3,3,3,103,Very Large,Very Large
+2230,65,1949,2024,Private,3,1,2,75,Large,Large
+2231,18,1948,2024,Private,3,3,3,76,Small,Small
+2232,14,1982,2025,TCHC,3,3,3,43,Small,Small
+2233,307,2021,2025,Private,3,1,3,4,Very Large,Very Large
+2234,17,1922,2024,Private,3,3,3,102,Small,Small
+2235,125,1971,2025,Private,3,1,3,54,Large,Large
+2236,178,1911,2024,Private,3,3,1,113,Very Large,Very Large
+2237,49,1954,2025,Private,3,1,3,71,Medium,Medium
+2238,18,1900,2025,Private,1,1,3,125,Small,Small
+2239,95,1999,2025,Private,3,3,3,26,Large,Large
+2240,89,1927,2023,Private,3,3,3,96,Large,Large
+2241,54,1963,2023,Private,3,3,3,60,Large,Large
+2242,16,1957,2024,Private,2,1,3,67,Small,Small
+2243,116,1915,2025,Private,0,3,3,110,Large,Large
+2244,112,1985,2024,TCHC,3,3,1,39,Large,Large
+2245,114,2007,2023,Social Housing,3,3,3,16,Large,Large
+2246,145,1949,2024,TCHC,3,3,3,75,Very Large,Very Large
+2247,170,2011,2025,TCHC,3,3,3,14,Very Large,Very Large
+2248,19,2006,2023,Private,3,1,1,17,Small,Small
+2249,20,1941,2025,Private,1,3,3,84,Small,Small
+2250,86,1979,2025,Private,2,3,1,46,Large,Large
+2251,29,1934,2023,TCHC,3,3,3,89,Medium,Medium
+2252,89,2022,2025,TCHC,3,3,3,3,Large,Large
+2253,49,1943,2025,Private,3,3,3,82,Medium,Medium
+2254,97,1989,2025,Private,3,0,3,36,Large,Large
+2255,109,1986,2024,Private,3,3,2,38,Large,Large
+2256,365,1970,2025,Private,1,3,2,55,Very Large,Very Large
+2257,354,2016,2025,Private,2,3,3,9,Very Large,Very Large
+2258,89,2003,2024,Private,3,3,3,21,Large,Large
+2259,325,2022,2025,TCHC,3,3,3,3,Very Large,Very Large
+2260,129,1929,2024,Private,3,1,3,95,Large,Large
+2261,31,1984,2025,Social Housing,3,3,3,41,Medium,Medium
+2262,11,1911,2023,Private,3,3,3,112,Small,Small
+2263,15,1942,2023,TCHC,3,3,3,81,Small,Small
+2264,46,1947,2023,Private,3,3,3,76,Medium,Medium
+2265,18,1990,2024,Private,3,3,3,34,Small,Small
+2266,324,2021,2024,Private,3,3,1,3,Very Large,Very Large
+2267,37,2011,2024,Private,3,3,3,13,Medium,Medium
+2268,79,1948,2024,Private,3,3,1,76,Large,Large
+2269,16,1985,2025,Private,3,3,3,40,Small,Small
+2270,246,1947,2024,Private,3,3,1,77,Very Large,Very Large
+2271,10,2002,2025,Private,3,3,3,23,Small,Small
+2272,46,2011,2025,Private,3,3,3,14,Medium,Medium
+2273,148,1982,2023,TCHC,3,3,3,41,Very Large,Very Large
+2274,200,1949,2024,Private,3,1,1,75,Very Large,Very Large
+2275,65,1900,2025,Private,3,3,3,125,Large,Large
+2276,83,1925,2023,Private,3,3,1,98,Large,Large
+2277,85,1947,2025,Private,3,3,3,78,Large,Large
+2278,188,1957,2024,Private,3,3,3,67,Very Large,Very Large
+2279,224,1949,2023,Private,3,3,3,74,Very Large,Very Large
+2280,649,1918,2024,Private,3,3,3,106,Very Large,Very Large
+2281,36,1980,2025,Private,3,3,2,45,Medium,Medium
+2282,19,1997,2025,Private,1,3,3,28,Small,Small
+2283,239,1950,2025,Private,1,3,3,75,Very Large,Very Large
+2284,32,2005,2024,Private,3,3,3,19,Medium,Medium
+2285,12,1966,2023,Private,3,3,3,57,Small,Small
+2286,16,1951,2023,Private,3,3,3,72,Small,Small
+2287,99,1997,2024,Private,2,3,0,27,Large,Large
+2288,48,1974,2023,Private,3,3,3,49,Medium,Medium
+2289,113,1917,2025,Private,3,3,1,108,Large,Large
+2290,15,1920,2025,Private,3,3,3,105,Small,Small
+2291,27,1963,2025,Private,3,3,3,62,Medium,Medium
+2292,18,1962,2023,Social Housing,3,3,1,61,Small,Small
+2293,210,1964,2025,Private,3,3,3,61,Very Large,Very Large
+2294,40,2019,2025,Private,1,3,3,6,Medium,Medium
+2295,240,1990,2025,Social Housing,3,3,1,35,Very Large,Very Large
+2296,75,1983,2023,Private,3,3,3,40,Large,Large
+2297,44,2015,2025,Private,3,3,3,10,Medium,Medium
+2298,322,2003,2025,Private,3,3,3,22,Very Large,Very Large
+2299,10,2002,2023,Private,3,3,3,21,Small,Small
+2300,73,1988,2023,Private,3,3,3,35,Large,Large
+2301,189,1921,2024,Private,3,3,3,103,Very Large,Very Large
+2302,316,1928,2025,Private,3,3,3,97,Very Large,Very Large
+2303,10,1997,2023,Private,1,3,3,26,Small,Small
+2304,363,2014,2025,Private,3,0,3,11,Very Large,Very Large
+2305,94,1936,2025,Private,1,3,3,89,Large,Large
+2306,48,1940,2025,Private,3,3,3,85,Medium,Medium
+2307,26,1904,2024,Private,3,3,3,120,Medium,Medium
+2308,28,1937,2024,Private,3,3,3,87,Medium,Medium
+2309,21,1990,2023,Private,3,0,3,33,Small,Small
+2310,93,1965,2025,Private,3,3,3,60,Large,Large
+2311,182,1989,2025,Private,3,3,3,36,Very Large,Very Large
+2312,45,1982,2023,Private,3,1,3,41,Medium,Medium
+2313,17,1959,2025,TCHC,3,3,1,66,Small,Small
+2314,198,1989,2023,Private,3,3,3,34,Very Large,Very Large
+2315,31,2003,2023,Private,3,1,3,20,Medium,Medium
+2316,155,1994,2025,Private,3,3,3,31,Very Large,Very Large
+2317,72,2018,2024,Private,3,1,3,6,Large,Large
+2318,54,1995,2023,Private,3,1,3,28,Large,Large
+2319,198,1997,2023,Private,3,3,3,26,Very Large,Very Large
+2320,223,1910,2023,Social Housing,3,3,3,113,Very Large,Very Large
+2321,323,1945,2025,Private,1,3,3,80,Very Large,Very Large
+2322,35,1998,2023,Private,3,3,3,25,Medium,Medium
+2323,26,1951,2024,Private,3,1,3,73,Medium,Medium
+2324,360,2022,2025,Private,1,3,3,3,Very Large,Very Large
+2325,36,1954,2024,Private,3,1,3,70,Medium,Medium
+2326,457,1905,2023,Private,3,3,2,118,Very Large,Very Large
+2327,16,1973,2024,Private,1,3,3,51,Small,Small
+2328,557,1942,2024,TCHC,3,3,3,82,Very Large,Very Large
+2329,194,1903,2024,Private,3,1,3,121,Very Large,Very Large
+2330,58,1944,2025,Private,1,3,3,81,Large,Large
+2331,40,1901,2023,Private,3,3,3,122,Medium,Medium
+2332,25,2009,2023,Private,3,2,3,14,Medium,Medium
+2333,132,1962,2023,Private,3,3,3,61,Large,Large
+2334,42,1997,2024,Private,3,3,3,27,Medium,Medium
+2335,11,2010,2025,Private,3,3,3,15,Small,Small
+2336,48,1910,2024,Private,3,3,1,114,Medium,Medium
+2337,31,1930,2024,Private,3,1,3,94,Medium,Medium
+2338,535,1955,2023,Private,3,3,3,68,Very Large,Very Large
+2339,27,1934,2025,Private,3,1,3,91,Medium,Medium
+2340,88,1914,2025,Private,3,1,3,111,Large,Large
+2341,28,1959,2025,Private,3,3,3,66,Medium,Medium
+2342,14,1978,2024,Private,3,3,3,46,Small,Small
+2343,128,1993,2023,Private,3,1,3,30,Large,Large
+2344,31,1939,2025,Private,3,3,3,86,Medium,Medium
+2345,88,1917,2025,Private,3,3,1,108,Large,Large
+2346,64,1948,2025,Private,3,3,3,77,Large,Large
+2347,188,1991,2024,Private,3,3,3,33,Very Large,Very Large
+2348,24,1973,2023,Private,3,3,3,50,Small,Small
+2349,11,1995,2023,Private,3,3,3,28,Small,Small
+2350,15,1914,2024,Private,3,3,3,110,Small,Small
+2351,13,1981,2025,Private,3,3,3,44,Small,Small
+2352,47,1953,2025,Private,3,3,3,72,Medium,Medium
+2353,40,1982,2023,Private,3,3,3,41,Medium,Medium
+2354,26,1982,2023,Private,3,3,3,41,Medium,Medium
+2355,347,1958,2023,Private,3,3,3,65,Very Large,Very Large
+2356,101,1907,2023,Private,3,3,3,116,Large,Large
+2357,183,1955,2024,Private,3,3,3,69,Very Large,Very Large
+2358,332,2004,2024,Private,3,3,1,20,Very Large,Very Large
+2359,43,1901,2025,Private,3,2,3,124,Medium,Medium
+2360,43,2018,2024,Social Housing,3,3,1,6,Medium,Medium
+2361,189,1995,2023,Private,3,3,3,28,Very Large,Very Large
+2362,149,1950,2024,Private,3,3,3,74,Very Large,Very Large
+2363,55,1998,2023,Private,3,3,2,25,Large,Large
+2364,32,1919,2025,Private,3,3,3,106,Medium,Medium
+2365,47,1933,2023,Private,3,1,3,90,Medium,Medium
+2366,51,2010,2023,Private,3,3,3,13,Medium,Medium
+2367,14,1975,2024,Private,3,3,3,49,Small,Small
+2368,179,1958,2024,Private,3,3,3,66,Very Large,Very Large
+2369,112,1987,2024,Private,3,3,2,37,Large,Large
+2370,18,1976,2025,Private,3,3,2,49,Small,Small
+2371,102,1916,2023,Private,1,3,3,107,Large,Large
+2372,40,1904,2024,Private,3,3,3,120,Medium,Medium
+2373,11,1913,2023,Private,3,3,3,110,Small,Small
+2374,137,1930,2023,Social Housing,3,3,3,93,Large,Large
+2375,60,1900,2024,Private,3,3,3,124,Large,Large
+2376,48,1969,2025,Social Housing,3,3,3,56,Medium,Medium
+2377,125,1963,2024,Private,3,3,3,61,Large,Large
+2378,90,2013,2023,Private,3,3,3,10,Large,Large
+2379,30,1936,2024,Private,3,3,3,88,Medium,Medium
+2380,42,1944,2024,Private,3,2,3,80,Medium,Medium
+2381,172,2002,2023,Private,3,3,1,21,Very Large,Very Large
+2382,115,1996,2024,Private,1,3,3,28,Large,Large
+2383,17,1931,2023,Private,3,3,3,92,Small,Small
+2384,40,1951,2024,Private,3,3,3,73,Medium,Medium
+2385,88,1922,2023,Private,3,2,3,101,Large,Large
+2386,15,1900,2024,Private,3,3,3,124,Small,Small
+2387,16,1965,2024,Private,3,3,3,59,Small,Small
+2388,93,1953,2023,Private,3,3,0,70,Large,Large
+2389,46,1964,2025,Private,3,3,3,61,Medium,Medium
+2390,37,1919,2025,Private,2,3,3,106,Medium,Medium
+2391,47,2013,2025,Private,3,3,3,12,Medium,Medium
+2392,26,1932,2024,Private,3,3,3,92,Medium,Medium
+2393,15,1958,2025,Private,3,3,3,67,Small,Small
+2394,180,1904,2024,Private,3,3,3,120,Very Large,Very Large
+2395,151,1980,2024,TCHC,1,1,3,44,Very Large,Very Large
+2396,88,2002,2025,Private,3,3,3,23,Large,Large
+2397,25,1941,2024,Private,3,3,1,83,Medium,Medium
+2398,331,1963,2024,Private,3,3,3,61,Very Large,Very Large
+2399,106,1943,2025,Private,1,3,3,82,Large,Large
+2400,130,1962,2024,Private,3,3,3,62,Large,Large
+2401,40,1933,2024,Private,1,2,3,91,Medium,Medium
+2402,342,1937,2024,Private,3,3,3,87,Very Large,Very Large
+2403,19,1980,2025,Private,3,3,3,45,Small,Small
+2404,156,1979,2025,Private,3,1,3,46,Very Large,Very Large
+2405,85,2010,2025,Private,3,3,2,15,Large,Large
+2406,46,1963,2025,Private,3,3,1,62,Medium,Medium
+2407,27,2012,2025,TCHC,3,3,3,13,Medium,Medium
+2408,18,2001,2025,Private,3,3,3,24,Small,Small
+2409,102,1982,2025,TCHC,3,3,3,43,Large,Large
+2410,150,1992,2025,Private,3,3,3,33,Very Large,Very Large
+2411,24,1903,2025,Private,3,0,3,122,Small,Small
+2412,64,2010,2024,Social Housing,1,3,1,14,Large,Large
+2413,29,1979,2025,TCHC,3,3,3,46,Medium,Medium
+2414,189,1926,2025,Private,3,1,3,99,Very Large,Very Large
+2415,112,1905,2025,Private,1,3,3,120,Large,Large
+2416,91,1945,2025,Private,3,3,3,80,Large,Large
+2417,18,1902,2024,Social Housing,3,3,3,122,Small,Small
+2418,52,1949,2025,TCHC,3,3,3,76,Medium,Medium
+2419,48,1946,2024,Private,3,3,3,78,Medium,Medium
+2420,43,1902,2023,Private,3,3,3,121,Medium,Medium
+2421,37,1962,2023,Social Housing,3,3,3,61,Medium,Medium
+2422,242,1972,2024,Private,3,3,3,52,Very Large,Very Large
+2423,12,1952,2023,Private,3,3,3,71,Small,Small
+2424,111,2011,2024,TCHC,3,1,3,13,Large,Large
+2425,42,1905,2023,Private,3,3,3,118,Medium,Medium
+2426,26,1974,2023,Private,3,3,3,49,Medium,Medium
+2427,197,1937,2024,Private,3,3,3,87,Very Large,Very Large
+2428,286,1908,2025,TCHC,3,3,3,117,Very Large,Very Large
+2429,71,1919,2024,Private,3,3,3,105,Large,Large
+2430,84,1983,2023,Private,3,3,3,40,Large,Large
+2431,56,1923,2024,Private,3,3,0,101,Large,Large
+2432,15,1959,2025,Private,1,3,3,66,Small,Small
+2433,18,1951,2025,Private,3,3,3,74,Small,Small
+2434,784,1999,2024,Private,3,3,3,25,Very Large,Very Large
+2435,167,1946,2024,Private,3,1,3,78,Very Large,Very Large
+2436,167,1963,2025,Private,3,3,3,62,Very Large,Very Large
+2437,391,2018,2025,Private,3,1,1,7,Very Large,Very Large
+2438,111,2004,2024,Private,3,3,3,20,Large,Large
+2439,20,2005,2023,Private,3,3,3,18,Small,Small
+2440,31,1912,2024,Social Housing,3,3,1,112,Medium,Medium
+2441,20,1949,2025,Private,3,3,3,76,Small,Small
+2442,88,1943,2025,Private,1,3,1,82,Large,Large
+2443,13,1944,2024,Private,3,3,3,80,Small,Small
+2444,31,1905,2024,Private,3,3,3,119,Medium,Medium
+2445,218,1994,2023,Private,2,3,3,29,Very Large,Very Large
+2446,158,1928,2025,TCHC,3,3,1,97,Very Large,Very Large
+2447,24,1927,2023,Social Housing,2,3,3,96,Small,Small
+2448,90,1992,2024,Private,3,3,1,32,Large,Large
+2449,41,1923,2025,Private,1,3,3,102,Medium,Medium
+2450,95,1964,2024,TCHC,3,3,3,60,Large,Large
+2451,209,2001,2025,Private,3,3,3,24,Very Large,Very Large
+2452,42,2007,2025,Private,3,3,3,18,Medium,Medium
+2453,183,1993,2024,Private,3,3,1,31,Very Large,Very Large
+2454,19,2002,2023,Private,3,3,1,21,Small,Small
+2455,31,1999,2025,Private,1,1,3,26,Medium,Medium
+2456,168,1959,2024,Private,3,3,3,65,Very Large,Very Large
+2457,195,1931,2025,Private,3,1,1,94,Very Large,Very Large
+2458,18,1927,2025,TCHC,3,3,3,98,Small,Small
+2459,20,1930,2024,Private,3,3,3,94,Small,Small
+2460,13,1901,2025,Private,3,3,1,124,Small,Small
+2461,243,1917,2025,Private,3,3,3,108,Very Large,Very Large
+2462,41,2011,2024,Private,3,2,3,13,Medium,Medium
+2463,98,2021,2024,Private,3,3,3,3,Large,Large
+2464,49,1972,2023,Private,3,2,3,51,Medium,Medium
+2465,178,1998,2025,TCHC,3,3,3,27,Very Large,Very Large
+2466,98,1934,2024,Private,3,3,3,90,Large,Large
+2467,29,2011,2024,Private,3,3,3,13,Medium,Medium
+2468,24,2012,2023,Private,3,2,3,11,Small,Small
+2469,46,2010,2025,Private,3,3,1,15,Medium,Medium
+2470,739,1937,2024,Private,3,3,3,87,Very Large,Very Large
+2471,12,1921,2024,Private,3,3,3,103,Small,Small
+2472,17,1995,2024,Private,3,3,3,29,Small,Small
+2473,18,1975,2023,Private,3,3,3,48,Small,Small
+2474,11,1938,2025,Private,3,2,3,87,Small,Small
+2475,286,2013,2024,Private,3,3,3,11,Very Large,Very Large
+2476,121,1987,2023,Private,3,3,3,36,Large,Large
+2477,228,1910,2024,Private,3,3,3,114,Very Large,Very Large
+2478,71,1985,2025,Private,3,3,3,40,Large,Large
+2479,102,1982,2024,Private,3,3,3,42,Large,Large
+2480,19,1999,2025,Private,3,1,3,26,Small,Small
+2481,46,1945,2025,Private,3,3,3,80,Medium,Medium
+2482,187,2020,2023,Private,3,3,3,3,Very Large,Very Large
+2483,184,1905,2023,Private,3,3,3,118,Very Large,Very Large
+2484,40,2004,2025,Private,1,3,3,21,Medium,Medium
+2485,356,1935,2024,Private,3,1,3,89,Very Large,Very Large
+2486,28,1980,2025,Private,3,3,3,45,Medium,Medium
+2487,132,1913,2024,Private,3,3,3,111,Large,Large
+2488,16,1924,2025,TCHC,3,3,1,101,Small,Small
+2489,35,1935,2024,Private,3,3,3,89,Medium,Medium
+2490,27,1908,2024,Private,3,3,1,116,Medium,Medium
+2491,17,1922,2025,Private,3,3,3,103,Small,Small
+2492,14,1934,2024,Social Housing,3,3,3,90,Small,Small
+2493,65,1969,2025,Private,3,1,3,56,Large,Large
+2494,60,1972,2023,Private,3,3,3,51,Large,Large
+2495,332,1937,2025,Private,3,1,3,88,Very Large,Very Large
+2496,288,2009,2024,Private,3,3,3,15,Very Large,Very Large
+2497,173,1970,2024,Private,3,3,3,54,Very Large,Very Large
+2498,25,1960,2023,Private,3,3,3,63,Medium,Medium
+2499,95,1986,2025,Private,3,3,3,39,Large,Large
+2500,70,1982,2025,Private,3,3,3,43,Large,Large
+2501,117,1924,2023,Private,3,3,3,99,Large,Large
+2502,33,2015,2025,Private,3,3,3,10,Medium,Medium
+2503,22,1905,2024,Private,3,3,3,119,Small,Small
+2504,21,1908,2025,Private,0,3,3,117,Small,Small
+2505,142,1934,2023,Private,3,3,3,89,Large,Large
+2506,19,1919,2024,Private,1,1,3,105,Small,Small
+2507,16,1995,2024,Private,3,3,3,29,Small,Small
+2508,37,2013,2025,Private,3,3,3,12,Medium,Medium
+2509,168,1970,2024,Social Housing,3,3,1,54,Very Large,Very Large
+2510,10,1980,2024,Private,1,3,3,44,Small,Small
+2511,136,1990,2023,Private,3,1,3,33,Large,Large
+2512,186,1951,2024,Private,3,3,3,73,Very Large,Very Large
+2513,10,1916,2024,Private,3,3,3,108,Small,Small
+2514,15,1965,2024,TCHC,3,3,3,59,Small,Small
+2515,370,1920,2025,Private,3,3,3,105,Very Large,Very Large
+2516,19,2000,2025,Private,3,3,3,25,Small,Small
+2517,37,2008,2025,Private,3,3,3,17,Medium,Medium
+2518,34,1961,2025,Private,3,2,3,64,Medium,Medium
+2519,94,1991,2024,Private,3,3,1,33,Large,Large
+2520,46,1910,2023,Private,3,3,3,113,Medium,Medium
+2521,161,1967,2024,Private,2,3,3,57,Very Large,Very Large
+2522,334,1957,2023,Private,3,3,3,66,Very Large,Very Large
+2523,11,1931,2023,Social Housing,0,3,1,92,Small,Small
+2524,188,2005,2025,Private,3,3,3,20,Very Large,Very Large
+2525,319,2007,2024,Private,3,3,3,17,Very Large,Very Large
+2526,193,1960,2025,Private,3,3,3,65,Very Large,Very Large
+2527,47,1905,2024,Private,3,3,3,119,Medium,Medium
+2528,12,1981,2025,TCHC,3,3,3,44,Small,Small
+2529,36,1920,2023,Private,3,3,1,103,Medium,Medium
+2530,27,2000,2025,Private,3,3,3,25,Medium,Medium
+2531,45,1993,2025,Private,3,3,3,32,Medium,Medium
+2532,10,2010,2025,Private,3,3,3,15,Small,Small
+2533,199,1962,2023,Social Housing,3,3,1,61,Very Large,Very Large
+2534,30,1996,2025,Social Housing,3,3,3,29,Medium,Medium
+2535,243,2006,2023,Private,3,3,3,17,Very Large,Very Large
+2536,36,1992,2025,Private,3,3,3,33,Medium,Medium
+2537,90,1981,2025,Social Housing,3,3,3,44,Large,Large
+2538,12,2004,2023,Private,3,3,3,19,Small,Small
+2539,224,1908,2024,Private,3,3,3,116,Very Large,Very Large
+2540,292,1937,2024,TCHC,3,3,3,87,Very Large,Very Large
+2541,35,1953,2024,Social Housing,3,3,3,71,Medium,Medium
+2542,175,2004,2025,Private,3,3,3,21,Very Large,Very Large
+2543,756,1957,2025,Private,3,1,0,68,Very Large,Very Large
+2544,28,2021,2024,Private,1,3,3,3,Medium,Medium
+2545,22,1940,2025,Social Housing,3,3,3,85,Small,Small
+2546,14,1904,2025,Private,3,3,3,121,Small,Small
+2547,29,1938,2024,Private,1,3,3,86,Medium,Medium
+2548,37,1993,2024,Private,3,3,3,31,Medium,Medium
+2549,394,1998,2024,Private,2,3,1,26,Very Large,Very Large
+2550,20,1996,2023,Private,3,3,1,27,Small,Small
+2551,85,1918,2024,Private,3,1,1,106,Large,Large
+2552,13,1935,2024,Private,1,3,3,89,Small,Small
+2553,23,1988,2025,Private,1,3,3,37,Small,Small
+2554,13,2009,2023,Private,1,3,2,14,Small,Small
+2555,378,2001,2025,Private,3,3,3,24,Very Large,Very Large
+2556,22,1929,2023,Private,1,3,3,94,Small,Small
+2557,42,2019,2025,Private,3,3,3,6,Medium,Medium
+2558,142,1912,2025,Private,3,3,1,113,Large,Large
+2559,81,1958,2025,Private,1,3,3,67,Large,Large
+2560,27,2002,2024,Social Housing,3,1,3,22,Medium,Medium
+2561,25,1953,2024,Private,3,3,3,71,Medium,Medium
+2562,318,2004,2025,Private,3,3,3,21,Very Large,Very Large
+2563,46,1963,2025,Private,3,3,3,62,Medium,Medium
+2564,543,1953,2025,Private,3,3,3,72,Very Large,Very Large
+2565,50,1944,2025,Private,3,1,3,81,Medium,Medium
+2566,24,1985,2023,Private,3,1,3,38,Small,Small
+2567,26,1970,2025,Private,3,3,3,55,Medium,Medium
+2568,24,1922,2024,Private,2,3,3,102,Small,Small
+2569,12,1957,2023,Private,3,1,0,66,Small,Small
+2570,340,1999,2025,Private,3,3,3,26,Very Large,Very Large
+2571,38,1974,2025,Private,3,3,3,51,Medium,Medium
+2572,41,1934,2024,Private,3,3,3,90,Medium,Medium
+2573,188,1920,2023,Private,3,3,3,103,Very Large,Very Large
+2574,265,1967,2025,Private,3,3,3,58,Very Large,Very Large
+2575,80,1924,2024,Private,3,3,1,100,Large,Large
+2576,57,1971,2024,Private,3,1,3,53,Large,Large
+2577,183,1994,2024,Private,3,3,3,30,Very Large,Very Large
+2578,36,2010,2025,Private,3,3,3,15,Medium,Medium
+2579,193,1949,2025,Private,3,3,3,76,Very Large,Very Large
+2580,40,1949,2023,Private,0,2,3,74,Medium,Medium
+2581,17,1902,2025,Private,3,3,1,123,Small,Small
+2582,114,1923,2023,Private,3,1,3,100,Large,Large
+2583,200,1988,2023,TCHC,1,3,3,35,Very Large,Very Large
+2584,52,1944,2025,Private,3,3,3,81,Medium,Medium
+2585,83,1997,2024,Private,3,3,3,27,Large,Large
+2586,123,1956,2024,Private,3,3,1,68,Large,Large
+2587,35,1964,2024,Private,3,3,3,60,Medium,Medium
+2588,26,1998,2025,Private,3,3,3,27,Medium,Medium
+2589,22,1935,2025,Private,3,3,1,90,Small,Small
+2590,82,1910,2024,Private,3,3,3,114,Large,Large
+2591,55,1983,2025,Private,3,3,3,42,Large,Large
+2592,76,1937,2024,Social Housing,0,1,3,87,Large,Large
+2593,136,1912,2023,Private,3,3,3,111,Large,Large
+2594,15,1981,2023,Private,1,3,3,42,Small,Small
+2595,15,1922,2025,TCHC,3,3,1,103,Small,Small
+2596,39,1917,2024,Private,3,3,3,107,Medium,Medium
+2597,23,1974,2025,Private,3,3,3,51,Small,Small
+2598,163,1911,2025,Private,3,3,3,114,Very Large,Very Large
+2599,363,1900,2025,Private,3,3,0,125,Very Large,Very Large
+2600,10,2000,2025,Private,3,3,3,25,Small,Small
+2601,16,2010,2024,TCHC,2,3,3,14,Small,Small
+2602,86,2001,2025,Private,2,3,3,24,Large,Large
+2603,43,1930,2025,Private,3,3,3,95,Medium,Medium
+2604,172,1921,2024,Private,3,3,3,103,Very Large,Very Large
+2605,17,1952,2024,Private,3,3,3,72,Small,Small
+2606,78,1979,2025,Private,1,3,3,46,Large,Large
+2607,61,1984,2024,Social Housing,3,3,3,40,Large,Large
+2608,10,1931,2024,Private,1,3,3,93,Small,Small
+2609,14,1901,2024,TCHC,2,3,3,123,Small,Small
+2610,144,2015,2025,Private,3,3,3,10,Very Large,Very Large
+2611,11,1989,2024,Private,0,3,3,35,Small,Small
+2612,18,2000,2023,TCHC,3,3,1,23,Small,Small
+2613,13,1927,2025,TCHC,3,3,3,98,Small,Small
+2614,14,1942,2024,Private,3,3,3,82,Small,Small
+2615,18,1987,2024,Private,3,3,3,37,Small,Small
+2616,60,1995,2024,Private,3,3,3,29,Large,Large
+2617,263,1987,2024,Private,1,3,3,37,Very Large,Very Large
+2618,76,1920,2024,Private,1,3,3,104,Large,Large
+2619,83,1942,2023,Social Housing,3,3,1,81,Large,Large
+2620,89,1903,2024,Social Housing,3,3,3,121,Large,Large
+2621,40,2011,2023,Social Housing,3,3,3,12,Medium,Medium
+2622,48,1957,2025,Private,3,3,3,68,Medium,Medium
+2623,24,1923,2024,Private,1,3,3,101,Small,Small
+2624,135,1937,2025,Private,3,3,1,88,Large,Large
+2625,274,1911,2025,Private,3,3,1,114,Very Large,Very Large
+2626,42,1918,2023,Private,3,1,3,105,Medium,Medium
+2627,377,1903,2025,Social Housing,3,3,3,122,Very Large,Very Large
+2628,85,2012,2023,Private,1,3,3,11,Large,Large
+2629,122,1916,2025,Private,3,1,3,109,Large,Large
+2630,110,1928,2024,Private,3,3,2,96,Large,Large
+2631,107,2003,2024,Private,1,3,3,21,Large,Large
+2632,184,1937,2024,TCHC,3,3,3,87,Very Large,Very Large
+2633,14,1915,2025,Private,1,3,3,110,Small,Small
+2634,329,1910,2024,Private,3,0,3,114,Very Large,Very Large
+2635,73,2016,2023,Private,3,3,3,7,Large,Large
+2636,81,1979,2024,Private,3,3,3,45,Large,Large
+2637,169,1922,2023,Private,1,1,3,101,Very Large,Very Large
+2638,14,2004,2024,Private,3,3,3,20,Small,Small
+2639,19,1972,2024,Private,3,3,3,52,Small,Small
+2640,183,1965,2023,Private,3,3,3,58,Very Large,Very Large
+2641,47,1933,2023,Private,3,3,3,90,Medium,Medium
+2642,36,1918,2023,Private,3,3,3,105,Medium,Medium
+2643,18,2007,2023,Private,3,3,3,16,Small,Small
+2644,12,1908,2024,Private,3,3,3,116,Small,Small
+2645,388,1911,2023,Private,1,3,3,112,Very Large,Very Large
+2646,231,1900,2025,Private,3,3,3,125,Very Large,Very Large
+2647,381,1931,2023,TCHC,3,3,3,92,Very Large,Very Large
+2648,20,1975,2023,Private,3,3,3,48,Small,Small
+2649,102,1932,2025,Private,3,3,3,93,Large,Large
+2650,52,2002,2024,Private,1,3,3,22,Medium,Medium
+2651,308,1901,2024,Private,3,1,3,123,Very Large,Very Large
+2652,43,1969,2023,Private,3,3,3,54,Medium,Medium
+2653,233,1973,2025,Private,3,3,1,52,Very Large,Very Large
+2654,23,1918,2025,Private,3,3,3,107,Small,Small
+2655,116,1907,2024,Private,3,1,3,117,Large,Large
+2656,43,1905,2025,TCHC,3,3,3,120,Medium,Medium
+2657,70,1912,2025,Private,3,3,3,113,Large,Large
+2658,141,2005,2025,Private,3,3,3,20,Large,Large
+2659,27,1922,2023,TCHC,3,3,3,101,Medium,Medium
+2660,37,2004,2025,Private,3,3,3,21,Medium,Medium
+2661,117,1946,2024,Private,3,3,3,78,Large,Large
+2662,19,1965,2024,Private,1,3,3,59,Small,Small
+2663,66,1974,2024,TCHC,3,3,1,50,Large,Large
+2664,10,1963,2023,Private,3,3,3,60,Small,Small
+2665,364,1938,2025,Private,3,3,1,87,Very Large,Very Large
+2666,20,1938,2025,Private,3,3,3,87,Small,Small
+2667,378,1969,2024,TCHC,3,3,3,55,Very Large,Very Large
+2668,91,2015,2024,Private,3,3,3,9,Large,Large
+2669,30,2011,2024,Private,3,3,3,13,Medium,Medium
+2670,55,1943,2025,Private,3,3,3,82,Large,Large
+2671,78,2009,2023,Private,3,3,3,14,Large,Large
+2672,47,1999,2025,TCHC,3,3,1,26,Medium,Medium
+2673,59,2022,2023,Private,3,3,3,1,Large,Large
+2674,189,1977,2023,Private,3,3,3,46,Very Large,Very Large
+2675,82,1952,2024,Private,1,3,3,72,Large,Large
+2676,49,2006,2025,Private,3,3,3,19,Medium,Medium
+2677,74,1977,2023,Private,3,3,3,46,Large,Large
+2678,180,1938,2024,TCHC,3,3,3,86,Very Large,Very Large
+2679,57,1930,2024,Private,3,3,3,94,Large,Large
+2680,52,1972,2024,Private,3,3,3,52,Medium,Medium
+2681,14,1967,2025,Private,3,3,3,58,Small,Small
+2682,21,1935,2024,Private,1,3,3,89,Small,Small
+2683,19,2008,2023,Private,3,3,3,15,Small,Small
+2684,85,1931,2025,Private,3,3,3,94,Large,Large
+2685,343,2018,2025,Private,3,3,3,7,Very Large,Very Large
+2686,254,1997,2024,Private,3,3,3,27,Very Large,Very Large
+2687,363,1966,2023,Social Housing,3,3,3,57,Very Large,Very Large
+2688,19,1941,2023,Private,3,3,3,82,Small,Small
+2689,10,1957,2024,Private,3,3,3,67,Small,Small
+2690,303,2004,2025,Private,3,3,3,21,Very Large,Very Large
+2691,59,1971,2025,Private,3,3,3,54,Large,Large
+2692,378,2000,2025,Private,3,3,1,25,Very Large,Very Large
+2693,303,1962,2024,Private,3,1,3,62,Very Large,Very Large
+2694,19,1996,2024,Private,3,1,0,28,Small,Small
+2695,63,1918,2023,Private,3,3,3,105,Large,Large
+2696,148,1995,2023,TCHC,3,3,3,28,Very Large,Very Large
+2697,43,1921,2023,Private,3,3,3,102,Medium,Medium
+2698,89,1942,2025,Private,3,3,1,83,Large,Large
+2699,115,1963,2024,Private,3,3,3,61,Large,Large
+2700,149,1900,2025,Private,3,3,3,125,Very Large,Very Large
+2701,51,1984,2024,TCHC,3,3,3,40,Medium,Medium
+2702,89,1994,2025,Private,3,1,3,31,Large,Large
+2703,198,1976,2025,Private,3,3,3,49,Very Large,Very Large
+2704,164,1957,2024,Private,3,3,0,67,Very Large,Very Large
+2705,27,1904,2024,Private,3,3,3,120,Medium,Medium
+2706,15,2005,2025,Private,3,3,3,20,Small,Small
+2707,29,1916,2023,Private,3,3,1,107,Medium,Medium
+2708,39,1921,2025,Private,3,3,3,104,Medium,Medium
+2709,19,1970,2023,Private,3,3,3,53,Small,Small
+2710,30,1999,2023,Private,3,3,3,24,Medium,Medium
+2711,388,1907,2025,TCHC,3,3,3,118,Very Large,Very Large
+2712,64,1908,2023,Private,3,3,3,115,Large,Large
+2713,53,1950,2023,Private,3,3,3,73,Medium,Medium
+2714,17,1977,2024,Private,3,3,1,47,Small,Small
+2715,230,2009,2024,Private,3,1,3,15,Very Large,Very Large
+2716,11,1986,2024,Private,3,3,3,38,Small,Small
+2717,19,2010,2023,Private,1,3,3,13,Small,Small
+2718,281,1913,2025,Private,3,3,1,112,Very Large,Very Large
+2719,41,1909,2023,Social Housing,3,3,3,114,Medium,Medium
+2720,87,1989,2024,TCHC,3,3,3,35,Large,Large
+2721,45,1947,2025,Private,3,1,1,78,Medium,Medium
+2722,171,2019,2024,Private,3,3,3,5,Very Large,Very Large
+2723,89,1908,2023,Private,3,3,3,115,Large,Large
+2724,12,1915,2023,Private,3,3,3,108,Small,Small
+2725,339,1911,2025,TCHC,3,3,3,114,Very Large,Very Large
+2726,344,1984,2024,Private,3,3,3,40,Very Large,Very Large
+2727,289,1990,2024,Private,3,3,3,34,Very Large,Very Large
+2728,25,2006,2023,Private,3,3,3,17,Medium,Medium
+2729,14,1948,2025,Private,0,3,3,77,Small,Small
+2730,33,1965,2024,Private,3,2,3,59,Medium,Medium
+2731,16,1940,2024,Private,3,3,3,84,Small,Small
+2732,102,1965,2023,Private,3,3,1,58,Large,Large
+2733,120,1956,2025,TCHC,3,3,0,69,Large,Large
+2734,30,1903,2023,Private,3,3,3,120,Medium,Medium
+2735,16,1966,2024,Private,3,3,3,58,Small,Small
+2736,399,1967,2024,Private,1,3,3,57,Very Large,Very Large
+2737,69,1950,2025,Private,3,3,3,75,Large,Large
+2738,105,1978,2025,Private,3,3,1,47,Large,Large
+2739,23,1944,2023,Private,3,3,3,79,Small,Small
+2740,26,1921,2023,Private,3,3,3,102,Medium,Medium
+2741,30,1912,2023,Private,3,3,3,111,Medium,Medium
+2742,46,1922,2025,Private,3,3,2,103,Medium,Medium
+2743,44,1917,2023,Private,3,3,1,106,Medium,Medium
+2744,19,1945,2024,TCHC,3,3,3,79,Small,Small
+2745,16,1930,2023,Private,3,1,3,93,Small,Small
+2746,31,1960,2025,Private,3,3,1,65,Medium,Medium
+2747,49,2000,2023,Private,3,3,3,23,Medium,Medium
+2748,16,1919,2025,Private,3,3,3,106,Small,Small
+2749,187,1985,2024,TCHC,3,0,3,39,Very Large,Very Large
+2750,208,2013,2025,Social Housing,3,3,3,12,Very Large,Very Large
+2751,33,1900,2024,Private,3,3,3,124,Medium,Medium
+2752,16,1907,2023,Private,3,3,3,116,Small,Small
+2753,190,1998,2023,TCHC,3,3,1,25,Very Large,Very Large
+2754,47,1940,2023,Private,3,3,1,83,Medium,Medium
+2755,121,1997,2023,Private,3,3,3,26,Large,Large
+2756,269,1903,2024,Private,3,3,3,121,Very Large,Very Large
+2757,56,1935,2025,Private,3,3,1,90,Large,Large
+2758,11,1941,2024,Private,3,1,3,83,Small,Small
+2759,113,1917,2024,Private,0,3,3,107,Large,Large
+2760,156,1960,2024,Private,1,1,3,64,Very Large,Very Large
+2761,24,1932,2025,Private,3,3,3,93,Small,Small
+2762,18,1962,2025,Private,3,0,1,63,Small,Small
+2763,311,1906,2023,Private,1,3,3,117,Very Large,Very Large
+2764,29,1940,2025,Private,3,3,3,85,Medium,Medium
+2765,20,1931,2024,Private,3,3,3,93,Small,Small
+2766,98,1991,2025,Private,1,3,3,34,Large,Large
+2767,69,1900,2025,Private,3,3,3,125,Large,Large
+2768,114,1944,2023,Private,3,3,3,79,Large,Large
+2769,29,1939,2025,Private,3,1,3,86,Medium,Medium
+2770,14,1960,2025,Private,3,3,3,65,Small,Small
+2771,353,1971,2025,Private,3,3,3,54,Very Large,Very Large
+2772,360,2007,2023,Private,1,3,1,16,Very Large,Very Large
+2773,31,1946,2025,Private,3,3,3,79,Medium,Medium
+2774,10,1979,2024,Private,3,3,3,45,Small,Small
+2775,45,1988,2025,Private,3,3,3,37,Medium,Medium
+2776,183,1974,2025,Private,3,3,1,51,Very Large,Very Large
+2777,257,1910,2024,Private,3,3,3,114,Very Large,Very Large
+2778,48,2017,2024,Private,3,3,1,7,Medium,Medium
+2779,48,1931,2025,Private,3,3,3,94,Medium,Medium
+2780,36,2012,2025,Private,3,3,3,13,Medium,Medium
+2781,78,1939,2023,Private,3,3,3,84,Large,Large
+2782,49,1939,2025,Private,3,3,3,86,Medium,Medium
+2783,22,1906,2024,Private,3,3,3,118,Small,Small
+2784,80,1972,2025,Private,3,3,3,53,Large,Large
+2785,42,2003,2023,Private,3,3,1,20,Medium,Medium
+2786,76,2002,2025,Private,1,3,3,23,Large,Large
+2787,17,1927,2025,Private,3,3,3,98,Small,Small
+2788,48,1946,2025,Private,3,3,3,79,Medium,Medium
+2789,273,1937,2024,Private,3,2,3,87,Very Large,Very Large
+2790,11,1943,2024,Private,3,3,3,81,Small,Small
+2791,18,1978,2025,Private,3,3,3,47,Small,Small
+2792,12,1910,2025,Private,3,3,3,115,Small,Small
+2793,31,1929,2023,Social Housing,1,0,3,94,Medium,Medium
+2794,37,1944,2024,Private,3,3,1,80,Medium,Medium
+2795,21,1935,2025,Private,3,1,3,90,Small,Small
+2796,26,1920,2025,Private,3,3,3,105,Medium,Medium
+2797,13,1996,2025,Private,1,3,3,29,Small,Small
+2798,16,1907,2024,Social Housing,3,3,3,117,Small,Small
+2799,139,1936,2023,Private,3,3,3,87,Large,Large
+2800,31,1980,2025,TCHC,3,3,3,45,Medium,Medium
+2801,258,1973,2024,Private,2,3,3,51,Very Large,Very Large
+2802,49,1939,2025,Private,3,3,1,86,Medium,Medium
+2803,70,1967,2023,Private,3,3,3,56,Large,Large
+2804,10,1942,2024,Private,1,3,3,82,Small,Small
+2805,42,1941,2024,TCHC,3,3,3,83,Medium,Medium
+2806,76,2001,2025,Private,3,1,3,24,Large,Large
+2807,139,2001,2023,Private,3,3,1,22,Large,Large
+2808,52,1989,2025,Private,2,3,1,36,Medium,Medium
+2809,238,1998,2024,Private,3,3,3,26,Very Large,Very Large
+2810,46,2001,2025,Private,3,3,3,24,Medium,Medium
+2811,18,1920,2024,Private,3,3,3,104,Small,Small
+2812,104,1992,2025,Social Housing,3,3,3,33,Large,Large
+2813,16,1913,2024,Private,1,2,3,111,Small,Small
+2814,227,1959,2023,Private,1,3,3,64,Very Large,Very Large
+2815,13,2001,2023,Private,3,3,3,22,Small,Small
+2816,13,2006,2023,Private,1,3,3,17,Small,Small
+2817,46,1968,2025,Private,3,3,3,57,Medium,Medium
+2818,126,1929,2023,Private,3,3,3,94,Large,Large
+2819,17,1970,2023,TCHC,3,3,3,53,Small,Small
+2820,22,1917,2025,Private,3,3,3,108,Small,Small
+2821,96,2019,2025,Private,3,3,1,6,Large,Large
+2822,20,1910,2023,Private,2,3,3,113,Small,Small
+2823,18,1967,2025,Private,1,3,3,58,Small,Small
+2824,73,1997,2024,TCHC,3,3,3,27,Large,Large
+2825,79,1998,2024,TCHC,3,3,3,26,Large,Large
+2826,10,1910,2024,Private,3,3,3,114,Small,Small
+2827,14,1990,2023,TCHC,3,2,3,33,Small,Small
+2828,302,1959,2023,Private,3,3,1,64,Very Large,Very Large
+2829,10,1903,2025,Private,3,3,3,122,Small,Small
+2830,220,1951,2024,Private,0,3,3,73,Very Large,Very Large
+2831,95,2001,2024,Private,3,1,3,23,Large,Large
+2832,68,1906,2025,Private,3,3,3,119,Large,Large
+2833,89,2018,2025,Private,3,3,3,7,Large,Large
+2834,33,1942,2024,Private,3,3,3,82,Medium,Medium
+2835,264,1920,2025,Private,3,3,3,105,Very Large,Very Large
+2836,82,1935,2025,Private,3,0,3,90,Large,Large
+2837,158,1956,2025,Private,1,3,3,69,Very Large,Very Large
+2838,70,2002,2025,Private,3,3,3,23,Large,Large
+2839,31,1965,2023,Private,3,3,3,58,Medium,Medium
+2840,81,1982,2024,Private,1,3,3,42,Large,Large
+2841,171,1951,2024,Private,3,3,2,73,Very Large,Very Large
+2842,45,1967,2024,TCHC,3,3,3,57,Medium,Medium
+2843,371,1940,2024,Private,3,3,3,84,Very Large,Very Large
+2844,37,1980,2023,Private,3,3,1,43,Medium,Medium
+2845,68,1900,2024,Private,3,3,3,124,Large,Large
+2846,45,1952,2023,Private,3,3,3,71,Medium,Medium
+2847,190,1962,2023,TCHC,3,3,3,61,Very Large,Very Large
+2848,323,2021,2025,Private,3,3,3,4,Very Large,Very Large
+2849,33,1947,2024,Private,3,3,3,77,Medium,Medium
+2850,123,1988,2023,Private,3,3,3,35,Large,Large
+2851,126,1996,2024,Private,3,3,3,28,Large,Large
+2852,16,1989,2025,Private,3,3,3,36,Small,Small
+2853,15,2015,2024,Social Housing,3,3,3,9,Small,Small
+2854,171,2001,2025,Private,3,3,3,24,Very Large,Very Large
+2855,35,1905,2024,TCHC,3,3,3,119,Medium,Medium
+2856,140,1940,2024,Private,3,3,0,84,Large,Large
+2857,13,1940,2025,Private,3,3,3,85,Small,Small
+2858,356,1912,2025,Private,3,0,3,113,Very Large,Very Large
+2859,86,2001,2024,Private,3,3,3,23,Large,Large
+2860,13,1976,2025,Private,2,3,3,49,Small,Small
+2861,37,1920,2024,Private,3,3,3,104,Medium,Medium
+2862,93,1978,2023,Private,3,3,3,45,Large,Large
+2863,324,1943,2025,Social Housing,3,3,3,82,Very Large,Very Large
+2864,43,1961,2025,Private,3,3,0,64,Medium,Medium
+2865,34,1990,2024,Private,1,1,3,34,Medium,Medium
+2866,13,1984,2025,Private,3,3,3,41,Small,Small
+2867,17,2020,2025,Private,3,3,1,5,Small,Small
+2868,21,1946,2025,Private,3,3,1,79,Small,Small
+2869,11,1996,2024,Private,3,1,3,28,Small,Small
+2870,48,1981,2024,Private,3,3,1,43,Medium,Medium
+2871,33,1981,2023,TCHC,3,3,3,42,Medium,Medium
+2872,13,2010,2025,Private,1,3,3,15,Small,Small
+2873,147,1966,2023,Private,3,3,3,57,Very Large,Very Large
+2874,37,1985,2025,Private,3,3,1,40,Medium,Medium
+2875,35,1981,2025,Private,3,3,3,44,Medium,Medium
+2876,30,1910,2023,Private,3,3,3,113,Medium,Medium
+2877,19,1979,2024,TCHC,3,3,3,45,Small,Small
+2878,72,1971,2025,Social Housing,3,1,3,54,Large,Large
+2879,49,1997,2024,Private,3,3,3,27,Medium,Medium
+2880,169,1983,2023,Private,3,3,3,40,Very Large,Very Large
+2881,11,2006,2025,Private,3,3,3,19,Small,Small
+2882,15,2000,2023,Private,3,3,3,23,Small,Small
+2883,150,1995,2025,Private,3,3,3,30,Very Large,Very Large
+2884,13,1983,2024,Private,3,3,3,41,Small,Small
+2885,30,1965,2024,Private,3,3,3,59,Medium,Medium
+2886,120,1933,2024,Private,3,3,3,91,Large,Large
+2887,18,2018,2023,Private,3,3,3,5,Small,Small
+2888,41,2005,2025,Private,3,3,3,20,Medium,Medium
+2889,26,1914,2025,Private,3,3,3,111,Medium,Medium
+2890,16,2000,2024,Private,3,3,3,24,Small,Small
+2891,19,1907,2025,Private,2,3,3,118,Small,Small
+2892,163,1959,2025,Social Housing,3,3,3,66,Very Large,Very Large
+2893,31,1905,2025,Private,3,3,3,120,Medium,Medium
+2894,79,1927,2023,TCHC,1,3,1,96,Large,Large
+2895,149,2022,2025,Private,3,3,0,3,Very Large,Very Large
+2896,21,1937,2025,Private,3,3,1,88,Small,Small
+2897,64,1908,2023,Social Housing,2,3,1,115,Large,Large
+2898,17,1993,2025,Private,3,0,3,32,Small,Small
+2899,46,1958,2024,Private,1,3,3,66,Medium,Medium
+2900,126,1900,2025,Private,1,3,3,125,Large,Large
+2901,180,1989,2024,Private,3,3,3,35,Very Large,Very Large
+2902,23,1993,2024,Private,3,1,3,31,Small,Small
+2903,77,1901,2025,Private,3,3,3,124,Large,Large
+2904,157,1965,2024,Private,3,3,3,59,Very Large,Very Large
+2905,20,2019,2025,Private,3,3,3,6,Small,Small
+2906,123,1988,2023,Private,1,3,3,35,Large,Large
+2907,20,1958,2023,Private,3,3,3,65,Small,Small
+2908,215,2022,2024,Private,3,3,3,2,Very Large,Very Large
+2909,22,1938,2025,Private,3,3,3,87,Small,Small
+2910,14,1981,2023,Private,3,3,3,42,Small,Small
+2911,358,2011,2023,Private,0,3,0,12,Very Large,Very Large
+2912,271,1900,2024,Private,3,0,3,124,Very Large,Very Large
+2913,27,1970,2024,Private,1,3,1,54,Medium,Medium
+2914,144,1921,2023,Private,3,1,3,102,Very Large,Very Large
+2915,183,2021,2025,Private,3,3,3,4,Very Large,Very Large
+2916,21,1910,2025,Private,0,3,3,115,Small,Small
+2917,91,1962,2025,TCHC,3,3,3,63,Large,Large
+2918,103,1905,2024,Private,3,3,3,119,Large,Large
+2919,11,1900,2024,Private,1,3,3,124,Small,Small
+2920,113,1983,2023,Private,3,3,3,40,Large,Large
+2921,169,1959,2024,Private,1,3,3,65,Very Large,Very Large
+2922,35,1928,2025,Private,3,3,3,97,Medium,Medium
+2923,320,1957,2025,Private,3,3,3,68,Very Large,Very Large
+2924,48,1976,2025,Private,3,3,3,49,Medium,Medium
+2925,47,1947,2025,Private,3,0,1,78,Medium,Medium
+2926,92,2011,2024,Private,3,2,3,13,Large,Large
+2927,70,1921,2023,Private,3,3,3,102,Large,Large
+2928,42,1921,2025,Social Housing,1,3,3,104,Medium,Medium
+2929,16,1981,2024,Private,3,3,3,43,Small,Small
+2930,24,1999,2025,Social Housing,3,3,3,26,Small,Small
+2931,36,1933,2025,Private,3,3,3,92,Medium,Medium
+2932,194,1927,2025,Private,3,3,3,98,Very Large,Very Large
+2933,105,1930,2025,Private,1,1,3,95,Large,Large
+2934,17,1989,2023,Private,3,3,3,34,Small,Small
+2935,62,1956,2025,Private,3,3,1,69,Large,Large
+2936,264,1902,2023,Social Housing,3,3,3,121,Very Large,Very Large
+2937,95,1911,2025,Private,3,3,3,114,Large,Large
+2938,14,1941,2024,Private,3,3,3,83,Small,Small
+2939,173,1943,2024,Private,3,3,3,81,Very Large,Very Large
+2940,60,1953,2023,Private,3,3,3,70,Large,Large
+2941,106,2016,2024,Social Housing,3,0,3,8,Large,Large
+2942,314,1936,2025,Private,3,3,3,89,Very Large,Very Large
+2943,46,2018,2023,Private,0,3,3,5,Medium,Medium
+2944,199,2006,2024,Private,3,3,3,18,Very Large,Very Large
+2945,189,2015,2025,Private,3,3,1,10,Very Large,Very Large
+2946,146,1998,2025,Private,3,3,3,27,Very Large,Very Large
+2947,12,1957,2024,Private,3,3,3,67,Small,Small
+2948,68,1914,2025,Private,3,1,1,111,Large,Large
+2949,150,1924,2025,Private,3,3,3,101,Very Large,Very Large
+2950,200,1939,2025,Private,3,3,3,86,Very Large,Very Large
+2951,26,1910,2024,Private,3,3,3,114,Medium,Medium
+2952,51,1972,2025,Private,3,3,3,53,Medium,Medium
+2953,82,2004,2023,Private,2,3,1,19,Large,Large
+2954,17,2019,2024,Private,3,3,2,5,Small,Small
+2955,75,1933,2025,Private,3,3,1,92,Large,Large
+2956,29,1918,2024,Private,3,3,3,106,Medium,Medium
+2957,359,1937,2024,TCHC,3,3,3,87,Very Large,Very Large
+2958,66,1924,2023,Private,3,3,3,99,Large,Large
+2959,19,1940,2024,TCHC,3,3,3,84,Small,Small
+2960,40,1990,2024,Private,3,3,3,34,Medium,Medium
+2961,38,1996,2024,Private,1,3,3,28,Medium,Medium
+2962,86,1944,2025,Private,3,3,3,81,Large,Large
+2963,30,1970,2024,Private,3,3,1,54,Medium,Medium
+2964,81,1965,2023,Private,3,3,3,58,Large,Large
+2965,192,1996,2025,Private,3,1,1,29,Very Large,Very Large
+2966,33,1984,2025,Private,3,3,3,41,Medium,Medium
+2967,86,1920,2024,Private,3,3,3,104,Large,Large
+2968,54,2012,2025,Private,3,3,3,13,Large,Large
+2969,127,1920,2025,Private,3,1,3,105,Large,Large
+2970,24,1966,2023,Private,3,3,3,57,Small,Small
+2971,40,2022,2025,TCHC,3,3,3,3,Medium,Medium
+2972,78,1903,2024,Private,3,3,3,121,Large,Large
+2973,22,1929,2025,Private,3,3,3,96,Small,Small
+2974,111,1959,2025,Private,3,3,3,66,Large,Large
+2975,36,1974,2024,Private,1,3,3,50,Medium,Medium
+2976,337,1981,2024,Private,3,0,3,43,Very Large,Very Large
+2977,73,1995,2025,Private,3,3,1,30,Large,Large
+2978,111,1994,2024,Private,3,3,3,30,Large,Large
+2979,47,1972,2023,Social Housing,3,3,0,51,Medium,Medium
+2980,43,1996,2025,Private,3,3,3,29,Medium,Medium
+2981,164,1968,2024,Private,3,3,3,56,Very Large,Very Large
+2982,39,1927,2024,Private,3,3,3,97,Medium,Medium
+2983,22,1945,2024,Private,3,3,3,79,Small,Small
+2984,38,1913,2024,Private,3,3,3,111,Medium,Medium
+2985,28,1958,2023,Private,1,3,3,65,Medium,Medium
+2986,43,1921,2023,Private,1,3,3,102,Medium,Medium
+2987,96,1904,2023,Private,3,3,3,119,Large,Large
+2988,98,1947,2024,Private,3,3,3,77,Large,Large
+2989,84,1922,2024,Private,1,3,3,102,Large,Large
+2990,22,1902,2023,Private,3,3,3,121,Small,Small
+2991,88,2000,2025,Private,3,3,3,25,Large,Large
+2992,42,1913,2024,Private,3,3,3,111,Medium,Medium
+2993,245,1900,2024,Private,3,3,1,124,Very Large,Very Large
+2994,38,1994,2025,Private,1,3,3,31,Medium,Medium
+2995,89,1929,2024,Private,3,3,2,95,Large,Large
+2996,13,1955,2023,Private,3,3,3,68,Small,Small
+2997,19,1963,2024,Private,3,1,3,61,Small,Small
+2998,42,1930,2025,Private,1,3,3,95,Medium,Medium
+2999,20,1966,2024,Private,3,3,1,58,Small,Small
+3000,725,1959,2025,Private,3,3,3,66,Very Large,Very Large
+3001,45,1927,2024,Private,1,2,3,97,Medium,Medium
+3002,48,1913,2024,TCHC,3,3,3,111,Medium,Medium
+3003,11,1933,2025,Private,3,3,3,92,Small,Small
+3004,324,1958,2023,Private,3,3,1,65,Very Large,Very Large
+3005,318,1998,2024,Private,2,3,1,26,Very Large,Very Large
+3006,60,1986,2025,Social Housing,1,3,3,39,Large,Large
+3007,309,1979,2025,Private,3,3,3,46,Very Large,Very Large
+3008,33,2006,2025,Social Housing,3,1,3,19,Medium,Medium
+3009,151,1909,2024,Private,3,3,3,115,Very Large,Very Large
+3010,201,1902,2025,Private,3,3,3,123,Very Large,Very Large
+3011,167,2020,2023,Private,3,3,3,3,Very Large,Very Large
+3012,43,1956,2024,Private,3,3,3,68,Medium,Medium
+3013,18,1993,2025,Private,3,3,3,32,Small,Small
+3014,44,1915,2023,Private,1,3,3,108,Medium,Medium
+3015,18,1930,2024,Private,2,3,1,94,Small,Small
+3016,190,1963,2023,Private,3,3,3,60,Very Large,Very Large
+3017,10,1987,2024,Private,3,3,3,37,Small,Small
+3018,312,1937,2025,Private,3,3,3,88,Very Large,Very Large
+3019,29,2022,2025,Private,3,3,3,3,Medium,Medium
+3020,12,2007,2024,Private,3,3,3,17,Small,Small
+3021,72,1906,2024,Private,3,3,3,118,Large,Large
+3022,96,1929,2025,Private,3,3,3,96,Large,Large
+3023,197,1935,2024,Social Housing,3,3,3,89,Very Large,Very Large
+3024,425,2019,2025,Private,3,0,3,6,Very Large,Very Large
+3025,15,1958,2023,Private,3,3,3,65,Small,Small
+3026,13,1966,2024,Private,3,3,3,58,Small,Small
+3027,19,1982,2023,Social Housing,3,3,3,41,Small,Small
+3028,253,2018,2025,TCHC,3,3,3,7,Very Large,Very Large
+3029,295,2009,2024,Private,3,3,3,15,Very Large,Very Large
+3030,354,2000,2023,Private,1,1,1,23,Very Large,Very Large
+3031,22,1966,2024,Private,1,3,3,58,Small,Small
+3032,15,1960,2025,Private,3,3,3,65,Small,Small
+3033,17,1976,2024,Private,3,3,3,48,Small,Small
+3034,501,1999,2024,Private,3,3,3,25,Very Large,Very Large
+3035,199,2019,2025,Private,3,3,3,6,Very Large,Very Large
+3036,353,1986,2025,Private,3,3,3,39,Very Large,Very Large
+3037,40,1927,2024,Social Housing,3,3,3,97,Medium,Medium
+3038,37,1946,2024,Private,3,3,3,78,Medium,Medium
+3039,85,1945,2024,Private,3,3,3,79,Large,Large
+3040,18,2005,2023,Private,3,3,3,18,Small,Small
+3041,16,1914,2025,Private,3,3,3,111,Small,Small
+3042,252,1907,2024,Private,3,3,3,117,Very Large,Very Large
+3043,77,1991,2024,Private,3,3,3,33,Large,Large
+3044,99,2011,2024,Private,3,3,3,13,Large,Large
+3045,36,1912,2024,Private,3,2,3,112,Medium,Medium
+3046,66,1979,2024,Private,3,3,3,45,Large,Large
+3047,148,1991,2023,Private,3,3,3,32,Very Large,Very Large
+3048,26,1912,2023,Private,3,3,1,111,Medium,Medium
+3049,93,1971,2024,Private,1,1,3,53,Large,Large
+3050,118,1981,2023,Private,3,3,3,42,Large,Large
+3051,42,1974,2025,Private,3,3,3,51,Medium,Medium
+3052,24,2009,2025,TCHC,3,3,3,16,Small,Small
+3053,352,1978,2024,Private,3,3,3,46,Very Large,Very Large
+3054,362,1990,2024,Private,3,3,1,34,Very Large,Very Large
+3055,182,1985,2024,Private,3,3,3,39,Very Large,Very Large
+3056,84,1925,2025,Private,3,3,3,100,Large,Large
+3057,166,1936,2023,Private,1,3,3,87,Very Large,Very Large
+3058,58,1930,2025,TCHC,1,0,3,95,Large,Large
+3059,85,1947,2023,Social Housing,3,3,3,76,Large,Large
+3060,80,1903,2024,Private,3,3,3,121,Large,Large
+3061,16,1995,2025,Social Housing,3,1,3,30,Small,Small
+3062,46,1955,2024,Private,3,3,3,69,Medium,Medium
+3063,88,2002,2024,Private,3,3,3,22,Large,Large
+3064,23,1966,2024,Private,3,3,3,58,Small,Small
+3065,13,2014,2025,Private,1,3,3,11,Small,Small
+3066,60,2012,2025,Private,3,1,1,13,Large,Large
+3067,37,1977,2024,Private,3,3,1,47,Medium,Medium
+3068,24,1983,2024,Private,3,3,3,41,Small,Small
+3069,13,1940,2023,Private,3,3,3,83,Small,Small
+3070,24,1986,2025,Private,3,3,3,39,Small,Small
+3071,23,1937,2024,Private,3,1,3,87,Small,Small
+3072,769,1920,2024,TCHC,3,1,3,104,Very Large,Very Large
+3073,119,1996,2024,Private,3,1,3,28,Large,Large
+3074,187,1977,2023,Private,3,3,3,46,Very Large,Very Large
+3075,256,1935,2023,Private,3,3,3,88,Very Large,Very Large
+3076,10,1988,2023,TCHC,3,3,3,35,Small,Small
+3077,10,1945,2024,Private,3,3,3,79,Small,Small
+3078,16,1975,2024,Private,1,3,1,49,Small,Small
+3079,35,1901,2024,Private,1,3,3,123,Medium,Medium
+3080,11,1933,2025,Private,3,3,3,92,Small,Small
+3081,367,1922,2024,Private,3,3,3,102,Very Large,Very Large
+3082,47,1952,2025,Private,3,3,3,73,Medium,Medium
+3083,13,2006,2025,Private,3,3,0,19,Small,Small
+3084,559,1966,2023,Private,1,3,3,57,Very Large,Very Large
+3085,15,1935,2024,TCHC,3,1,3,89,Small,Small
+3086,155,1918,2025,Private,3,3,3,107,Very Large,Very Large
+3087,53,1967,2024,Private,3,2,3,57,Medium,Medium
+3088,19,1978,2025,Private,3,1,3,47,Small,Small
+3089,204,1958,2025,Social Housing,3,3,0,67,Very Large,Very Large
+3090,18,2008,2024,Private,3,3,3,16,Small,Small
+3091,35,1973,2025,Social Housing,3,1,3,52,Medium,Medium
+3092,45,2008,2023,Private,3,3,3,15,Medium,Medium
+3093,47,1949,2025,Social Housing,3,1,1,76,Medium,Medium
+3094,74,1944,2025,Private,3,3,3,81,Large,Large
+3095,79,1991,2023,Private,3,3,3,32,Large,Large
+3096,173,1902,2024,Private,3,3,1,122,Very Large,Very Large
+3097,164,1962,2023,TCHC,3,1,3,61,Very Large,Very Large
+3098,18,1903,2024,Private,3,3,3,121,Small,Small
+3099,161,1988,2023,TCHC,3,3,2,35,Very Large,Very Large
+3100,314,1933,2023,Private,3,3,3,90,Very Large,Very Large
+3101,16,2003,2023,Private,1,3,3,20,Small,Small
+3102,177,1960,2023,Private,1,3,3,63,Very Large,Very Large
+3103,59,1992,2024,Private,3,3,3,32,Large,Large
+3104,17,1910,2025,Private,3,2,3,115,Small,Small
+3105,18,1935,2025,Private,3,3,3,90,Small,Small
+3106,25,2001,2023,Private,3,3,3,22,Medium,Medium
+3107,123,1979,2023,Social Housing,3,3,3,44,Large,Large
+3108,10,1934,2024,Private,3,3,3,90,Small,Small
+3109,83,1935,2025,Social Housing,3,3,3,90,Large,Large
+3110,63,1925,2025,Private,1,3,3,100,Large,Large
+3111,247,1954,2025,TCHC,3,3,3,71,Very Large,Very Large
+3112,180,2004,2024,Private,3,3,3,20,Very Large,Very Large
+3113,123,2011,2023,Private,1,3,3,12,Large,Large
+3114,33,1984,2023,Private,3,2,3,39,Medium,Medium
+3115,73,1926,2025,Private,3,3,3,99,Large,Large
+3116,88,1960,2023,Private,3,3,3,63,Large,Large
+3117,43,1949,2024,Private,3,3,3,75,Medium,Medium
+3118,13,2008,2025,Social Housing,3,3,3,17,Small,Small
+3119,131,2019,2024,Social Housing,3,3,1,5,Large,Large
+3120,65,1959,2024,Private,1,3,3,65,Large,Large
+3121,39,1974,2025,Private,1,3,3,51,Medium,Medium
+3122,14,1979,2025,Private,3,3,3,46,Small,Small
+3123,28,1922,2025,Private,3,3,3,103,Medium,Medium
+3124,14,1936,2023,Private,3,3,3,87,Small,Small
+3125,42,1967,2024,Private,3,3,3,57,Medium,Medium
+3126,65,1926,2023,Private,3,3,3,97,Large,Large
+3127,123,2007,2024,Private,3,3,1,17,Large,Large
+3128,31,1963,2025,Private,3,3,3,62,Medium,Medium
+3129,30,1960,2024,Private,3,3,3,64,Medium,Medium
+3130,108,2015,2023,Private,3,0,3,8,Large,Large
+3131,58,1900,2024,Private,3,3,3,124,Large,Large
+3132,18,1981,2024,Private,3,3,3,43,Small,Small
+3133,48,1985,2025,Private,3,1,0,40,Medium,Medium
+3134,14,2009,2023,Private,3,3,3,14,Small,Small
+3135,127,1926,2025,Social Housing,3,3,3,99,Large,Large
+3136,237,1975,2023,Private,3,3,3,48,Very Large,Very Large
+3137,157,1958,2024,Private,3,3,3,66,Very Large,Very Large
+3138,59,1979,2024,Private,3,3,3,45,Large,Large
+3139,177,1940,2025,Private,3,3,3,85,Very Large,Very Large
+3140,14,1940,2024,Private,3,3,3,84,Small,Small
+3141,47,1936,2023,Private,3,3,3,87,Medium,Medium
+3142,72,1982,2023,Private,3,3,2,41,Large,Large
+3143,356,2003,2025,Private,1,3,3,22,Very Large,Very Large
+3144,55,1968,2025,Social Housing,3,3,3,57,Large,Large
+3145,138,1960,2024,Private,3,1,3,64,Large,Large
+3146,265,2015,2024,TCHC,3,3,3,9,Very Large,Very Large
+3147,185,1902,2023,Private,3,3,3,121,Very Large,Very Large
+3148,16,1911,2025,Private,3,3,3,114,Small,Small
+3149,189,1959,2025,Private,3,3,1,66,Very Large,Very Large
+3150,13,2013,2025,Social Housing,1,2,1,12,Small,Small
+3151,11,1961,2025,TCHC,3,3,3,64,Small,Small
+3152,11,1989,2023,Private,2,3,3,34,Small,Small
+3153,38,1990,2024,Social Housing,3,3,3,34,Medium,Medium
+3154,18,1959,2023,Private,3,0,3,64,Small,Small
+3155,56,1958,2025,Private,3,3,3,67,Large,Large
+3156,11,2000,2023,Private,3,3,3,23,Small,Small
+3157,32,1948,2025,Private,3,1,3,77,Medium,Medium
+3158,26,1947,2024,Private,3,3,3,77,Medium,Medium
+3159,40,2008,2025,Private,3,2,3,17,Medium,Medium
+3160,83,1936,2024,Private,3,1,3,88,Large,Large
+3161,40,1986,2025,Private,3,3,1,39,Medium,Medium
+3162,114,1981,2023,Private,3,3,1,42,Large,Large
+3163,86,2000,2025,TCHC,1,3,3,25,Large,Large
+3164,393,1926,2024,Private,3,3,3,98,Very Large,Very Large
+3165,17,1985,2023,Private,3,3,3,38,Small,Small
+3166,58,2014,2025,Private,3,3,3,11,Large,Large
+3167,188,1984,2025,Private,3,2,3,41,Very Large,Very Large
+3168,66,1941,2024,Private,1,1,3,83,Large,Large
+3169,68,1910,2023,Private,3,3,3,113,Large,Large
+3170,108,1905,2025,TCHC,3,3,3,120,Large,Large
+3171,15,1904,2025,Private,3,1,1,121,Small,Small
+3172,143,1929,2024,Private,2,3,3,95,Very Large,Very Large
+3173,175,1971,2023,Private,3,3,3,52,Very Large,Very Large
+3174,37,1912,2023,Private,3,3,3,111,Medium,Medium
+3175,27,1909,2024,Private,3,3,3,115,Medium,Medium
+3176,18,1935,2023,Private,3,3,3,88,Small,Small
+3177,15,2001,2025,Social Housing,3,3,3,24,Small,Small
+3178,12,1995,2024,Private,3,3,3,29,Small,Small
+3179,19,1946,2025,Private,3,3,3,79,Small,Small
+3180,19,1960,2025,Private,3,1,3,65,Small,Small
+3181,82,1927,2023,Private,3,3,1,96,Large,Large
+3182,55,1969,2024,Private,1,2,3,55,Large,Large
+3183,190,1938,2023,Private,3,1,3,85,Very Large,Very Large
+3184,207,1926,2023,Social Housing,3,3,3,97,Very Large,Very Large
+3185,462,1968,2025,Private,3,3,1,57,Very Large,Very Large
+3186,263,2018,2024,Private,1,3,3,6,Very Large,Very Large
+3187,19,1931,2024,Private,3,1,3,93,Small,Small
+3188,255,1922,2025,Private,3,3,3,103,Very Large,Very Large
+3189,390,1969,2024,Private,3,3,3,55,Very Large,Very Large
+3190,35,1996,2024,Private,3,3,1,28,Medium,Medium
+3191,131,1916,2024,Private,3,3,3,108,Large,Large
+3192,108,1949,2025,Private,3,3,3,76,Large,Large
+3193,11,1924,2023,Private,1,3,3,99,Small,Small
+3194,83,1931,2024,Private,3,3,1,93,Large,Large
+3195,138,1977,2023,Private,3,3,3,46,Large,Large
+3196,87,2002,2025,Social Housing,3,3,3,23,Large,Large
+3197,14,1986,2024,Private,1,3,3,38,Small,Small
+3198,202,1933,2024,TCHC,3,3,2,91,Very Large,Very Large
+3199,104,1982,2024,Private,3,3,3,42,Large,Large
+3200,89,1947,2024,Private,3,3,3,77,Large,Large
+3201,36,1934,2024,Private,1,1,3,90,Medium,Medium
+3202,87,1983,2024,Private,3,3,3,41,Large,Large
+3203,12,1971,2025,Private,3,2,3,54,Small,Small
+3204,35,1960,2024,Private,3,1,0,64,Medium,Medium
+3205,141,1907,2025,Private,3,3,3,118,Large,Large
+3206,49,1997,2024,TCHC,3,3,3,27,Medium,Medium
+3207,84,1906,2025,Private,3,3,3,119,Large,Large
+3208,17,1967,2023,Private,3,3,3,56,Small,Small
+3209,48,1944,2024,Private,1,1,3,80,Medium,Medium
+3210,72,1936,2025,Private,3,3,3,89,Large,Large
+3211,14,1906,2025,Private,3,2,3,119,Small,Small
+3212,196,1969,2023,TCHC,3,3,3,54,Very Large,Very Large
+3213,13,1975,2023,Private,3,1,3,48,Small,Small
+3214,14,1922,2024,Private,1,3,3,102,Small,Small
+3215,194,1905,2024,Private,3,3,3,119,Very Large,Very Large
+3216,43,1900,2025,TCHC,1,3,3,125,Medium,Medium
+3217,75,1985,2025,Private,3,3,1,40,Large,Large
+3218,119,1995,2024,Private,1,3,3,29,Large,Large
+3219,40,1916,2023,TCHC,3,2,3,107,Medium,Medium
+3220,17,1940,2025,Private,3,3,2,85,Small,Small
+3221,18,1973,2024,Private,1,3,3,51,Small,Small
+3222,84,1987,2025,Private,3,3,3,38,Large,Large
+3223,14,1949,2025,Private,3,3,3,76,Small,Small
+3224,86,1931,2025,Private,3,3,3,94,Large,Large
+3225,66,1951,2025,TCHC,3,3,3,74,Large,Large
+3226,47,1936,2024,Private,3,3,3,88,Medium,Medium
+3227,270,1963,2025,Private,3,3,3,62,Very Large,Very Large
+3228,19,2010,2025,Private,3,2,3,15,Small,Small
+3229,83,1989,2025,Private,3,3,3,36,Large,Large
+3230,277,1988,2025,Private,3,3,2,37,Very Large,Very Large
+3231,97,1906,2025,Private,3,3,3,119,Large,Large
+3232,14,1900,2024,Private,3,2,1,124,Small,Small
+3233,162,1977,2023,Social Housing,3,3,1,46,Very Large,Very Large
+3234,93,1964,2023,Social Housing,3,3,3,59,Large,Large
+3235,191,1962,2023,Private,3,3,2,61,Very Large,Very Large
+3236,76,1933,2024,Private,3,3,3,91,Large,Large
+3237,29,1997,2025,Private,3,3,2,28,Medium,Medium
+3238,43,1914,2024,Private,3,1,3,110,Medium,Medium
+3239,46,1960,2025,Private,3,3,3,65,Medium,Medium
+3240,12,1926,2024,Private,3,3,3,98,Small,Small
+3241,11,1914,2023,Private,1,3,3,109,Small,Small
+3242,11,1944,2023,Private,3,3,3,79,Small,Small
+3243,10,1906,2023,Private,3,1,3,117,Small,Small
+3244,19,1911,2025,Private,3,0,3,114,Small,Small
+3245,240,1965,2025,Private,3,3,3,60,Very Large,Very Large
+3246,42,2007,2024,Private,3,3,3,17,Medium,Medium
+3247,121,1907,2025,Private,3,3,1,118,Large,Large
+3248,92,1983,2023,Private,3,3,3,40,Large,Large
+3249,32,1951,2023,TCHC,3,3,3,72,Medium,Medium
+3250,10,2015,2023,Private,3,1,3,8,Small,Small
+3251,26,1992,2025,Private,3,3,3,33,Medium,Medium
+3252,25,1946,2023,Private,1,3,3,77,Medium,Medium
+3253,48,1950,2024,Private,3,1,3,74,Medium,Medium
+3254,771,1914,2025,Private,3,3,3,111,Very Large,Very Large
+3255,62,1919,2025,Private,3,3,3,106,Large,Large
+3256,192,1920,2024,Private,3,3,3,104,Very Large,Very Large
+3257,44,1988,2025,TCHC,3,3,3,37,Medium,Medium
+3258,19,1942,2025,Private,1,1,3,83,Small,Small
+3259,350,1934,2025,Private,3,3,3,91,Very Large,Very Large
+3260,12,1919,2025,Private,0,1,3,106,Small,Small
+3261,188,1943,2023,Private,3,3,3,80,Very Large,Very Large
+3262,59,1938,2024,Private,3,3,3,86,Large,Large
+3263,66,1958,2025,Private,3,3,3,67,Large,Large
+3264,145,1985,2023,Private,3,3,3,38,Very Large,Very Large
+3265,45,2008,2025,Private,3,3,1,17,Medium,Medium
+3266,16,1969,2024,Private,3,3,3,55,Small,Small
+3267,148,1998,2025,Private,3,3,3,27,Very Large,Very Large
+3268,98,2013,2023,Private,3,1,3,10,Large,Large
+3269,35,1967,2024,TCHC,3,3,3,57,Medium,Medium
+3270,172,2000,2023,TCHC,3,3,3,23,Very Large,Very Large
+3271,15,1987,2025,Private,1,3,3,38,Small,Small
+3272,100,1912,2024,Private,3,3,1,112,Large,Large
+3273,12,1901,2025,Private,3,3,1,124,Small,Small
+3274,322,1919,2023,Private,3,3,3,104,Very Large,Very Large
+3275,162,1942,2024,Private,3,3,3,82,Very Large,Very Large
+3276,10,1961,2024,Private,3,3,3,63,Small,Small
+3277,280,1929,2024,Private,3,3,3,95,Very Large,Very Large
+3278,34,1967,2023,Private,3,3,3,56,Medium,Medium
+3279,16,2021,2023,Private,1,3,3,2,Small,Small
+3280,41,1992,2025,Private,3,3,3,33,Medium,Medium
+3281,304,1957,2025,Private,3,1,3,68,Very Large,Very Large
+3282,18,2020,2025,Private,3,3,3,5,Small,Small
+3283,25,1929,2023,Private,3,3,3,94,Medium,Medium
+3284,113,1963,2024,TCHC,3,3,3,61,Large,Large
+3285,15,2009,2024,Private,3,3,3,15,Small,Small
+3286,42,2011,2023,Private,3,3,3,12,Medium,Medium
+3287,14,1907,2025,Private,3,3,1,118,Small,Small
+3288,71,1980,2024,Private,3,3,3,44,Large,Large
+3289,31,1963,2025,Private,3,3,3,62,Medium,Medium
+3290,162,1954,2024,Private,1,3,3,70,Very Large,Very Large
+3291,18,2011,2025,Private,3,3,3,14,Small,Small
+3292,97,2017,2025,Social Housing,3,3,3,8,Large,Large
+3293,139,1974,2025,TCHC,3,1,1,51,Large,Large
+3294,47,1926,2025,Private,3,3,3,99,Medium,Medium
+3295,131,2004,2024,Private,3,1,3,20,Large,Large
+3296,17,1928,2025,Private,3,1,3,97,Small,Small
+3297,18,1995,2024,Private,3,3,3,29,Small,Small
+3298,78,1980,2025,Private,1,3,3,45,Large,Large
+3299,80,1932,2024,Social Housing,0,1,3,92,Large,Large
+3300,58,2007,2023,Private,3,3,3,16,Large,Large
+3301,32,1914,2023,Private,3,3,3,109,Medium,Medium
+3302,95,1961,2024,TCHC,1,3,3,63,Large,Large
+3303,250,1959,2025,Private,1,1,3,66,Very Large,Very Large
+3304,24,1924,2025,Private,3,3,3,101,Small,Small
+3305,42,1981,2024,Private,3,3,3,43,Medium,Medium
+3306,159,1982,2025,Private,3,3,3,43,Very Large,Very Large
+3307,49,1958,2023,Private,3,3,1,65,Medium,Medium
+3308,10,1956,2024,Private,3,3,3,68,Small,Small
+3309,232,1975,2024,Private,3,3,3,49,Very Large,Very Large
+3310,268,1912,2025,Private,1,3,3,113,Very Large,Very Large
+3311,91,1990,2025,Private,3,1,3,35,Large,Large
+3312,339,1908,2023,Private,3,3,3,115,Very Large,Very Large
+3313,145,1973,2023,Private,3,3,3,50,Very Large,Very Large
+3314,80,1969,2025,Private,3,3,1,56,Large,Large
+3315,10,1976,2024,Private,3,3,1,48,Small,Small
+3316,25,1994,2025,Social Housing,3,3,3,31,Medium,Medium
+3317,163,1901,2025,Private,3,3,1,124,Very Large,Very Large
+3318,29,1919,2025,Private,3,3,3,106,Medium,Medium
+3319,15,1954,2025,Private,3,3,3,71,Small,Small
+3320,64,1929,2025,Private,3,3,1,96,Large,Large
+3321,24,1939,2024,TCHC,3,3,3,85,Small,Small
+3322,276,1909,2025,Private,3,3,3,116,Very Large,Very Large
+3323,15,1912,2025,Private,3,3,3,113,Small,Small
+3324,66,1989,2023,Private,3,2,3,34,Large,Large
+3325,30,2005,2025,Private,2,3,3,20,Medium,Medium
+3326,305,1916,2024,Private,3,3,3,108,Very Large,Very Large
+3327,13,2009,2024,Private,3,3,3,15,Small,Small
+3328,64,2008,2024,Private,3,3,3,16,Large,Large
+3329,375,2003,2023,Private,3,3,3,20,Very Large,Very Large
+3330,42,1923,2025,Private,3,3,3,102,Medium,Medium
+3331,74,2004,2023,Private,3,3,3,19,Large,Large
+3332,63,1936,2023,Private,3,3,3,87,Large,Large
+3333,107,1966,2025,Private,3,3,3,59,Large,Large
+3334,104,1995,2024,Private,3,1,3,29,Large,Large
+3335,18,1961,2023,Private,3,2,3,62,Small,Small
+3336,92,1948,2024,Private,0,3,3,76,Large,Large
+3337,85,1986,2024,Private,3,3,3,38,Large,Large
+3338,101,1904,2024,Private,3,3,3,120,Large,Large
+3339,158,1933,2024,Private,3,3,3,91,Very Large,Very Large
+3340,38,2017,2025,Social Housing,3,3,3,8,Medium,Medium
+3341,35,1906,2024,TCHC,3,3,3,118,Medium,Medium
+3342,15,1963,2023,Private,3,3,3,60,Small,Small
+3343,45,1930,2023,Private,3,3,3,93,Medium,Medium
+3344,22,1940,2025,Private,3,3,3,85,Small,Small
+3345,64,1990,2025,Private,3,3,3,35,Large,Large
+3346,83,1948,2025,TCHC,3,3,3,77,Large,Large
+3347,180,1946,2025,Private,1,2,3,79,Very Large,Very Large
+3348,32,1921,2024,Private,3,3,3,103,Medium,Medium
+3349,88,1905,2024,TCHC,3,3,3,119,Large,Large
+3350,45,1903,2024,Private,3,3,3,121,Medium,Medium
+3351,21,1969,2023,Private,3,3,2,54,Small,Small
+3352,244,2021,2025,Private,3,3,3,4,Very Large,Very Large
+3353,77,1969,2024,Private,3,3,3,55,Large,Large
+3354,116,1911,2024,Private,3,3,1,113,Large,Large
+3355,46,1973,2025,Private,3,3,3,52,Medium,Medium
+3356,300,1966,2023,Private,3,3,3,57,Very Large,Very Large
+3357,40,1971,2024,Private,3,3,3,53,Medium,Medium
+3358,117,1903,2023,Social Housing,3,3,3,120,Large,Large
+3359,48,2014,2024,Private,1,3,3,10,Medium,Medium
+3360,344,1924,2023,Private,3,1,3,99,Very Large,Very Large
+3361,67,1920,2024,Private,3,3,3,104,Large,Large
+3362,83,1955,2024,Private,3,3,3,69,Large,Large
+3363,18,1991,2024,Private,3,3,3,33,Small,Small
+3364,15,1919,2024,TCHC,3,3,3,105,Small,Small
+3365,20,1967,2023,Private,3,0,3,56,Small,Small
+3366,55,2011,2025,Private,3,3,3,14,Large,Large
+3367,36,2015,2025,Private,3,1,3,10,Medium,Medium
+3368,215,2011,2023,Private,3,3,3,12,Very Large,Very Large
+3369,13,1904,2024,Private,3,3,3,120,Small,Small
+3370,31,1957,2025,Private,3,3,3,68,Medium,Medium
+3371,16,1974,2024,TCHC,3,3,1,50,Small,Small
+3372,239,1999,2025,Social Housing,3,1,3,26,Very Large,Very Large
+3373,154,1909,2024,Private,3,3,3,115,Very Large,Very Large
+3374,69,1958,2023,Private,3,3,1,65,Large,Large
+3375,30,1994,2024,Private,3,3,3,30,Medium,Medium
+3376,194,1997,2024,Private,1,3,3,27,Very Large,Very Large
+3377,59,1999,2025,Private,3,3,3,26,Large,Large
+3378,19,1908,2023,TCHC,1,3,3,115,Small,Small
+3379,67,2013,2023,Private,3,3,3,10,Large,Large
+3380,89,1947,2023,Private,3,3,3,76,Large,Large
+3381,19,1926,2023,TCHC,3,3,3,97,Small,Small
+3382,10,1931,2025,Private,3,3,1,94,Small,Small
+3383,121,2002,2025,Social Housing,3,3,3,23,Large,Large
+3384,170,1999,2023,Private,3,1,3,24,Very Large,Very Large
+3385,33,1969,2025,Private,3,3,3,56,Medium,Medium
+3386,134,1981,2025,Private,3,3,3,44,Large,Large
+3387,98,1986,2023,Private,3,3,3,37,Large,Large
+3388,18,1997,2023,Private,3,3,3,26,Small,Small
+3389,304,2022,2023,Private,1,3,0,1,Very Large,Very Large
+3390,350,1956,2025,Private,3,3,3,69,Very Large,Very Large
+3391,231,1909,2025,Private,3,3,3,116,Very Large,Very Large
+3392,56,1921,2025,TCHC,3,3,3,104,Large,Large
+3393,10,1955,2025,Private,3,3,3,70,Small,Small
+3394,49,1929,2025,Private,3,3,3,96,Medium,Medium
+3395,137,1952,2025,TCHC,1,3,3,73,Large,Large
+3396,16,2015,2024,Private,3,3,3,9,Small,Small
+3397,14,1971,2023,Private,1,3,3,52,Small,Small
+3398,99,1983,2025,Private,3,3,3,42,Large,Large
+3399,19,1945,2025,Private,3,3,3,80,Small,Small
+3400,14,1935,2025,Private,3,3,0,90,Small,Small
+3401,22,1977,2024,Private,3,3,3,47,Small,Small
+3402,49,2018,2025,Private,3,1,3,7,Medium,Medium
+3403,16,1996,2025,Private,3,3,3,29,Small,Small
+3404,25,1903,2024,Private,3,3,3,121,Medium,Medium
+3405,22,1976,2025,Private,3,3,3,49,Small,Small
+3406,274,1988,2023,Private,3,3,3,35,Very Large,Very Large
+3407,244,1903,2025,Social Housing,3,3,3,122,Very Large,Very Large
+3408,128,1906,2023,Private,0,0,1,117,Large,Large
+3409,26,2017,2025,Private,2,3,3,8,Medium,Medium
+3410,327,1969,2023,Private,3,3,3,54,Very Large,Very Large
+3411,126,1953,2023,Private,3,1,3,70,Large,Large
+3412,126,1908,2023,TCHC,3,3,3,115,Large,Large
+3413,25,1954,2024,Private,3,3,3,70,Medium,Medium
+3414,25,1970,2025,Private,1,3,1,55,Medium,Medium
+3415,109,1956,2023,Private,3,3,2,67,Large,Large
+3416,56,1948,2023,TCHC,3,1,3,75,Large,Large
+3417,16,1948,2023,Private,3,3,3,75,Small,Small
+3418,15,1937,2024,Private,3,3,3,87,Small,Small
+3419,48,1958,2024,Private,3,3,3,66,Medium,Medium
+3420,85,2010,2024,Private,3,3,3,14,Large,Large
+3421,195,1970,2024,Private,3,3,3,54,Very Large,Very Large
+3422,55,2021,2024,Private,1,3,1,3,Large,Large
+3423,270,1914,2024,Private,3,3,3,110,Very Large,Very Large
+3424,159,1913,2024,Private,3,3,1,111,Very Large,Very Large
+3425,56,2000,2025,Private,3,3,3,25,Large,Large
+3426,35,1954,2024,Private,3,3,3,70,Medium,Medium
+3427,65,2021,2025,Private,3,1,3,4,Large,Large
+3428,25,1904,2025,Social Housing,3,2,3,121,Medium,Medium
+3429,77,1956,2024,Private,3,3,3,68,Large,Large
+3430,32,1924,2024,Social Housing,3,2,1,100,Medium,Medium
+3431,321,1925,2023,Private,3,3,0,98,Very Large,Very Large
+3432,54,1905,2024,Private,3,3,3,119,Large,Large
+3433,46,2019,2025,TCHC,3,3,3,6,Medium,Medium
+3434,46,1962,2025,Private,3,3,1,63,Medium,Medium
+3435,15,1989,2025,Social Housing,2,3,3,36,Small,Small
+3436,34,1907,2024,Private,1,3,3,117,Medium,Medium
+3437,85,1969,2023,Private,3,3,3,54,Large,Large
+3438,44,1911,2024,Private,3,3,1,113,Medium,Medium
+3439,113,2000,2023,Private,1,3,3,23,Large,Large
+3440,139,1907,2025,Private,3,3,3,118,Large,Large
+3441,47,1907,2024,Private,3,0,3,117,Medium,Medium
+3442,44,1928,2024,TCHC,3,3,3,96,Medium,Medium
+3443,18,1903,2024,TCHC,1,3,3,121,Small,Small
+3444,24,2022,2025,Private,3,3,3,3,Small,Small
+3445,130,1956,2025,Private,3,3,3,69,Large,Large
+3446,178,1900,2025,Private,3,3,3,125,Very Large,Very Large
+3447,54,1925,2025,Private,3,3,3,100,Large,Large
+3448,99,1992,2024,Private,3,3,1,32,Large,Large
+3449,125,1959,2023,Private,3,1,3,64,Large,Large
+3450,98,1999,2025,Private,3,3,3,26,Large,Large
+3451,74,2002,2025,Private,3,3,3,23,Large,Large
+3452,37,1958,2025,Private,3,3,3,67,Medium,Medium
+3453,11,1921,2025,Social Housing,3,3,3,104,Small,Small
+3454,19,1904,2025,Private,2,3,3,121,Small,Small
+3455,56,1936,2023,Private,3,1,3,87,Large,Large
+3456,46,1910,2025,Private,3,3,1,115,Medium,Medium
+3457,92,1983,2024,Social Housing,3,3,3,41,Large,Large
+3458,15,1950,2023,Private,3,3,3,73,Small,Small
+3459,146,1986,2025,Private,3,3,3,39,Very Large,Very Large
+3460,322,1924,2024,Private,3,3,3,100,Very Large,Very Large
+3461,28,1911,2023,Private,3,1,3,112,Medium,Medium
+3462,32,2016,2025,Private,3,3,3,9,Medium,Medium
+3463,124,1995,2023,Private,0,0,1,28,Large,Large
+3464,18,1910,2025,Private,3,3,3,115,Small,Small
+3465,24,1967,2024,Private,3,3,1,57,Small,Small
+3466,189,1920,2024,Private,3,3,3,104,Very Large,Very Large
+3467,37,1998,2023,Social Housing,3,1,3,25,Medium,Medium
+3468,42,1971,2024,Private,3,3,0,53,Medium,Medium
+3469,142,1995,2025,Social Housing,3,3,3,30,Large,Large
+3470,89,1906,2024,Social Housing,3,3,2,118,Large,Large
+3471,62,2021,2023,Private,3,3,3,2,Large,Large
+3472,16,1930,2025,Private,3,3,3,95,Small,Small
+3473,74,1956,2024,Social Housing,3,3,3,68,Large,Large
+3474,392,1905,2023,Private,3,3,3,118,Very Large,Very Large
+3475,358,1972,2023,Private,3,3,3,51,Very Large,Very Large
+3476,300,1909,2023,TCHC,3,3,3,114,Very Large,Very Large
+3477,13,2016,2024,TCHC,3,3,3,8,Small,Small
+3478,231,2001,2025,Private,3,3,3,24,Very Large,Very Large
+3479,17,1980,2024,Private,3,1,3,44,Small,Small
+3480,42,2005,2025,Private,3,3,3,20,Medium,Medium
+3481,229,2022,2025,Private,3,3,3,3,Very Large,Very Large
+3482,369,2001,2023,TCHC,3,3,3,22,Very Large,Very Large
+3483,93,1980,2024,TCHC,3,1,3,44,Large,Large
+3484,30,1998,2024,TCHC,3,3,3,26,Medium,Medium
+3485,37,1923,2024,Private,3,3,3,101,Medium,Medium
+3486,14,1946,2025,TCHC,3,3,3,79,Small,Small
+3487,35,2015,2024,Social Housing,3,3,3,9,Medium,Medium
+3488,70,1928,2023,Private,3,3,3,95,Large,Large
+3489,39,1956,2023,TCHC,3,3,3,67,Medium,Medium
+3490,71,1996,2023,Private,3,3,3,27,Large,Large
+3491,36,1925,2025,Private,1,3,3,100,Medium,Medium
+3492,49,1971,2025,Private,2,3,3,54,Medium,Medium
+3493,152,1905,2025,Private,3,3,1,120,Very Large,Very Large
+3494,16,1912,2024,Private,3,3,3,112,Small,Small
+3495,238,1992,2023,Private,3,3,3,31,Very Large,Very Large
+3496,276,1926,2025,Private,3,3,3,99,Very Large,Very Large
+3497,31,2008,2025,Private,3,3,3,17,Medium,Medium
+3498,138,2000,2024,Private,3,3,3,24,Large,Large
+3499,324,1999,2025,Private,3,3,3,26,Very Large,Very Large
+3500,136,1902,2024,Private,3,1,1,122,Large,Large
