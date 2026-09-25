@@ -1,26 +1,30 @@
 #### Preamble ####
-# Purpose: Downloads and saves the data from [...UPDATE THIS...]
-# Author: Rohan Alexander [...UPDATE THIS...]
-# Date: 11 February 2023 [...UPDATE THIS...]
-# Contact: rohan.alexander@utoronto.ca [...UPDATE THIS...]
-# License: MIT
-# Pre-requisites: [...UPDATE THIS...]
-# Any other information needed? [...UPDATE THIS...]
+# Purpose: Downloads and saves Apartment Building Evaluation data from 2023 to 2025
+# from Open Data Toronto
+# Author: Kexin Liu
+# Date: 24 September 2026
+# Contact: ws1nn2lj3@gmail.com
+# License: 
+# Pre-requisites: 
+  # The `tidyverse` package must be installed and loaded
+  # The `opendatatoronto` package must be installed and loaded
 
 
 #### Workspace setup ####
 library(opendatatoronto)
 library(tidyverse)
-# [...UPDATE THIS...]
 
 #### Download data ####
-# [...ADD CODE HERE TO DOWNLOAD...]
 
+package <- show_package("4ef82789-e038-44ef-a478-a8f3590c3eb1")
+
+resources <- list_package_resources("4ef82789-e038-44ef-a478-a8f3590c3eb1")
+
+datastore_resources <- filter(resources, tolower(format) %in% c('csv', 'geojson'))
+
+raw_data <- filter(datastore_resources, row_number()==1) %>% get_resource()
 
 
 #### Save data ####
-# [...UPDATE THIS...]
-# change the_raw_data to whatever name you assigned when you downloaded it.
-write_csv(the_raw_data, "inputs/data/raw_data.csv") 
 
-         
+write_csv(raw_data, "data/01-raw_data/raw_data.csv") 
