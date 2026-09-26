@@ -16,6 +16,22 @@ library(tidyverse)
 library(ggplot2)
 apartment <- read_csv("data/02-analysis_data/analysis_data.csv")
 
+
+#### Introductory Graph ####
+
+ggplot(apartment, aes(x = `CONFIRMED UNITS`)) +
+  geom_histogram(
+    binwidth = 60,
+    boundary = 0,
+    closed = "left",
+    fill = "#89C2D9",
+    colour = "#89C2D9") +
+  scale_x_continuous(breaks = seq(0, 840, by = 120)) +
+  labs(title = "Distribution of apartment building sizes",
+       x = "Confirmed units per building", y = "Number of buildings") +
+  theme_minimal()
+
+
 #### Main Graph ####
 
 # Derive the variable building_size. It will only be used for the main graph.
@@ -25,44 +41,57 @@ size_breaks <- quantile(apartment[["CONFIRMED UNITS"]],
 apartment$building_size <- cut(apartment[["CONFIRMED UNITS"]], breaks = size_breaks, 
                                include.lowest = TRUE,
                                labels = c("Small", "Medium", "Large", "Very Large"))
-
-
-score1_percent <- apartment |>
-  filter(
-    !is.na(building_size),
-    `TENANT SERVICE REQUEST LOG` %in% c(1, 3)
-  ) |>
+service <- apartment |>
+  filter(!is.na(building_size), `TENANT SERVICE REQUEST LOG` %in% c(1, 3)) |>
   group_by(building_size) |>
-  summarise(
-    buildings = n(),
-    percent_score1 = mean(`TENANT SERVICE REQUEST LOG` == 1),
-    .groups = "drop"
-  )
+  summarise(buildings = n(), 
+            service_percent = mean(`TENANT SERVICE REQUEST LOG` == 1),
+            .groups = "drop")
 
-ggplot(score1_percent,
-       aes(x = building_size, y = percent_score1)) +
-  geom_col(fill = "#B85C50", width = 0.7) +
-  geom_text(
-    aes(label = scales::percent(percent_score1, accuracy = 0.1)),
-    vjust = -0.5
-  ) +
-  scale_y_continuous(
-    labels = scales::label_percent(accuracy = 1),
-    limits = c(0, max(score1_percent$percent_score1) * 1.25),
-    expand = expansion(mult = c(0, 0))
-  ) +
-  labs(
-    title = "Tenant service request log score 1 by building size",
-    x = "Building size",
-    y = "Percentage receiving score 1",
-    caption = "Percentages are among buildings rated 1 or 3; scores 0 and 2 are excluded."
-  ) +
+ggplot(service, aes(x = building_size, y = service_percent)) +
+  geom_col(fill = "#E8A0BF", width = 0.7) +
+  geom_text(aes(label = scales::percent(service_percent, accuracy = 0.1)),
+            vjust = -0.5) +
+  scale_y_continuous( labels = scales::label_percent(accuracy = 1),
+                      limits = c(0, max(service$service_percent) * 1.25),
+                      expand = expansion(mult = c(0, 0))) +
+  labs(title = "Tenant service request log score 1 by building size",
+       x = "Building size", y = "Percentage receiving score 1") +
   theme_minimal()
 
 
+# Two-panel graph comparing building size with maintenance and pest control score
+
+pest <- apartment |>
+  filter(!is.na(building_size),`PEST CONTROL LOG` %in% c(1, 3)) |>
+  group_by(building_size) |>
+  summarise(buildings = n(), score1_percent = mean(`PEST CONTROL LOG` == 1),
+    .groups = "drop") |>
+  mutate(log_type = "Pest control log")
+
+maintenance <- apartment |>
+  filter(!is.na(building_size), `MAINTENANCE LOG` %in% c(1, 3)) |>
+  group_by(building_size) |>
+  summarise(buildings = n(), score1_percent = mean(`MAINTENANCE LOG` == 1),
+    .groups = "drop") |>
+  mutate(log_type = "Maintenance log")
+
+both_logs <- bind_rows(pest, maintenance)
+
+ggplot(both_logs, aes(x = building_size, y = score1_percent)) +
+  geom_col(fill = "#E8A0BF", width = 0.7) +
+  geom_text( aes(label = scales::percent(score1_percent, accuracy = 0.1)),
+             vjust = -0.5) +
+  facet_wrap(~log_type, nrow = 1) +
+  scale_y_continuous(labels = scales::label_percent(accuracy = 1),
+                     limits = c(0, max(both_logs$score1_percent) * 1.25),
+                     expand = expansion(mult = c(0, 0))) +
+  labs(title = "Log score 1 by building size", x = "Building size",
+       y = "Percentage receiving score 1") + 
+  theme_minimal()
 
 
-
+#### Appendix Graph ####
 
 # Build a data frame without observations that are missing the "year built" value.
 # It will only be used for analysis relating to building age.
