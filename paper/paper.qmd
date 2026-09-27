@@ -22,9 +22,13 @@ library(tidyverse)
 
 # Introduction
 
+When tenants report problems such as leaks or broken locks, keeping a record of the request and the response helps track how the problem was handled. Under Toronto’s RentSafeTO program, building owners are required to track tenant service requests and keep records of requests and responses for 24 months [@toronto_service_requests]. Maintaining up-to-date records helps support accountability by showing how well buildings keep track of tenant concerns.
 
-Telegraphing paragraph: The remainder of this paper is structured as follows. @sec-data....
+Toronto’s apartment-building evaluations provide a way to examine differences in tenant-service record keeping across buildings[@toronto_apartment_data]. The tenant-service request log rating shows whether a building’s log was complete and properly updated at the time of evaluation[@toronto_evaluation_criteria]. The main analysis uses each building’s latest available evaluation from 2023 through 24 September 2026, covering 3,587 buildings. We examine how log ratings differ by building size, and how ratings change in later evaluations for buildings that initially received a low rating. We also compare ward-level results with benchmarks reflecting each ward’s mix of building sizes.
 
+Low tenant-service-log ratings were more common among smaller buildings. Among buildings rated either 1 or 3 at their latest evaluation, 14.0% of those with 10–19 units received a rating of 1, indicating an incomplete or outdated log, compared with 1.1% of buildings with at least 100 units. In the follow-up sample, smaller buildings were also more likely to receive a rating of 1 again at their latest evaluation. These patterns suggest groups of buildings where further investigation into record-keeping practices may be useful. However, these findings do not show that building size causes poor record keeping or that smaller buildings provide worse service.
+
+The remainder of this paper is structured as follows. @sec-data....
 
 
 # Data {#sec-data}
@@ -53,7 +57,7 @@ Use sub-sub-headings for each outcome variable and feel free to combine a few in
 We run the model in R [@citeR] using the `rstanarm` package of @rstanarm. We use the default priors from `rstanarm`.
 
 
-# Discussion
+# Discussion {#sec-discussion}
 
 ## First discussion point {#sec-first-point}
 
