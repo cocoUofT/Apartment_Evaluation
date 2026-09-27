@@ -17,14 +17,15 @@ raw_data <- read_csv("data/01-raw_data/raw_data.csv")
 #### Clean data ####
 
 variable_interest <- raw_data |>
-  select("RSN", "EVALUATION COMPLETED ON", "CONFIRMED UNITS", "YEAR BUILT", 
-         "PROPERTY TYPE", "TENANT SERVICE REQUEST LOG") |>
+  select("_id", "RSN", "EVALUATION COMPLETED ON", "CONFIRMED UNITS", "YEAR BUILT", 
+         "PROPERTY TYPE", "TENANT SERVICE REQUEST LOG", "WARDNAME") |>
   mutate("YEAR EVALUATED" = as.integer(
-    format(as.Date(raw_data[["EVALUATION COMPLETED ON"]]), "%Y")
-  ))
+    format(as.Date(raw_data[["EVALUATION COMPLETED ON"]]), "%Y")), 
+    completion_date = as.Date(`EVALUATION COMPLETED ON`))
 
 sorted <- variable_interest[order(variable_interest$RSN, 
-                                  -variable_interest[["YEAR EVALUATED"]]), ]
+                                  -as.numeric(variable_interest$completion_date),
+                                  -variable_interest[["_id"]]), ]
 apartment <- sorted[!duplicated(sorted$RSN), ]
 row.names(apartment) <- NULL
 
