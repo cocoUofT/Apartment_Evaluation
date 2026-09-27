@@ -66,6 +66,42 @@ ggplot(service, aes(x = building_size, y = service_percent)) +
   theme_minimal()
 
 
+# Stacked barplot containing all scores
+
+stacked_data <- apartment |>
+  filter(`TENANT SERVICE REQUEST LOG` %in% 0:3) |>
+  mutate(log_score = factor(`TENANT SERVICE REQUEST LOG`, 
+                            levels = c(1, 0, 2, 3)))
+stacked_data$building_size <- cut(
+  stacked_data[["CONFIRMED UNITS"]],
+  breaks = size_breaks,
+  labels = size_labels
+)
+size_totals <- stacked_data |> count(building_size)
+
+ggplot(stacked_data, aes(x = building_size, fill = log_score)) +
+  geom_bar(width = 0.72, position = position_stack(reverse = TRUE)) +
+  geom_text(data = size_totals, 
+            aes(x = building_size, y = n, label = scales::comma(n)),
+            inherit.aes = FALSE, vjust = -0.5) +
+  scale_fill_manual(
+    name = "Tenant service request log score",
+    values = c(
+      "0" = "#71808A",
+      "1" = "#B85C50",
+      "2" = "#C5A654",
+      "3" = "#A8B99D"),
+    breaks = c("0", "1", "2", "3"),
+    labels = c("0: not specified", "1: not completed/updated", "2: N/A", 
+               "3: completed/full")) +
+  scale_y_continuous(labels = scales::label_comma(), 
+                     expand = expansion(mult = c(0, 0.08))) +
+  labs(x = "Building size (confirmed units)", y = "Number of buildings") +
+  theme_minimal() +
+  theme(legend.position = "bottom") +
+  guides(fill = guide_legend(nrow = 2, byrow = TRUE))
+
+
 # Create a barplot for building size and proportion of improvement in service log
 
 scorechange$building_size <- cut(scorechange[["CONFIRMED UNITS"]],
