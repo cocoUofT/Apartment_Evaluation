@@ -18,8 +18,7 @@ raw_data <- read_csv("data/01-raw_data/raw_data.csv")
 
 variable_interest <- raw_data |>
   select("RSN", "EVALUATION COMPLETED ON", "CONFIRMED UNITS", "YEAR BUILT", 
-         "PROPERTY TYPE", "TENANT SERVICE REQUEST LOG", "PEST CONTROL LOG",
-         "MAINTENANCE LOG") |>
+         "PROPERTY TYPE", "TENANT SERVICE REQUEST LOG") |>
   mutate("YEAR EVALUATED" = as.integer(
     format(as.Date(raw_data[["EVALUATION COMPLETED ON"]]), "%Y")
   ))
