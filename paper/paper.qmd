@@ -3,9 +3,9 @@ title: "Tenant-Service Record Keeping in Toronto: Low Ratings Are More Common in
 author: 
   - Kexin Liu
 thanks: "Code and data are available at: [https://github.com/cocoUofT/Apartment_Evaluation.git](https://github.com/cocoUofT/Apartment_Evaluation.git)."
-date: 27 September 2026
+date: 28 September 2026
 date-format: long
-abstract: "Tenant service records track reported problems and managers’ responses, helping ensure accountability in rental housing. This paper uses Toronto’s apartment-building evaluations from 2023 to September 2026 to study tenant-service-log ratings, their patterns across different building sizes, how they change over time, and differences across wards relative to benchmarks based on building-size composition. We found that, among buildings with a meaningful rating at their latest evaluation, 13.8% of buildings with 10–19 units had incomplete or outdated tenant service logs, whereas only 1.0% of buildings with 100 or more units had incomplete logs. These differences show where further investigation of record-keeping practices may be useful, although the causes and whether tenants’ problems were resolved promptly remain unclear from the log scores alone."
+abstract: "Tenant service records track reported problems and managers’ responses, helping ensure accountability in rental housing. This paper uses Toronto’s apartment-building evaluations from 2023 to September 2026 to study tenant-service-log ratings, their patterns across different building sizes, how they change over time, and differences across wards relative to benchmarks based on building-size composition. We found that, among buildings with a meaningful rating at their latest evaluation, 13.8% of buildings with 10–19 units had incomplete or outdated tenant service logs, whereas only 1.0% of buildings with 100 or more units had incomplete logs. These differences show where further investigation of record-keeping practices may be useful, but log scores alone cannot establish why ratings differ or how quickly tenants’ problems were resolved."
 format: pdf
 number-sections: true
 bibliography: references.bib
@@ -32,7 +32,7 @@ When tenants report problems such as leaks or broken locks, keeping a record of 
 
 This requirement raises a question: how consistently are tenant-service records maintained across apartment buildings? This paper examines whether low log ratings are more common in smaller buildings, whether buildings initially receiving low ratings score better at later evaluations, and whether ward differences remain after accounting for their mix of building sizes.
 
-Toronto’s apartment-building evaluations provide a way to examine differences in tenant-service record keeping across buildings[@toronto_apartment_data]. The tenant-service request log rating shows whether a building’s log was complete and properly updated at the time of evaluation[@toronto_evaluation_criteria]. The main analysis uses each building’s latest available evaluation from 2023 through 24 September 2026, covering 3,587 buildings.
+Toronto’s apartment-building evaluations provide a way to examine differences in tenant-service record keeping across buildings [@toronto_apartment_data]. The tenant-service request log rating shows whether a building’s log was complete and properly updated at the time of evaluation [@toronto_evaluation_criteria]. The main analysis uses each building’s latest available evaluation from 2023 through 24 September 2026, covering 3,587 buildings.
 
 Low tenant-service-log ratings were more common among smaller buildings. Among buildings rated either 1 or 3 at their latest evaluation, 13.8% of those with 10–19 units received a rating of 1, indicating an incomplete or outdated log, compared with 1.0% of buildings with at least 100 units. In the follow-up sample, smaller buildings were also more likely to receive a rating of 1 again at their latest evaluation. These patterns suggest groups of buildings where further investigation into record-keeping practices may be useful. However, they do not show that building size causes poor record keeping or that smaller buildings provide worse service.
 
@@ -48,9 +48,9 @@ This study uses the City of Toronto’s Apartment Building Evaluation dataset, a
 
 The analysis uses the 2023–current resource downloaded on September 24, 2026. It contains 6,731 evaluation records for 3,587 buildings, covering June 5, 2023, to September 22, 2026. Each record represents one building evaluation, so buildings evaluated more than once appear in multiple rows. The cleaned data contain one latest evaluation per building across Toronto’s 25 wards for size and ward comparisons. A separate dataset pairs each building’s earliest and latest evaluations to examine changes in log ratings.
 
-These records are produced through building evaluations conducted by City bylaw enforcement officers. For the tenant service request log, the officer assesses whether a process exists for recording requests and whether the log is complete and updated [@toronto_evaluation_criteria]. This assessment turns into a rating recorded alongside some other characteristics of the building. The rating therefore describes the condition of the log at the time of evaluation. However, it does not directly measure the quality of repairs or tenants’ satisfaction. 
+These records are produced through building evaluations conducted by City bylaw enforcement officers. For the tenant service request log, the officer assesses whether a process exists for recording requests and whether the log is complete and updated [@toronto_evaluation_criteria]. Officers record this assessment as a score alongside other building characteristics. The rating therefore describes the condition of the log at the time of evaluation. However, it does not directly measure the quality of repairs or tenants’ satisfaction. 
 
-The analysis discusses evaluated RentSafeTO buildings in the downloaded dataset, rather than all rental homes or renters in Toronto. Moreover, the reported percentages describe buildings, not the proportion of tenants affected by incomplete or outdated records.
+The analysis covers evaluated RentSafeTO buildings in the downloaded dataset, rather than all rental homes or renters in Toronto. Moreover, the reported percentages describe buildings, not the proportion of tenants affected by incomplete or outdated records.
 
 ## Variables of Interest
 
@@ -63,7 +63,7 @@ Building size is measured by the number of confirmed residential units recorded 
 #| echo: false
 #| eval: true
 #| warning: false
-#| fig-cap: Distribution of confirmed unit counts at the latest evaluation of 3,587 buildings
+#| fig-cap: "Confirmed unit counts at the latest evaluation of 3,587 buildings. Most buildings are small, with a few much larger buildings."
 #| fig-pos: H
 
 # Histogram of confirmed unit distribution
@@ -151,7 +151,7 @@ The comparison includes the 3,484 buildings that received a tenant-service-log s
 #| echo: false
 #| eval: true
 #| warning: false
-#| fig-cap: Percentage scoring 1, indicating incomplete or outdated logs, among 3,484 buildings with latest scores of 1 or 3
+#| fig-cap: "Score-1 percentages among 3,484 buildings with latest log scores of 1 or 3. Incomplete or outdated logs were more common in buildings with 10-19 units (13.8%) than in those with 100+ units (1.0%)."
 #| fig-pos: H
 
 # Building size and proportion of score 1 in service log
@@ -186,7 +186,7 @@ ggplot(service, aes(x = building_size, y = service_percent)) +
 #| echo: false
 #| eval: true
 #| warning: false
-#| fig-cap: Counts of all four log scores at the latest evaluation of 3,587 buildings, grouped by size
+#| fig-cap: "Latest log scores for 3,587 buildings, grouped by size. Complete logs (score 3) were most common in every size group."
 #| fig-pos: H
 
 stacked_data <- apartment |>
@@ -254,7 +254,7 @@ Building size is measured at the latest evaluation. Within each size group, the 
 #| echo: false
 #| eval: true
 #| warning: false
-#| fig-cap: Percentage scoring 1 again among 374 buildings that initially scored 1 and were later scored 1 or 3, grouped by latest unit count
+#| fig-cap: "Percentage scoring 1 again among 374 buildings initially scoring 1 and receiving 1 or 3 at their latest follow-up. Using latest unit counts, the percentage was 23.8% for 10-19 units and 2.6% for 100+ units."
 #| fig-pos: H
 
 ggplot(size_change_summary, aes(x = building_size, y = percent_stayed_1)) +
@@ -264,7 +264,7 @@ ggplot(size_change_summary, aes(x = building_size, y = percent_stayed_1)) +
   scale_y_continuous(labels = scales::label_percent(), limits = c(0, 0.32),
                      expand = expansion(mult = c(0, 0))) +
   labs(x = "Building Size (Number of Units)",
-       y = "Percentage of Scoring 1 Again") +
+       y = "Percentage of Buildings Scoring 1 Again") +
   theme_minimal()
 ```
 
@@ -285,7 +285,7 @@ These comparisons show that differences in building size do not fully explain wh
 #| echo: false
 #| eval: true
 #| warning: false
-#| fig-cap: Filled points show observed score-1 percentages, and open points show benchmarks based on each ward’s building-size mix, using latest scores of 1 or 3
+#| fig-cap: "Filled points show score-1 percentages; open points show benchmarks based on each ward’s building-size mix. Among 21 wards with at least 50 buildings rated 1 or 3 at their latest evaluation, Parkdale-High Park had the largest gap above its benchmark."
 #| fig-pos: H
 
 ward_data <- apartment |>
@@ -345,9 +345,9 @@ Other differences between wards, such as household income, housing costs, and th
 
 The tenant-service-log score measures whether records were complete and up to date at the time of evaluation. It does not directly measure how quickly requests were addressed, the quality of repairs, or tenants’ satisfaction. The ratings reflect officers’ assessments rather than tenants’ own opinions. Problems that tenants did not report or that management did not record may therefore be missing from the study.
 
-A study of New York City’s 311 system found differences in complaint behaviour across neighbourhoods after comparing buildings with similar physical conditions [@kontokosta2017]. Toronto’s log ratings assess record keeping rather than complaint counts, but the previously mentioned study tells a related concern: recorded information may not capture all problems tenants experience. This points to a limitation of this study: complete logs do not necessarily include all tenant concerns. Future research could use tenant surveys or interviews, in addition to response times and log ratings, to examine these gaps.
+A study of New York City’s 311 system found differences in complaint behaviour across neighbourhoods after comparing buildings with similar physical conditions [@kontokosta2017]. Toronto’s log ratings assess record keeping rather than complaint counts, but the study illustrates a related concern: recorded information may not capture all problems tenants experience. This points to a limitation of this study: complete logs do not necessarily include all tenant concerns. Future research could use tenant surveys or interviews, in addition to response times and log ratings, to examine these gaps.
 
-Evaluation timing also affects the comparisons. In the eligible follow-up sample, the median interval between the earliest and latest evaluations was 737 days (@tbl-followup), with individual intervals ranging from 530 to 1,157 days. Evidently, some buildings had more time to improve their logs. Moreover, a score of 1 at both evaluations does not mean the log was incomplete or outdated throughout the entire period. Future comparisons could use similar time intervals between evaluations.
+Evaluation timing also affects the comparisons. In the eligible follow-up sample, the median interval between the earliest and latest evaluations was 737 days (@tbl-followup), with individual intervals ranging from 530 to 1,157 days. This shows that some buildings had more time to improve their logs. Moreover, a score of 1 at both evaluations does not mean the log was incomplete or outdated throughout the entire period. Future comparisons could use similar time intervals between evaluations.
 
 The follow-up results include only buildings that initially scored 1 and later received an eligible score. The City also allows owners to request re-evaluations [@toronto_evaluation_criteria], but the data do not show which evaluations were owner-requested. Therefore, buildings with follow-up evaluations may differ from those without follow-up. For example, some owners may have requested another evaluation after improving their logs. Future research could separate these owner-requested evaluations and compare buildings with and without scheduled follow-up.
 
@@ -429,7 +429,7 @@ tt(followup_table) |>
 
 5.  **Calculate the benchmark.** Multiply each citywide percentage from Step 3 by the corresponding ward weight from Step 4. Add the four results. A size category containing no eligible buildings in a ward receives a weight of zero.
 
-For example: Parkdale-High Park contains 195 eligible buildings: 37 with 10–19 units, 64 with 20–49 units, 49 with 50–99 units, and 45 with 100 or more units. Its benchmark is calculated as:
+For example: Parkdale-High Park contains 195 eligible buildings: 37 with 10–19 units, 64 with 20–49 units, 49 with 50–99 units, and 45 with 100 or more units. Using the citywide percentages, the benchmark is calculated in @eq-wardbenchmark.
 
 $$
 \frac{37}{195}\times 0.138
@@ -437,7 +437,7 @@ $$
 +\frac{49}{195}\times 0.031
 +\frac{45}{195}\times 0.010
 \approx 6.29 \%.
-$$
+$${#eq-wardbenchmark}
 
 \newpage
 
