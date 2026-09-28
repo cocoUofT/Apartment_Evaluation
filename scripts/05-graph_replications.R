@@ -113,7 +113,7 @@ ggplot(size_change_summary, aes(x = building_size, y = percent_stayed_1)) +
   scale_y_continuous(labels = scales::label_percent(), limits = c(0, 0.32),
                      expand = expansion(mult = c(0, 0))) +
   labs(x = "Building Size (Number of Units)",
-       y = "Percentage Remaining at Score 1") +
+       y = "Percentage of Buildings Scoring 1 Again") +
   theme_minimal()
 
 # Toronto city wise segment plot
