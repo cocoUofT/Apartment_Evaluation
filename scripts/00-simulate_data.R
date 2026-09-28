@@ -3,7 +3,6 @@
 # follow-up-rating, and ward comparisons used in this study.
 # Author: Kexin Liu
 # Date: 24 September 2026
-# Updated: 28 September 2026
 # Contact: ws1nn2lj3@gmail.com
 # License: MIT
 # Pre-requisites: The `tidyverse` package must be installed.
@@ -48,13 +47,10 @@ n_evaluation <- length(record_building)
 
 possible_dates <- seq(as.Date("2023-06-05"), as.Date("2026-09-24"), by = "day")
 evaluation_time <- do.call(c, lapply(evaluation_counts, function(n) {
-  sort(sample(possible_dates, size = n, replace = FALSE))
-}))
+  sort(sample(possible_dates, size = n, replace = FALSE))}))
 
-# Retain all four recorded scores: 0 has no published meaning, 1 means the log
-# was incomplete or outdated, 2 means not applicable, and 3 means completed/full.
-# Scores are drawn independently with illustrative probabilities that sum to 1.
-# No size effect, ward effect, or improvement over time is imposed here.
+# Create all four recorded scores: 0, 1, 2, 3
+
 score_probs <- c(0.01, 0.10, 0.02, 0.87)
 
 simulated <- data.frame(
@@ -65,32 +61,38 @@ simulated <- data.frame(
   "TENANT SERVICE REQUEST LOG" = sample(0:3, n_evaluation, replace = TRUE,
                                         prob = score_probs),
   "WARDNAME" = ward_name[record_building],
-  check.names = FALSE
+  check.names = FALSE ## Keep the natural space in names
 )
 
-# Shuffle rows so that selecting the earliest/latest record requires sorting.
+# Shuffle rows: selecting the earliest or latest record requires sorting
+
 simulated <- simulated[sample(nrow(simulated)), ]
 row.names(simulated) <- NULL
 
 #### Derive the analysis datasets ####
 
-# Match the date conversion and latest-record selection in 03-clean_data.R.
+# Keep only the latest evaluation for each building
+
 evaluation_history <- simulated |>
   mutate(completion_date = as.Date(`EVALUATION COMPLETED ON`))
 
 sorted <- evaluation_history |>
   arrange(RSN, desc(completion_date), desc(`_id`))
+
 latest <- sorted[!duplicated(sorted$RSN), ]
 row.names(latest) <- NULL
 
-# Match the fixed size categories used in the paper; do not use quartiles.
+# Size break used in elsewhere in the paper
+
 size_breaks <- c(9, 19, 49, 99, Inf)
 size_labels <- c("10–19", "20–49", "50–99", "100+")
+
 latest$building_size <- cut(latest[["CONFIRMED UNITS"]],
                             breaks = size_breaks, labels = size_labels)
 
-# Keep one earliest/latest pair per building, as in the real cleaning script.
-# A building with only one evaluation has equal first_date and latest_date.
+# Keep one earliest/latest pair per building
+# A building with only one evaluation has equal first_date and latest_date
+
 scorechange <- evaluation_history |>
   arrange(RSN, completion_date) |>
   group_by(RSN) |>
@@ -100,12 +102,8 @@ scorechange <- evaluation_history |>
             latest_score = last(`TENANT SERVICE REQUEST LOG`),
             `CONFIRMED UNITS` = last(`CONFIRMED UNITS`), .groups = "drop")
 
-# The analysis subsequently keeps only buildings with a later evaluation,
-# first_score == 1, and latest_score in c(1, 3).
-
 #### Save data ####
 
-dir.create("data/00-simulated_data", recursive = TRUE, showWarnings = FALSE)
-write_csv(simulated, "data/00-simulated_data/simulated_evaluations.csv")
-write_csv(latest, "data/00-simulated_data/simulated_data.csv")
+write_csv(simulated, "data/00-simulated_data/simulated_complete_data.csv")
+write_csv(latest, "data/00-simulated_data/simulated_analysis_data.csv")
 write_csv(scorechange, "data/00-simulated_data/simulated_score_change_data.csv")
