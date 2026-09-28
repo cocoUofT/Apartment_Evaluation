@@ -2,7 +2,7 @@
 title: "Tenant-Service Record Keeping in Toronto: Low Ratings Are More Common in Smaller Apartment Buildings"
 author: 
   - Kexin Liu
-thanks: "Code and data are available at: [https://github.com/cocoUofT/Apartment_Evaluation](https://github.com/cocoUofT/Apartment_Evaluation])."
+thanks: "Code and data are available at: [https://github.com/cocoUofT/Apartment_Evaluation.git](https://github.com/cocoUofT/Apartment_Evaluation.git)."
 date: 27 September 2026
 date-format: long
 abstract: "Tenant service records track reported problems and managers’ responses, helping ensure accountability in rental housing. This paper uses Toronto’s apartment-building evaluations from 2023 to September 2026 to study tenant-service-log ratings, their patterns across different building sizes, how they change over time, and differences across wards relative to benchmarks based on building-size composition. We found that, among buildings with an available rating at their latest evaluation, 14.0% of buildings with 10–19 units had incomplete or outdated tenant service logs, whereas only 1.1% of buildings with 100 or more units had incomplete logs. These differences show where further investigation of record-keeping practices may be useful, although the causes and whether tenants’ problems were resolved promptly remain unclear from the log scores alone."
