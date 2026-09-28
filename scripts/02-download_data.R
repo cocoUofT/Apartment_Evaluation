@@ -27,4 +27,4 @@ raw_data <- filter(datastore_resources, row_number()==1) %>% get_resource()
 
 #### Save data ####
 
-write_csv(raw_data, "data/01-raw_data/raw_data.csv") 
+write_csv(raw_data,paste0("data/01-raw_data/raw_data_", Sys.Date(), ".csv"))
