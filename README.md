@@ -34,6 +34,31 @@ evaluation dates from June 5, 2023, to September 22, 2026.
 | `other/sketches/` | Initial dataset and figure sketches. |
 | `other/llm_usage/` | Saved records of AI assistance. |
 
+## Reproduce
+
+Requires R, Quarto, and LaTeX (e.g., TinyTeX). Open `ApartmentLogRating.Rproj` and run from the project root.
+
+Use the saved data. Skip `02-download_data.R`, which replaces the snapshot with current data.
+
+Run in the R console:
+
+```r
+install.packages(c("tidyverse", "ggplot2", "opendatatoronto", "testthat", "tinytable", "scales")) # Once
+
+source("scripts/00-simulate_data.R")
+testthat::test_file("scripts/01-test_simulated_data.R")
+source("scripts/03-clean_data.R")
+testthat::test_file("scripts/04-test_analysis_data.R")
+source("scripts/05-graph_replications.R", print.eval = TRUE)
+source("scripts/06-table_replications.R", print.eval = TRUE)
+```
+
+Then run in the terminal:
+
+```sh
+quarto render paper/paper.qmd --to pdf
+```
+
 ## AI assistance
 
 OpenAI ChatGPT assisted with exploring the dataset, developing and revising 
