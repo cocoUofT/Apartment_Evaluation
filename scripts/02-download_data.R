@@ -1,10 +1,10 @@
 #### Preamble ####
-# Purpose: Downloads and saves Apartment Building Evaluation data from 2023 to 2025
-# from Open Data Toronto
+# Purpose: Downloads and saves Apartment Building Evaluation data from 2023
+# to when this study was conducted (24 September 2026) from Open Data Toronto
 # Author: Kexin Liu
 # Date: 24 September 2026
 # Contact: ws1nn2lj3@gmail.com
-# License: 
+# License: MIT
 # Pre-requisites: 
   # The `tidyverse` package must be installed and loaded
   # The `opendatatoronto` package must be installed and loaded

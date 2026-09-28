@@ -1,12 +1,12 @@
 #### Preamble ####
-# Purpose: Cleans the raw Apartment Building Evaluation data from 2023 to present
+# Purpose: Cleans the raw Apartment Building Evaluation dataset to a ready for
+# analysis dataset
 # Author: Kexin Liu
 # Date: 24 September 2026
 # Contact: ws1nn2lj3@gmail.com
-# License: 
-# Pre-requisites: 
+# License: MIT
+# Pre-requisites: The `tidyverse` package must be installed
 
-# Any other information needed?
 
 #### Workspace setup ####
 
@@ -17,11 +17,9 @@ raw_data <- read_csv("data/01-raw_data/raw_data.csv")
 #### Clean data ####
 
 variable_interest <- raw_data |>
-  select("_id", "RSN", "EVALUATION COMPLETED ON", "CONFIRMED UNITS", "YEAR BUILT", 
-         "PROPERTY TYPE", "TENANT SERVICE REQUEST LOG", "WARDNAME") |>
-  mutate("YEAR EVALUATED" = as.integer(
-    format(as.Date(raw_data[["EVALUATION COMPLETED ON"]]), "%Y")), 
-    completion_date = as.Date(`EVALUATION COMPLETED ON`))
+  select("_id", "RSN", "EVALUATION COMPLETED ON", "CONFIRMED UNITS",
+         "TENANT SERVICE REQUEST LOG", "WARDNAME") |>
+  mutate(completion_date = as.Date(`EVALUATION COMPLETED ON`))
 
 sorted <- variable_interest[order(variable_interest$RSN, 
                                   -as.numeric(variable_interest$completion_date),
@@ -33,8 +31,6 @@ colSums(is.na(apartment)) ## Check for missing value in all columns
 
 
 #### Additional dataframe for evaluating score change only ####
-
-# Keep buildings that were evaluated more than once
 
 df.history <- raw_data |>
   select("RSN", "EVALUATION COMPLETED ON", "CONFIRMED UNITS",
