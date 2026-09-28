@@ -11,14 +11,20 @@ number-sections: true
 bibliography: references.bib
 ---
 
+\newpage
+
 ```{r}
 #| include: false
 #| warning: false
 #| message: false
 
 library(tidyverse)
-```
+library(ggplot2)
+library(tinytable)
 
+apartment <- read_csv("../data/02-analysis_data/analysis_data.csv")
+scorechange <- read_csv("../data/02-analysis_data/score_change_data.csv")
+```
 
 # Introduction
 
@@ -28,63 +34,365 @@ Toronto’s apartment-building evaluations provide a way to examine differences 
 
 Low tenant-service-log ratings were more common among smaller buildings. Among buildings rated either 1 or 3 at their latest evaluation, 14.0% of those with 10–19 units received a rating of 1, indicating an incomplete or outdated log, compared with 1.1% of buildings with at least 100 units. In the follow-up sample, smaller buildings were also more likely to receive a rating of 1 again at their latest evaluation. These patterns suggest groups of buildings where further investigation into record-keeping practices may be useful. However, these findings do not show that building size causes poor record keeping or that smaller buildings provide worse service.
 
-The remainder of this paper is structured as follows. @sec-data....
-
+The remainder of this paper is organized as follows. @sec-data introduces the dataset and variables, then examines log ratings by building size, changes at follow-up, and ward differences relative to building-size benchmarks. @sec-discussion considers possible explanations for the findings, the study’s limitations, and directions for future research. The appendix provides additional summary statistics and a step-by-step explanation of the ward benchmark calculation.
 
 # Data {#sec-data}
 
+All data preparation and analysis were conducted in R [@citeR]. The `opendatatoronto` package was used to download the data [@opendatatoronto], `tidyverse` to prepare and summarize the records [@tidyverse], and `testthat` to check the structure and consistency of the analysis data [@testthat]. Figures were created using `ggplot2` [@ggplot2], with numerical labels formatted using `scales` [@scales]. Tables were produced using `tinytable` [@tinytable].
+
 ## Overview
 
-We use the statistical programming language R [@citeR].... Our data [@shelter].... Following @tellingstories, we consider...
+This study uses the City of Toronto’s Apartment Building Evaluation dataset, available through Open Data Toronto [@toronto_apartment_data]. The dataset contains evaluation records collected under RentSafeTO, which applies to rental apartment buildings with three or more storeys and ten or more units [@toronto_registration]. The dataset provides information such as tenant-service-log ratings, building size, and ward. Another relevant dataset available through Open Data Toronto is the *Apartment Building Registration* dataset, which provides information about registered properties [@toronto_registration_data]. However, it lacks clear evaluation metrics or records of repeated evaluations. These are needed to compare record keeping across building sizes and assess whether log ratings improve over time. The *Apartment Building Evaluation* dataset therefore serves as the primary data source for this study.
 
-Overview text
+The analysis uses the 2023–current resource downloaded on September 24, 2026. It contains 6,731 evaluation records for 3,587 buildings, covering evaluations from June 5, 2023, to September 22, 2026. Each record represents one building evaluation. Buildings evaluated more than once therefore appear in multiple rows. The main analysis uses the latest available evaluation for each building, producing one observation per building across Toronto’s 25 wards. Earlier records are kept separately to examine changes in ratings over time.
 
-## Measurement
-	
-Some paragraphs about how we go from a phenomena in the world to an entry in the dataset.
+These records are produced through scheduled building evaluations conducted by City bylaw enforcement officers. For the tenant service request log, the officer assesses whether a process exists for recording requests and whether the log is complete and updated [@toronto_evaluation_criteria]. This assessment turns into a rating recorded alongside the some other characteristics of the building. The rating therefore describes the condition of the log at the time of evaluation. However, it does not directly measure the quality of repairs or tenants’ satisfaction.
 
-## Outcome variables
+## Variables of Interest
 
-Add graphs, tables and text. Use sub-sub-headings for each outcome variable or update the subheading to be singular.
+### Building Size
 
-## Predictor variables
+Building size is measured by the number of confirmed residential units recorded at each building’s latest evaluation. Unit counts are available for all 3,587 buildings in the main sample and range from 10 to 793.
 
-Add graphs, tables and text.
+```{r}
+#| label: fig-sizehistogram
+#| echo: false
+#| eval: true
+#| warning: false
+#| fig-cap: Confirmed residential unit distribution
+#| fig-pos: H
 
-Use sub-sub-headings for each outcome variable and feel free to combine a few into one if they go together naturally.
+# Histogram of confirmed unit distribution
+ggplot(apartment, aes(x = `CONFIRMED UNITS`)) +
+  geom_histogram(binwidth = 60, boundary = 0, closed = "left", fill = "grey",
+                 colour = "grey") +
+  scale_x_continuous(breaks = seq(0, 840, by = 120)) +
+  labs(x = "Confirmed Units Per Building", y = "Number of Buildings") +
+  theme_minimal()
+```
 
+@fig-sizehistogram shows that the distribution of confirmed units is right-skewed, with many smaller buildings and relatively few much larger buildings. The median is 51 units, while the mean is 91.2 units, reflecting the influence of larger buildings. Summary statistics for confirmed units are provided in @tbl-confirmunits in the appendix.
 
-We run the model in R [@citeR] using the `rstanarm` package of @rstanarm. We use the default priors from `rstanarm`.
+For comparisons of tenant-service-log ratings, confirmed unit counts are grouped into four categories: 10–19, 20–49, 50–99, and 100 or more units. These categories are adapted from the size groups used in the Canada Mortgage and Housing Corporation’s Rental Market Report: Greater Toronto Area [@cmhc2018, p. 29]. The smallest category starts at 10 units, matching the standard in this analysis, while the report’s two largest categories are combined into a single group of 100 or more units here. The same four categories are used throughout the analysis. @tbl-sizegroup reports the number and percentage of buildings in each size category.
 
+```{r}
+#| label: tbl-sizegroup
+#| tbl-cap: "Building counts and percentages by size category"
+#| message: FALSE
+#| echo: FALSE
+#| tbl-pos: H
+
+size_breaks <- c(9, 19, 49, 99, Inf)
+size_labels <- c("10–19", "20–49", "50–99", "100+")
+
+# Table: the four size groups
+size_summary <- apartment |>
+  mutate(size_group = cut(.data[["CONFIRMED UNITS"]], breaks = size_breaks, 
+                          labels = size_labels)) |>
+  filter(!is.na(size_group)) |>
+  count(size_group, name = "Building", .drop = FALSE) |>
+  mutate(`Share (%)` = 100 * Building / sum(Building)) |>
+  rename(`Building Size` = size_group)
+
+tt(size_summary) |>
+  format_tt(escape = TRUE) |>
+  format_tt(j = 2, digits = 0, num_fmt = "decimal", num_mark_big = ",") |>
+  format_tt(j = 3, digits = 1, num_fmt = "decimal") |>
+  style_tt(j = 2:3, align = "r")
+```
+
+### Tenant Service Log Score
+
+The tenant service log score describes whether a building’s record of tenant requests was complete and properly updated at the time of evaluation. Under the City’s published criteria, a score of 1 indicates an incomplete or outdated log, while a score of 3 indicates a complete log. A score of 2 is labelled “N/A” for this item [@toronto_evaluation_criteria]. The dataset also contains scores of 0, which are not defined in the published criteria and are reported separately as unspecified. These values are treated as categories rather than a continuous numerical scale.
+
+@tbl-logscore shows the number and percentage of buildings receiving each score at their latest evaluation. Most buildings received a score of 3 (3,276 buildings, or 91.3%), while 208 buildings received a score of 1 (5.8%). The remaining 103 buildings received scores of 0 or 2.
+
+```{r}
+#| label: tbl-logscore
+#| tbl-cap: "Building counts and percentages by tenant-log score"
+#| message: FALSE
+#| echo: FALSE
+#| tbl-pos: H
+
+# Table: the four scores
+score_counts <- table(factor(apartment[["TENANT SERVICE REQUEST LOG"]],
+                             levels = 0:3))
+score_summary <- data.frame(Score = as.character(0:3),
+                            `Published Meaning` = c("Not specified", 
+                                                    "Not completed or properly 
+                                                    updated",
+                                                    "Not applicable", 
+                                                    "Completed/full"),
+                            Buildings = as.integer(score_counts),
+                            `Share (%)` = 100 * as.integer(score_counts) 
+                            / nrow(apartment),
+                            check.names = FALSE)
+tt(score_summary) |>
+  format_tt(escape = TRUE) |>
+  format_tt(j = 3, digits = 0, num_fmt = "decimal", num_mark_big = ",") |>
+  format_tt(j = 4, digits = 1, num_fmt = "decimal") |>
+  style_tt(j = c(3, 4), align = "r")
+```
+
+## Analysis
+
+### Log Ratings by Building Size
+
+The comparison includes the 3,484 buildings who received a tenant-service-log score of either 1 or 3 in their latest evaluation, excluding scores of 0 and 2. Within each size category, the percentage receiving a low rating is calculated as the number of buildings scoring 1 divided by the number scoring either 1 or 3.
+
+@fig-sizescore shows that low ratings become less common as building size increases. Among buildings with 10–19 units, 13.8% received a score of 1. The proportion was 8.1% for buildings with 20–49 units and 3.1% for buildings with 50–99 units. Buildings with 100 or more units had the lowest percentage, at only 1.0%. This pattern indicates that incomplete or outdated tenant-service logs were more common among smaller buildings.
+
+```{r}
+#| label: fig-sizescore
+#| echo: false
+#| eval: true
+#| warning: false
+#| fig-cap: Percentage receiving score 1 by building size
+#| fig-pos: H
+
+# Building size and proportion of score 1 in service log
+
+apartment$building_size <- cut(
+  apartment[["CONFIRMED UNITS"]],
+  breaks = size_breaks,
+  labels = size_labels)
+
+service <- apartment |>
+  filter(`TENANT SERVICE REQUEST LOG` %in% c(1, 3)) |>
+  group_by(building_size) |>
+  summarise(buildings = n(), 
+            service_percent = mean(`TENANT SERVICE REQUEST LOG` == 1),
+            .groups = "drop")
+
+ggplot(service, aes(x = building_size, y = service_percent)) +
+  geom_col(fill = "grey", width = 0.7) +
+  geom_text(aes(label = scales::percent(service_percent, accuracy = 0.1)),
+            vjust = -0.5) +
+  scale_y_continuous( labels = scales::label_percent(accuracy = 1),
+                      limits = c(0, max(service$service_percent) * 1.25),
+                      expand = expansion(mult = c(0, 0))) +
+  labs(x = "Building Size", y = "Percentage Receiving Score 1") +
+  theme_minimal()
+```
+
+@fig-sizecounts presents the counts of all four recorded scores across the 3,587 buildings. A score of 3 was the most common rating in every building-size category. Although buildings with 100 or more units had the highest overall count, only 11 of them received a score of 1, compared with 97 buildings in the smallest size group. These counts support the pattern shown in @fig-sizescore, while also showing the distribution of scores 0 and 2.
+
+```{r}
+#| label: fig-sizecounts
+#| echo: false
+#| eval: true
+#| warning: false
+#| fig-cap: Tenant-log score counts by building size
+#| fig-pos: H
+
+stacked_data <- apartment |>
+  filter(`TENANT SERVICE REQUEST LOG` %in% 0:3) |>
+  mutate(log_score = factor(`TENANT SERVICE REQUEST LOG`, 
+                            levels = c(1, 0, 2, 3)))
+
+stacked_data$building_size <- cut(
+  stacked_data[["CONFIRMED UNITS"]],
+  breaks = size_breaks,
+  labels = size_labels)
+
+size_totals <- stacked_data |> count(building_size)
+
+ggplot(stacked_data, aes(x = building_size, fill = log_score)) +
+  geom_bar(width = 0.72, position = position_stack(reverse = TRUE)) +
+  geom_text(data = size_totals, 
+            aes(x = building_size, y = n, label = scales::comma(n)),
+            inherit.aes = FALSE, vjust = -0.5) +
+  scale_fill_manual(name = "Score: ",
+                    values = c("0" = "#BC5085", "1" = "grey", "2" = "#FDE2A7",
+                               "3" = "#BDE0FE"), breaks = c("0", "1", "2", "3"),
+                    labels = c("0: Undefined", "1: Not Completed / Outdated", 
+                               "2: N/A", "3: Completed")) +
+  scale_y_continuous(labels = scales::label_comma(), 
+                     expand = expansion(mult = c(0, 0.08))) +
+  labs(x = "Building Size (Number of Units)", y = "Number of Buildings") +
+  theme_minimal() +
+  theme(legend.position = "right", legend.title = element_text(size = 9),
+        legend.text = element_text(size = 6),
+        legend.key.size = grid::unit(0.5, "cm")) +
+  guides(fill = guide_legend(nrow = 4, byrow = TRUE))
+```
+
+These results show an association between building size and log ratings. They do not imply that building size causes differences in record keeping or that tenants in smaller buildings receive poorer service.
+
+### Follow-up Ratings by Building Size
+
+The follow-up analysis examines buildings that received a score of 1 at their earliest recorded evaluation and had a later evaluation with a score of either 1 or 3. The sample includes 374 buildings that were evaluated more than once, grouped by their confirmed unit counts. Within each size category, the percentage of buildings that received a score of 1 again is calculated using all eligible buildings in that category.
+
+@fig-scorechange shows that smaller buildings were more likely to receive a score of 1 again. Among buildings with 10–19 units, 23.8% scored 1 at their latest evaluation. The percentage was 16.1% for buildings with 20–49 units, and 14.3% for buildings with 50–99 units. The percentage was lowest among buildings with 100 or more units, at only 2.6%. Overall, 307 of the 374 buildings improved from a score of 1 to 3, while 67 received a score of 1 again.
+
+```{r}
+#| label: fig-scorechange
+#| echo: false
+#| eval: true
+#| warning: false
+#| fig-cap: Percentage scoring 1 again by building size
+#| fig-pos: H
+
+# Create a barplot for building size and proportion of improvement in service log
+
+scorechange$building_size <- cut(scorechange[["CONFIRMED UNITS"]],
+                                 breaks = size_breaks, labels = size_labels)
+score1_change <- scorechange |>
+  filter(first_date < latest_date, first_score == 1, latest_score %in% c(1, 3))
+
+size_change_summary <- score1_change |>
+  group_by(building_size) |>
+  summarise(total = n(), stayed_at_1 = sum(latest_score == 1),
+            percent_stayed_1 = stayed_at_1 / total, .groups = "drop")
+
+ggplot(size_change_summary, aes(x = building_size, y = percent_stayed_1)) +
+  geom_col(fill = "grey", width = 0.7) +
+  geom_text(aes(label = scales::percent(percent_stayed_1, accuracy = 0.1)),
+            vjust = -1, colour = "black") +
+  scale_y_continuous(labels = scales::label_percent(), limits = c(0, 0.32),
+                     expand = expansion(mult = c(0, 0))) +
+  labs(x = "Building Size (Number of Units)",
+       y = "Percentage Remaining at Score 1") +
+  theme_minimal()
+```
+
+This pattern suggests that improvement in recorded log ratings was more common among larger buildings in the follow-up sample. However, the two largest size categories contain only 35 and 38 buildings, respectively, so their percentages depend on relatively few observations.
+
+### Log Ratings by Ward
+
+Log ratings may vary across wards, partly because wards have different mixes of building sizes. To account for this, each ward’s percentage of buildings scoring 1 is compared with a benchmark that reflects its composition of building sizes. To calculate this benchmark, each building is assigned the citywide score-1 percentage for its size category. These percentages are then averaged across the buildings in the ward. Only buildings with scores of 1 or 3 are included. The calculation is explained step by step in [ward benchmark calculation](#sec-wardbenchmark) in the appendix.
+
+@fig-ward compares the observed and benchmark percentages. A filled point to the right of its benchmark means the ward has a higher percentage of low ratings than the benchmark; a point to the left means a lower percentage. The figure shows only the 21 wards with at least 50 eligible buildings, but buildings from all 25 wards are used to calculate the benchmarks.
+
+Among the displayed wards, Parkdale-High Park had the largest positive difference: 10.8% of eligible buildings scored 1, compared with a benchmark of 6.3%, a difference of 4.5 percentage points. Eglinton-Lawrence also exceeded its benchmark, with an observed percentage of 11.3% compared with 7.5%. In contrast, Etobicoke Centre had the largest negative difference, with 1.6% scoring 1 compared with a benchmark of 5.2%.
+
+These comparisons show that differences in building size do not fully explain why low ratings are more common in some wards than others. Some wards have higher percentages of low ratings than their benchmarks, while others have lower percentages.
+
+```{r}
+#| label: fig-ward
+#| echo: false
+#| eval: true
+#| warning: false
+#| fig-cap: Observed and benchmark percentages by ward
+#| fig-pos: H
+
+ward_data <- apartment |>
+  filter(`TENANT SERVICE REQUEST LOG` %in% c(1, 3)) |>
+  mutate(size_band = cut(`CONFIRMED UNITS`, breaks = size_breaks,
+                         labels = size_labels),
+         score1 = `TENANT SERVICE REQUEST LOG` == 1)
+
+city_rates <- ward_data |>
+  group_by(size_band) |>
+  summarise(city_rate = mean(score1), .groups = "drop")
+
+ward_summary <- ward_data |>
+  left_join(city_rates, by = "size_band") |>
+  group_by(WARDNAME) |>
+  summarise(buildings = n(), observed = mean(score1), 
+            benchmark = mean(city_rate), .groups = "drop") |>
+  filter(buildings >= 50) |>
+  mutate(gap = observed - benchmark) |>
+  arrange(gap) |>
+  mutate(ward_label = paste0(WARDNAME, " (n=", buildings, ")"),
+         ward_label = factor(ward_label, levels = ward_label))
+
+ggplot(ward_summary, aes(y = ward_label)) +
+  geom_segment(aes(x = benchmark, xend = observed, yend = ward_label),
+               color = "grey70", linewidth = 0.9) +
+  geom_point(aes(x = benchmark, shape = "Size-mix benchmark",
+                 color = "Size-mix benchmark"), size = 3, stroke = 1.2) +
+  geom_point(aes(x = observed, shape = "Observed rate", 
+                 color = "Observed rate"), size = 2) +
+  scale_shape_manual(name = NULL, values = c("Observed rate" = 16, 
+                                             "Size-mix benchmark" = 1)) +
+  scale_color_manual(name = NULL, values = c("Observed rate" = "#A94C41",
+                                             "Size-mix benchmark" = "#4F6874")) +
+  scale_x_continuous(labels = scales::label_percent(accuracy = 1),
+                     limits = c(0, 0.15), breaks = seq(0, 0.14, 0.02)) +
+  labs(x = "Percentage of Buildings Receiving Score 1", y = NULL) +
+  theme_minimal() +
+  theme(legend.position = "top")
+```
 
 # Discussion {#sec-discussion}
 
-## First discussion point {#sec-first-point}
+## Building Size and Record Keeping
 
-If my paper were 10 pages, then should be be at least 2.5 pages. The discussion is a chance to show off what you know and what you learnt from all this. 
+Low tenant-service-log ratings were more common among smaller buildings. The follow-up analysis also showed that, among buildings that initially scored 1, smaller buildings were more likely to score 1 again. Together, these findings suggest that maintaining complete and updated logs may be more difficult for smaller buildings. However, improvement was common overall, with 307 of the 374 buildings in the follow-up sample moving from a score of 1 to 3.
 
-## Second discussion point
+One possible explanation is that larger buildings may have more staff or complete systems for record keeping, while smaller buildings may use less formal procedures. However, this study did not examine staffing or record-keeping systems, so this explanation cannot be confirmed. Further research could examine whether additional guidance or support would help smaller buildings maintain complete and updated logs.
 
-Please don't use these as sub-heading labels - change them to be what your point actually is.
+## Ward Differences
 
-## Third discussion point
+Some wards had more low log ratings than their mix of building sizes would suggest. For example, Parkdale-High Park and Eglinton-Lawrence had higher percentages of low ratings than their benchmarks. This means that differences in the proportions of small and large buildings do not fully explain the differences between wards.
 
-## Weaknesses and next steps
+Other differences between wards, such as household income, housing costs, and the proportion of households that rent, could provide additional context for these patterns. Building ownership and management practices may also be relevant. Wards with percentages above their benchmarks could be starting points for investigating why incomplete or outdated logs are more common in some areas.
 
-Weaknesses and next steps should also be included.
+## Limitations and Future Work
+
+The tenant-service-log score measures whether records were complete and updated at the time of evaluation. It does not directly measure how quickly requests were addressed, the quality of repairs, or tenants’ satisfaction. Therefore, a higher score does not necessarily mean that tenants received better service. Future research could examine response times and tenant experiences alongside log ratings.
+
+Evaluation timing also affects the comparisons. Buildings had different amounts of time between evaluations, so some had more time to improve their logs. A score of 1 at both evaluations does not mean the log was incomplete or outdated the entire time between them. Future comparisons could use similar gaps between evaluations.
+
+Finally, the analysis identifies associations rather than causes. Management resources and other building characteristics may also matter. The ward benchmarks consider only four size groups, which may hide differences between buildings within each group. Future research could examine management practices and check whether the results change with different size groups or minimum numbers of buildings per ward.
 
 \newpage
 
 \appendix
 
-# Appendix {-}
+# Appendix {.unnumbered}
 
+### Summary Statistics of Confirmed Units {.unnumbered}
 
+```{r}
+#| label: tbl-confirmunits
+#| tbl-cap: "Summary statistics of confirmed residential units"
+#| message: FALSE
+#| echo: FALSE
+#| tbl-pos: H
 
+units <- apartment[["CONFIRMED UNITS"]]
+
+# Table 1: numeric characteristics of the latest-evaluation buildings.
+
+unit_summary <- data.frame(
+  Statistic = c("Total", "Missing", "Minimum", "Maximum", "Mean", "Median"), 
+  "Confirmed Units" = c(
+    formatC(sum(!is.na(units)), format = "f", digits = 0, big.mark = ","),
+    formatC(sum(is.na(units)), format = "f", digits = 0, big.mark = ","),
+    formatC(min(units, na.rm = TRUE), format = "f", digits = 0, big.mark = ","),
+    formatC(max(units, na.rm = TRUE), format = "f", digits = 0, big.mark = ","),
+    formatC(mean(units, na.rm = TRUE), format = "f", digits = 1, big.mark = ","),
+    formatC(median(units, na.rm = TRUE), format = "f", digits = 0, big.mark = ",")),
+  check.names = FALSE)
+
+tt(unit_summary) |>
+  style_tt(j = 2, align = "r")
+```
+
+### Calculation of ward benchmarks {#sec-wardbenchmark .unnumbered}
+
+1.  **Select eligible buildings.** Take the latest evaluation for each building and include only buildings with tenant-service-log scores of 1 or 3.
+
+2.  **Assign building-size categories.** Group buildings by their confirmed unit counts: 10–19, 20–49, 50–99, and 100+ units.
+
+3.  **Calculate citywide percentages.** Within each size category, divide the number of buildings scoring 1 by the number scoring either 1 or 3. The resulting percentages are approximately 13.8%, 8.1%, 3.1%, and 1.0%, respectively.
+
+4.  **Calculate each ward’s size proportions.** Within a ward, count the eligible buildings in each size category. Divide each count by the ward’s total number of eligible buildings. These four proportions are the weights.
+
+5.  **Calculate the benchmark.** Multiply each citywide percentage from Step 3 by the corresponding ward weight from Step 4. Add the four results. A size category containing no eligible buildings in a ward receives a weight of zero.
+
+For example: Parkdale-High Park contains 195 eligible buildings: 37 with 10–19 units, 64 with 20–49 units, 49 with 50–99 units, and 45 with 100 or more units. Its benchmark is calculated as:
+
+$$
+\frac{37}{195}\times 0.14
++\frac{64}{195}\times 0.81
++\frac{49}{195}\times 0.031
++\frac{45}{195}\times 0.01
+\approx 6.3 \%.
+$$
 
 \newpage
 
-
 # References
-
-
