@@ -39,7 +39,7 @@ unit_summary <- data.frame(
   check.names = FALSE)
 
 tt(unit_summary) |>
-  style_tt(j = 2, align = "r")
+  style_tt(j = 2, align = "c")
 
 # Keep all four recorded scores.
 
@@ -59,7 +59,7 @@ tt(score_summary) |>
   format_tt(escape = TRUE) |>
   format_tt(j = 3, digits = 0, num_fmt = "decimal", num_mark_big = ",") |>
   format_tt(j = 4, digits = 1, num_fmt = "decimal") |>
-  style_tt(j = c(3, 4), align = "r")
+  style_tt(j = c(3, 4), align = "c")
 
 
 # The four size groups
@@ -76,7 +76,7 @@ tt(size_summary) |>
   format_tt(escape = TRUE) |>
   format_tt(j = 2, digits = 0, num_fmt = "decimal", num_mark_big = ",") |>
   format_tt(j = 3, digits = 1, num_fmt = "decimal") |>
-  style_tt(j = 2:3, align = "r")
+  style_tt(j = 2:3, align = "c")
 
 
 # Follow up information
@@ -111,4 +111,4 @@ tt(followup_table) |>
   format_tt(escape = TRUE) |>
   format_tt(j = c(2, 3, 5), digits = 0, num_fmt = "decimal") |>
   format_tt(j = 4, digits = 1, num_fmt = "decimal") |>
-  style_tt(j = 2:5, align = "r")
+  style_tt(j = 2:5, align = "c")
