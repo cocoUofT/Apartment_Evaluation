@@ -8,6 +8,7 @@
   # The `tidyverse` package must be installed
   # The 'tinytable' package must be installed
   # The 'analysis_data.csv' saved and ready to be read
+  # The 'score_change_data.csv' is saved and ready to be read
 
 
 #### Workspace setup ####
@@ -15,6 +16,7 @@
 library(tidyverse)
 library(tinytable)
 apartment <- read_csv("data/02-analysis_data/analysis_data.csv")
+scorechange <- read_csv("data/02-analysis_data/score_change_data.csv")
 
 #### Tables in Data Section ####
 
@@ -75,3 +77,38 @@ tt(size_summary) |>
   format_tt(j = 2, digits = 0, num_fmt = "decimal", num_mark_big = ",") |>
   format_tt(j = 3, digits = 1, num_fmt = "decimal") |>
   style_tt(j = 2:3, align = "r")
+
+
+# Follow up information
+
+scorechange$building_size <- cut(scorechange[["CONFIRMED UNITS"]],
+                                 breaks = size_breaks, labels = size_labels)
+score1_change <- scorechange |>
+  filter(first_date < latest_date, first_score == 1, latest_score %in% c(1, 3)) |>
+  mutate(interval_days = as.numeric(latest_date - first_date))
+
+size_change_summary <- score1_change |>
+  group_by(building_size) |>
+  summarise(total = n(), stayed_at_1 = sum(latest_score == 1),
+            percent_stayed_1 = stayed_at_1 / total,
+            median_days = median(interval_days), .groups = "drop")
+
+followup_table <- size_change_summary |>
+transmute(`Size (Units)` = as.character(building_size),
+          Eligible = total,
+          `Scored 1 Again` = stayed_at_1,
+          `Share (%)` = 100 * percent_stayed_1,
+          `Median Gap (Days)` = median_days) |>
+  bind_rows(tibble(
+    `Size (Units)` = "Overall",
+    Eligible = nrow(score1_change),
+    `Scored 1 Again` = sum(score1_change$latest_score == 1),
+    `Share (%)` = 100 * mean(score1_change$latest_score == 1),
+    `Median Gap (Days)` = median(score1_change$interval_days)
+  ))
+
+tt(followup_table) |>
+  format_tt(escape = TRUE) |>
+  format_tt(j = c(2, 3, 5), digits = 0, num_fmt = "decimal") |>
+  format_tt(j = 4, digits = 1, num_fmt = "decimal") |>
+  style_tt(j = 2:5, align = "r")
