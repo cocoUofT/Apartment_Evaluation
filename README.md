@@ -41,4 +41,15 @@ R code, and troubleshooting Quarto rendering. It also assisted with editing the
 paragraph structure, as well as fixing some grammatical mistakes for the paper. 
 GPT-6 Sol was the only model used for this study.
 
-The chat history is stored in [other/llm_usage/usage.txt](other/llm_usage/usage.txt). 
+The chat history is stored in [other/llm_usage/usage.txt](other/llm_usage/usage.txt).
+
+## Licence
+
+The original code and accompanying code documentation are licensed under the
+[MIT License](LICENSE). Copyright (c) 2026 Kexin Liu.
+
+The City of Toronto source data, including the information contained in the cleaned
+datasets, are covered by the
+[Open Government Licence – Toronto](https://www.toronto.ca/city-government/data-research-maps/open-data/open-data-licence/),
+not the MIT License. Contains information licensed under the Open Government
+Licence – Toronto.
